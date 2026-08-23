@@ -1,0 +1,88 @@
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-2B-Instruct}
+  device: auto
+  dtype: bfloat16
+  attn_implementation: sdpa
+  generation:
+    max_new_tokens: 64
+    temperature: 0.0
+    top_p: null
+    top_k: null
+    repetition_penalty: 1.0
+  video:
+    min_pixels: 4096
+    max_pixels: 262144
+    total_pixels: 4194304
+    fps: 1.0
+    max_frames: 32
+
+agent:
+  use_tools: true
+  max_tool_calls: 2
+  planning_max_new_tokens: 128
+  planning_temperature: 0.0
+  max_tool_result_chars: 12000
+
+coarse_to_fine:
+  cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}
+  sample_fps: 1.0
+  cache_max_side: 768
+  cache_jpeg_quality: 85
+  cache_lru_size: 4
+  glance_frames: 4
+  global_frames: 32
+  initial_windows: 6
+  select_top_k: 2
+  split_parts: 2
+  max_rounds: 3
+  confidence_threshold: 3
+  working_set_frames: 12
+  unique_frame_budget: 32
+  cumulative_frame_budget: 64
+  subtitle_max_chars: 4000
+  min_window_seconds: 1.0
+  decision_max_new_tokens: 128
+  reasoning_max_new_tokens: 192
+  contact_sheet_columns: 3
+
+active_tree:
+  cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}
+  sample_fps: 1.0
+  cache_max_side: 768
+  cache_jpeg_quality: 85
+  cache_lru_size: 4
+  scene_min_seconds: 4.0
+  scene_max_seconds: 20.0
+  scene_change_threshold: 0.16
+  subtitle_gap_seconds: 3.0
+  min_children: 3
+  max_children: 6
+  storyboard_frames: 4
+  contact_sheet_columns: 4
+  inspect_frames: 8
+  motion_frames: 12
+  detail_frames: 4
+  compare_frames_per_node: 4
+  subtitle_max_chars: 4000
+  breadth_subtitle_chars_per_node: 500
+  min_active_observations: 1
+  max_search_observations: 6
+  max_repair_observations: 2
+  max_stagnant_observations: 2
+  max_navigation_actions: 4
+  max_verification_repairs: 2
+  protocol_repair_attempts: 1
+  max_model_calls: 40
+  frontier_max_nodes: 18
+  allow_alignment_adjudication: true
+  allow_temporal_adjudication: true
+  enable_subtitle_retrieval_proposal: true
+  alignment_min_phrase_tokens: 2
+  alignment_min_margin: 3.0
+  temporal_min_gap_seconds: 0.5
+  compiler_max_new_tokens: 256
+  breadth_max_new_tokens: 512
+  discriminator_max_new_tokens: 256
+  planner_max_new_tokens: 256
+  observer_max_new_tokens: 320
+  verifier_max_new_tokens: 256

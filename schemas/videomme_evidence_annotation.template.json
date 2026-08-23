@@ -1,0 +1,78 @@
+{
+  "schema_version": "videomme-evidence30/0.2.0",
+  "annotation_id": "__FILL__",
+  "record_status": "draft",
+  "split": "candidate",
+  "source": {
+    "dataset": "Video-MME",
+    "video_id": "__FILL__",
+    "question_id": "__FILL__",
+    "duration_bucket": "unknown",
+    "domain": "",
+    "sub_category": "",
+    "task_type": "",
+    "video_sha256": null,
+    "subtitle_sha256": null
+  },
+  "question": {
+    "text": "__FILL__",
+    "options": [
+      {
+        "option_id": "O1",
+        "benchmark_label": "A",
+        "text": "__FILL__"
+      },
+      {
+        "option_id": "O2",
+        "benchmark_label": "B",
+        "text": "__FILL__"
+      },
+      {
+        "option_id": "O3",
+        "benchmark_label": "C",
+        "text": "__FILL__"
+      },
+      {
+        "option_id": "O4",
+        "benchmark_label": "D",
+        "text": "__FILL__"
+      }
+    ],
+    "official_answer": {
+      "option_id": "O1",
+      "benchmark_label": "A"
+    }
+  },
+  "validity": {
+    "status": "pending",
+    "reason": ""
+  },
+  "evidence_contract": {
+    "primary_topology": "pending",
+    "secondary_topologies": [],
+    "required_modalities": [],
+    "answer_criterion": "pending",
+    "evidence_slots": [],
+    "sufficient_evidence_sets": [],
+    "global_coverage_contract": null
+  },
+  "hard_negatives": [],
+  "annotation_notes": [],
+  "review": {
+    "mode": "single_annotator",
+    "status": "draft",
+    "annotator_a": null,
+    "annotator_b": null,
+    "adjudicator": null,
+    "agreement": {
+      "validity": null,
+      "topology": null,
+      "modalities": null,
+      "sufficient_set": null,
+      "notes": ""
+    },
+    "locked_at": null,
+    "content_sha256": null,
+    "notes": ""
+  }
+}

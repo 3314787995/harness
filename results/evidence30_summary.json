@@ -1,0 +1,84 @@
+{
+  "schema_version": "harness-curated-results/1.0",
+  "as_of": "2026-08-23",
+  "dataset": {
+    "name": "VideoMME-Evidence30",
+    "status": "ai_assisted_internal_reference",
+    "dev_questions": 18,
+    "locked_questions": 12
+  },
+  "quality": {
+    "unit_tests_passed": 79,
+    "ruff_passed": true,
+    "compileall_passed": true
+  },
+  "runs": {
+    "dev_v6": {
+      "policy_id": "evidence30-relaxed-debug/1.0",
+      "split": "dev",
+      "run_signature": "9eff46c5ac1ea0962fe8621ba495592bcd42b1b8d3a2c3ae5f335c104bd8c93f",
+      "expected_items": 54,
+      "observed_items": 54,
+      "engineering_pass": true,
+      "accuracy": {
+        "direct": 0.3333333333333333,
+        "coarse_to_fine": 0.2777777777777778,
+        "active_tree": 0.5
+      },
+      "active_tree_verified_rate": 0.1111111111111111,
+      "active_tree_relaxed_grounded_rate": 0.4444444444444444
+    },
+    "locked_v1": {
+      "policy_id": "evidence30-relaxed-debug/1.0",
+      "split": "locked",
+      "run_signature": "20790ae17d28d3dece407354cb4077bceadc859f9263cb7a6919f36e9243e9c2",
+      "freeze_id": "c9dbacd585332ef0d516c2b2c9aa0895442309cf4eda07479ad9e0d14adde44f",
+      "expected_items": 36,
+      "observed_items": 36,
+      "engineering_pass": false,
+      "failure_reason": "one coarse_to_fine degraded_direct_fallback",
+      "accuracy": {
+        "direct": 0.5,
+        "coarse_to_fine": 0.5,
+        "active_tree": 0.5
+      },
+      "active_tree_verified_rate": 0.08333333333333333
+    },
+    "ablation_v2": {
+      "policy_id": "evidence30-oracle-unified-head/1.1",
+      "split": "dev",
+      "run_signature": "9aab79d4f207170f0d9c9aa929def01c01e6ad7021329677e2cdae338ff679bc",
+      "expected_items": 54,
+      "observed_items": 54,
+      "engineering_pass": true,
+      "accuracy": {
+        "direct_replay": 0.3333333333333333,
+        "active_tree_replay": 0.3333333333333333,
+        "oracle_context": 0.5
+      },
+      "oracle_relaxed_grounded_rate": 1.0,
+      "oracle_slot_coverage": 1.0
+    },
+    "core_dense_v2": {
+      "policy_id": "evidence30-oracle-core-density/1.1",
+      "split": "dev",
+      "locked_records_read": false,
+      "run_signature": "53b619f428c04c78653e3bc26e89cb72dae439ab1ae649fe954ccec55886f5eff",
+      "baseline_oracle_failures": 9,
+      "expected_items": 18,
+      "observed_items": 18,
+      "engineering_pass": true,
+      "accuracy": {
+        "core_16": 0.1111111111111111,
+        "core_32": 0.2222222222222222
+      },
+      "core_32_vs_core_16": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 6
+      },
+      "chosen_set_core_recall": 1.0,
+      "supersedes": "policy 1.0 exploratory run with unmatched realized visual-token budget"
+    }
+  }
+}

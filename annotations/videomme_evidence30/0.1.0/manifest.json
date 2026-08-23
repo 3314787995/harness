@@ -1,0 +1,89 @@
+{
+  "manifest_version": "videomme-evidence30/0.1.0",
+  "status": "draft_smoke",
+  "dataset": "Video-MME",
+  "standard_document": "docs/videomme_evidence30_annotation_standard.md",
+  "schema_document": "schemas/videomme_evidence_annotation.schema.json",
+  "source_files": {
+    "question_parquet": {
+      "path": "D:/videomme/videomme/test-00000-of-00001.parquet",
+      "sha256": "7fffab8ed38eccf9f0eca4c44d8a11636f0ee96116ede83580c8b9ae0faf986"
+    }
+  },
+  "selection": {
+    "scope": "3-question smoke subset",
+    "question_ids": [
+      "212-3",
+      "007-2",
+      "389-2"
+    ],
+    "video_ids": [
+      "212",
+      "007",
+      "389"
+    ],
+    "topologies": {
+      "local": "212-3",
+      "sequence": "007-2",
+      "multi_set": "389-2"
+    },
+    "modality_coverage": {
+      "pure_visual": [
+        "212-3"
+      ],
+      "subtitle": [
+        "007-2"
+      ],
+      "mixed_visual_subtitle": [
+        "389-2"
+      ]
+    },
+    "video_level_isolation": true,
+    "trace_blind_exclusions": [
+      "102-2",
+      "154-1",
+      "251-1"
+    ],
+    "selection_notes": [
+      "候选题来自本地 Video-MME parquet；三题使用三个不同视频。",
+      "排除了已被当前会话读取过运行 trace 的题号，避免 trace contamination。",
+      "先做 smoke；尚未形成 18 dev / 12 locked 的正式集合。"
+    ]
+  },
+  "splits": {
+    "candidate_question_ids": [
+      "212-3",
+      "007-2",
+      "389-2"
+    ],
+    "dev_question_ids": [],
+    "locked_question_ids": [],
+    "excluded_question_ids": []
+  },
+  "artifact_files": {
+    "records": "dev.jsonl",
+    "excluded": "excluded.jsonl",
+    "manifest": "manifest.json"
+  },
+  "artifact_sha256": {
+    "records": "8ea4408421b9ae411324f6bc427688a95adf1668bd58fec2916e2a75b9cabe7b",
+    "excluded": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "manifest": null
+  },
+  "review_status": {
+    "record_status": "draft",
+    "review_status": "draft",
+    "annotator_a": null,
+    "annotator_b": null,
+    "adjudicator": null,
+    "note": "AI-assisted draft by Codex；当前无人独立复核，不能视为 locked/gold。"
+  },
+  "locked_at": null,
+  "change_log": [
+    {
+      "version": "0.1.0-draft-smoke",
+      "date": "2026-08-22",
+      "change": "建立 trace-blind 的 3 题 smoke draft，覆盖 local/sequence/multi_set。"
+    }
+  ]
+}

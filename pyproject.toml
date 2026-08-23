@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwen3vl-agent"
+version = "0.1.0"
+description = "Training-free Qwen3-VL video reasoning strategies and Evidence30 diagnostics"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "accelerate>=1.0",
+  "av>=14",
+  "PyYAML>=6.0",
+  "qwen-vl-utils>=0.0.14",
+  "torch>=2.4",
+  "torchvision>=0.19",
+  "transformers>=4.57.0,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9"]
+eval = ["jsonschema>=4.23,<5", "pyarrow>=17,<22"]
+
+[project.scripts]
+qwen3vl-agent = "qwen3vl_agent.cli:main"
+qwen3vl-videomme = "qwen3vl_agent.videomme_cli:main"
+qwen3vl-evidence30 = "qwen3vl_agent.evidence30_cli:main"
+qwen3vl-evidence30-ablate = "qwen3vl_agent.evidence30_ablation_cli:main"
+qwen3vl-evidence30-core-dense = "qwen3vl_agent.evidence30_core_dense_cli:main"
+
+[tool.setuptools.packages.find]
+include = ["qwen3vl_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

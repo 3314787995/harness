@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.cache/
+build/
+dist/
+outputs/
+runs/
+tmp/
+
+# Local models, datasets, credentials, and machine-specific configuration.
+/data/
+/models/
+.env
+.env.*
+!.env.example
+configs/local.yaml
+
+# AI-assisted drafts are not part of the frozen annotation release.
+annotations/_unreviewed_ai_drafts/
+
+# Editor and operating-system noise.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
