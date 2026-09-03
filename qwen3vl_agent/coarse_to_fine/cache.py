@@ -175,9 +175,7 @@ class VideoEvidenceCache:
             cache_dir=str(manifest_path.parent),
             duration_seconds=float(manifest["duration_seconds"]),
             source_fps=(
-                float(manifest["source_fps"])
-                if manifest.get("source_fps") is not None
-                else None
+                float(manifest["source_fps"]) if manifest.get("source_fps") is not None else None
             ),
             width=int(manifest["width"]),
             height=int(manifest["height"]),
@@ -269,9 +267,7 @@ class SubtitleCue:
 
 
 class SubtitleTrack:
-    TIMESTAMP_PATTERN = re.compile(
-        r"(?P<h>\d{2}):(?P<m>\d{2}):(?P<s>\d{2})[,.](?P<ms>\d{3})"
-    )
+    TIMESTAMP_PATTERN = re.compile(r"(?P<h>\d{2}):(?P<m>\d{2}):(?P<s>\d{2})[,.](?P<ms>\d{3})")
 
     def __init__(self, cues: Iterable[SubtitleCue], *, source_path: str | None = None) -> None:
         self.cues = tuple(cues)
@@ -326,9 +322,7 @@ class SubtitleTrack:
             if key in seen:
                 continue
             seen.add(key)
-            selected.append(
-                f"[{cue.start_seconds:.3f}s-{cue.end_seconds:.3f}s] {cue.text}"
-            )
+            selected.append(f"[{cue.start_seconds:.3f}s-{cue.end_seconds:.3f}s] {cue.text}")
         text = "\n".join(selected)
         if len(text) <= max_chars:
             return text
@@ -341,6 +335,9 @@ def build_contact_sheet(
     *,
     output_dir: str | Path,
     columns: int = 3,
+    tile_width: int = 320,
+    image_height: int = 180,
+    label_height: int = 30,
 ) -> str:
     if not frames or len(frames) != len(labels):
         raise ValueError("contact sheet requires one label per frame")
@@ -349,16 +346,17 @@ def build_contact_sheet(
 
     output = Path(output_dir).expanduser().resolve()
     output.mkdir(parents=True, exist_ok=True)
-    digest = hashlib.sha1(
-        "|".join(f"{frame.id}:{label}" for frame, label in zip(frames, labels)).encode(
-            "utf-8"
-        )
-    ).hexdigest()[:16]
+    digest_payload = [
+        f"layout:{columns}:{tile_width}:{image_height}:{label_height}",
+        *(f"{frame.id}:{label}" for frame, label in zip(frames, labels)),
+    ]
+    digest = hashlib.sha1("|".join(digest_payload).encode("utf-8")).hexdigest()[:16]
     target = output / f"contact_{digest}.jpg"
     if target.is_file():
         return str(target)
 
-    tile_width, image_height, label_height = 320, 180, 30
+    if min(tile_width, image_height, label_height) < 1:
+        raise ValueError("contact sheet dimensions must be positive")
     columns = max(1, min(columns, len(frames)))
     rows = math.ceil(len(frames) / columns)
     canvas = Image.new(
@@ -375,7 +373,9 @@ def build_contact_sheet(
         with Image.open(frame.path) as image:
             tile = ImageOps.fit(image.convert("RGB"), (tile_width, image_height))
         canvas.paste(tile, (x, y))
-        draw.rectangle((x, y + image_height, x + tile_width, y + image_height + label_height), fill=(0, 0, 0))
+        draw.rectangle(
+            (x, y + image_height, x + tile_width, y + image_height + label_height), fill=(0, 0, 0)
+        )
         draw.text((x + 8, y + image_height + 8), label, fill=(255, 255, 255))
     canvas.save(target, format="JPEG", quality=88, optimize=True)
     return str(target)

@@ -10,6 +10,7 @@ dist/
 outputs/
 runs/
 tmp/
+/.codex_artifacts/
 
 # Local models, datasets, credentials, and machine-specific configuration.
 /data/

@@ -1,0 +1,95 @@
+# Explicit always-safe profile for a 24 GiB RTX 4090D.
+# The default v2 config already retries one OOM call with the same reduced pixel profile.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  device: auto
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  generation:
+    temperature: 0.0
+  video:
+    min_pixels: 32768
+    max_pixels: 196608
+    total_pixels: 8388608
+
+p01:
+  cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/p01
+  index_fps: 2.0
+  index_max_side: 768
+  shot_min_seconds: 2.0
+  shot_max_seconds: 20.0
+  shot_change_threshold: 0.16
+
+  short_video_threshold_sec: 20.0
+  locator_branch_factor: 12
+  locator_beam_width: 2
+  locator_max_levels: 3
+  max_candidate_spans: 2
+  locator_tiles_per_page: 6
+  locator_tile_width: 480
+  locator_tile_height: 270
+  locator_label_height: 36
+  locator_sheet_max_pixels: 524288
+  rescue_candidate_spans: 2
+  global_rescue_max_frames: 128
+  global_rescue_uniform_fraction: 0.5
+
+  static_max_span_sec: 20.0
+  dynamic_max_span_sec: 40.0
+  ocr_max_span_sec: 20.0
+  caption_max_span_sec: 50.0
+  static_padding_sec: 2.0
+  dynamic_padding_sec: 6.0
+  ocr_padding_sec: 2.0
+  caption_padding_sec: 8.0
+
+  static_frames: 9
+  static_max_frames: 16
+  dynamic_fps: 6.0
+  dynamic_refine_fps: 8.0
+  dynamic_max_frames: 72
+  dynamic_refine_max_frames: 96
+  ocr_search_fps: 8.0
+  ocr_max_frames: 16
+  caption_fps: 4.0
+  caption_max_frames: 96
+  caption_refine_fps: 6.0
+  caption_refine_max_frames: 112
+  max_detail_images: 6
+  decision_max_frames: 48
+
+  interval_short_fps: 6.0
+  interval_medium_fps: 3.0
+  interval_long_fps: 1.5
+  interval_short_max_frames: 72
+  interval_medium_max_frames: 90
+  interval_long_max_frames: 112
+  interval_pattern_keyframes: 24
+  interval_chunk_sec: 25.0
+  interval_overlap_sec: 2.0
+  max_interval_chunks: 8
+
+  normal_min_pixels: 32768
+  normal_max_pixels: 196608
+  normal_total_pixels: 8388608
+  image_min_pixels: 65536
+  image_max_pixels: 196608
+  detail_max_pixels: 786432
+  safe_normal_min_pixels: 32768
+  safe_normal_max_pixels: 196608
+  safe_normal_total_pixels: 8388608
+  safe_image_min_pixels: 65536
+  safe_image_max_pixels: 196608
+  safe_detail_max_pixels: 786432
+  safe_locator_sheet_max_pixels: 524288
+  oom_retry_attempts: 1
+
+  max_refinement_rounds: 1
+  max_rescue_rounds: 1
+  protocol_repair_attempts: 1
+  hypothesis_compiler_max_new_tokens: 1024
+  decision_max_new_tokens: 1024
+  rescue_locator_max_new_tokens: 384
+  repair_max_new_tokens: 1024
+  max_model_calls: 20
+  terminal_call_reserve: 2

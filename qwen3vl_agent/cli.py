@@ -13,6 +13,7 @@ from qwen3vl_agent.coarse_to_fine.adapters import build_answer_adapter
 from qwen3vl_agent.coarse_to_fine.prompts import build_direct_prompt
 from qwen3vl_agent.config import load_config
 from qwen3vl_agent.factory import build_model
+from qwen3vl_agent.p01 import P01VideoAgent
 from qwen3vl_agent.tools.defaults import build_default_registry
 
 
@@ -24,12 +25,25 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--image", action="append", default=[])
     parser.add_argument(
         "--strategy",
-        choices=("direct", "tools", "coarse_to_fine", "active_tree"),
+        choices=("direct", "tools", "coarse_to_fine", "active_tree", "p01"),
         default=None,
         help="Inference strategy; omitted preserves the legacy tools default.",
     )
     parser.add_argument("--choice", action="append", default=[])
     parser.add_argument("--subtitle", default=None)
+    parser.add_argument(
+        "--given-interval",
+        nargs=2,
+        type=float,
+        metavar=("START", "END"),
+        default=None,
+        help="Optional P01 interval in seconds; frames outside it are excluded.",
+    )
+    parser.add_argument(
+        "--force-choice",
+        action="store_true",
+        help="Deprecated for P01 v2: valid MCQs always emit one legal option.",
+    )
     parser.add_argument("--trace-output", default=None)
     parser.add_argument("--replay-output", default=None)
     parser.add_argument("--no-tools", action="store_true")
@@ -47,25 +61,48 @@ def main() -> None:
         raise SystemExit("--no-tools cannot be combined with a non-direct --strategy")
     strategy = args.strategy or ("direct" if args.no_tools else "tools")
     search_strategies = {"coarse_to_fine", "active_tree"}
+    structured_strategies = {*search_strategies, "p01"}
     if strategy not in search_strategies and args.subtitle:
         raise SystemExit("--subtitle is supported by coarse_to_fine and active_tree")
+    if strategy != "p01" and args.given_interval:
+        raise SystemExit("--given-interval requires --strategy p01")
+    if strategy != "p01" and args.force_choice:
+        raise SystemExit("--force-choice requires --strategy p01")
+    if strategy == "p01" and (len(args.video) != 1 or args.image):
+        raise SystemExit("--strategy p01 requires exactly one --video and no --image")
 
     config = load_config(args.config) if args.config else {"model": {}, "agent": {}}
     agent_config = dict(config.get("agent") or {})
-    model = build_model(config.get("model"))
+    model_config = dict(config.get("model") or {})
+    if strategy == "p01":
+        model_config.setdefault("path", "Qwen/Qwen3-VL-8B-Instruct")
+        model_config.setdefault("dtype", "bfloat16")
+        model_config.setdefault("attn_implementation", "flash_attention_2")
+    model = build_model(model_config)
     if strategy == "coarse_to_fine":
         agent = CoarseToFineVideoAgent(model, config=config.get("coarse_to_fine"))
     elif strategy == "active_tree":
         agent = ActiveTreeVideoAgent(model, config=config.get("active_tree"))
+    elif strategy == "p01":
+        agent = P01VideoAgent(model, config=config.get("p01"))
     else:
         agent = Qwen3VLAgent(model, tools=build_default_registry(), **agent_config)
 
     query = args.query
-    if args.choice and strategy not in search_strategies:
+    if args.choice and strategy not in structured_strategies:
         query = build_direct_prompt(query, build_answer_adapter(args.choice))
     agent.load()
     try:
-        if strategy in search_strategies:
+        if strategy == "p01":
+            result = agent.generate(
+                [{"role": "user", "content": query}],
+                videos=args.video or None,
+                images=args.image or None,
+                choices=args.choice or None,
+                given_interval=args.given_interval,
+                force_choice=args.force_choice,
+            )
+        elif strategy in search_strategies:
             result = agent.generate(
                 [{"role": "user", "content": query}],
                 videos=args.video or None,
