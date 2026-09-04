@@ -55,7 +55,6 @@ class P01Config:
     caption_refine_max_frames: int = 112
     verification_max_frames: int = 16  # v1 compatibility; unused by v2.
     max_detail_images: int = 6
-    decision_max_frames: int = 64
 
     interval_short_fps: float = 6.0
     interval_medium_fps: float = 3.0
@@ -141,7 +140,6 @@ class P01Config:
             "caption_refine_max_frames": self.caption_refine_max_frames,
             "verification_max_frames": self.verification_max_frames,
             "max_detail_images": self.max_detail_images,
-            "decision_max_frames": self.decision_max_frames,
             "max_interval_chunks": self.max_interval_chunks,
             "interval_short_max_frames": self.interval_short_max_frames,
             "interval_medium_max_frames": self.interval_medium_max_frames,

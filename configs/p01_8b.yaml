@@ -1,3 +1,5 @@
+# General P01 v2 entry point: original inference budgets, no fixed GPU model or count.
+# FlashAttention 2 and bfloat16 require a compatible user-provided runtime.
 model:
   path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
   device: auto
@@ -54,7 +56,6 @@ p01:
   caption_refine_fps: 6.0
   caption_refine_max_frames: 112
   max_detail_images: 6
-  decision_max_frames: 64
 
   interval_short_fps: 6.0
   interval_medium_fps: 3.0

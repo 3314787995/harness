@@ -9,7 +9,36 @@ Evidence30 证据标注、冻结协议、消融实验和可回放 trace。
 当前重点是验证“如何找到、记录并验证长视频证据”，不是训练模型，也不宣称复现
 任何论文的训练过程或公开指标。模型权重、Video-MME 数据和批量运行产物不在仓库中。
 
-## 先看结论
+## P01 v2 导师验收入口
+
+本分支提供**面向以下 18 类原生题型的 P01 v2 设计评审版本**。这里的 18 类是设计范围，
+不是已经全部实现、逐类验证通过或获得导师认可的声明；P01 也不是这些 benchmark 的官方统一分类。
+
+| Benchmark | 数量 | 列入设计范围的原生题型 |
+|---|---:|---|
+| LVBench | 4 | Entity Recognition；Event Understanding；Key Information Retrieval；Temporal Grounding |
+| MLVU | 1 | Sub-Scene Captioning |
+| MVBench | 5 | Action Antonym；Fine-grained Action；Fine-grained Pose；Moving Attribute；Object Existence |
+| TVBench | 1 | Action Antonym |
+| Video-MME | 4 | Attribute Perception；Object Recognition；OCR Problems；Spatial Perception |
+| Video-MME-v2 | 3 | Fine-Grained Action Recognition；Vision-Guided Audio Description；Visual Recognition |
+
+- 原计划中的 **Video-MME · Action Recognition** 不再列入本次设计范围；其他动作相关题型保留。
+- **Vision-Guided Audio Description 尚未实现音频回答部分**：当前执行器不读取音频或字幕。
+- 其余类别也只对满足“单视频、单连续局部片段可提供答案证据”的题目适用，不代表覆盖整类所有样本。
+- 本次不增加路由器，不删除内部 `dynamic_action` 取证模式，也不删除历史 Action Recognition 错题记录。
+
+代码沿用“当前 v2 双卡版重测”的原始流程与媒体预算，保留可出现 90–96 帧调用的能力，
+不再使用旧评审版额外的统一 64/48 帧决策截断。普通入口不绑定显卡型号、数量或每卡显存额度；
+默认仍为 Qwen3-VL-8B、`device: auto`、`bfloat16` 和 `flash_attention_2`。
+这不是双卡七题重测部署包，也不是新一轮性能验证。
+
+**导师从 [P01 v2 导览与快速运行](qwen3vl_agent/p01/README.md) 开始即可**，其中包括安装、
+模型路径、选择题、显式区间、自由文本及原始模型回答的保存方式。完整协议见
+[流程与预算](docs/p01_v2_pipeline.md)，待确认的设计取舍和历史失败案例见
+[评审清单](docs/p01_v2_design_review.md)。不要求先跑单测、smoke 或显存压力预检。
+
+## 仓库中的其他路径与背景
 
 | 路径 | 解决的问题 | 实现位置 |
 |---|---|---|
@@ -29,13 +58,15 @@ Evidence30 不是线上推理策略，而是一套机制诊断工具：
 截至 2026-08-23，控制逻辑有 79 个不加载模型的单元测试。当前真实实验结论、失败项和
 不可宣称内容见 [当前状态](docs/current_status.md)。
 
-## 五分钟上手
+## 其他路径的五分钟上手
+
+本节是仓库原有通用入口，默认模型为 2B；验收 P01 请使用上面的 8B 专用导览。
 
 要求 Python 3.10+。真实推理通常需要 CUDA GPU；CPU 只适合静态检查、单元测试和
 无模型 preflight。
 
 ```powershell
-git clone https://github.com/3314787995/harness.git
+git clone --branch p01-v2-review https://github.com/3314787995/harness.git
 cd harness
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -63,7 +94,7 @@ data/videomme/
 └── subtitle/<video_id>.srt
 ```
 
-先跑无需模型的质量门：
+开发维护时可选运行以下质量门；它们不是 P01 快速运行的前置步骤：
 
 ```powershell
 python -m ruff check qwen3vl_agent tests scripts tools examples
@@ -151,8 +182,8 @@ qwen3vl-agent `
 P01 当前是供设计评审的 v2 候选版本。先读
 [P01 v2 导览](qwen3vl_agent/p01/README.md)，再看
 [完整流程与不变量](docs/p01_v2_pipeline.md)；给老师确认的关键分歧和脱敏诊断结果集中在
-[设计评审清单](docs/p01_v2_design_review.md)。租卡复现步骤见
-[4090D 运行手册](docs/p01_rental_runbook.md)。
+[设计评审清单](docs/p01_v2_design_review.md)。
+[旧 4090D 运行手册](docs/p01_rental_runbook.md) 仅保留历史部署背景，不是导师机器的配置要求。
 
 Video-MME 指定题目评测：
 

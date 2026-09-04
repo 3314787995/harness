@@ -1451,13 +1451,12 @@ class P01VideoAgent:
         return tuple(sorted(selected, key=lambda frame: frame.timestamp_seconds))
 
     def _mode_decision_max_frames(self, mode: str) -> int:
-        mode_limit = {
+        return {
             "static_visual": self.config.static_max_frames,
             "dynamic_action": self.config.dynamic_refine_max_frames,
             "ocr": self.config.ocr_max_frames + self.config.max_detail_images,
             "subscene_caption": self.config.caption_refine_max_frames,
         }[mode]
-        return min(mode_limit, self.config.decision_max_frames)
 
     def _deterministic_option_decision(
         self,
