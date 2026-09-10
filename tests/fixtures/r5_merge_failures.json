@@ -1,0 +1,2764 @@
+[
+  {
+    "request_id": "R5-MME-075-3",
+    "source_relative_path": "calls/R5-MME-075-3/00014.json",
+    "source_sha256": "0c177b95caf91c64b466784d12c12dc27be733800547e3da1d65d68faf4496e2",
+    "item_sha256": "a1aadd0df6be5e611d569471abf9546fafeaba28c5f242fbb5048c36904359c2",
+    "payload": {
+      "units": [
+        {
+          "id": "fact:call_000002:f2",
+          "statement": "The shirt is folded neatly and placed on the wooden surface.",
+          "kind": "visual_observation",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000011:f1",
+          "statement": "The video shows a person folding a dark polo shirt on a wooden surface.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000011:f2",
+          "statement": "The person smooths out the shirt and aligns its edges before folding.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000011:f3",
+          "statement": "A white line is drawn horizontally across the shirt, likely to guide the folding process.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f1",
+          "statement": "A person is drawing lines on a dark polo shirt laid out on a wooden surface.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f2",
+          "statement": "The person draws a horizontal line across the middle of the shirt.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f3",
+          "statement": "The person draws a vertical line down the center of the shirt, intersecting the horizontal line.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f4",
+          "statement": "The person labels the intersection point of the lines as 'A' and the top of the vertical line as 'B' on the shirt.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f5",
+          "statement": "The shirt has an embroidered logo on the left chest area.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f6",
+          "statement": "The watermark 'DAVEHAX.COM' is visible in the bottom left corner of the frames.",
+          "kind": "screen_text",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f1",
+          "statement": "A person is demonstrating how to fold a dark polo shirt on a wooden surface.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f2",
+          "statement": "The shirt is marked with white lines forming a cross, dividing it into four sections.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f3",
+          "statement": "The person points to specific points on the shirt labeled A, B, and C.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f4",
+          "statement": "The person folds the shirt by bringing the top collar area down to the bottom hem, aligning it with point A.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        }
+      ],
+      "child_ids": [
+        "card:seg_00000:call_000012:page0",
+        "card:seg_00001:call_000011:page0",
+        "card:seg_00002:call_000004:page0",
+        "card:seg_00003:call_000005:page0"
+      ],
+      "conflicts": [
+        "isolated_observation_facts",
+        "observation_content_incomplete"
+      ],
+      "claim_limit": 32,
+      "output_language": "same_as_question",
+      "question": "What is this video mainly about?"
+    },
+    "raw_response": "{\n  \"claims\": [\n    {\n      \"statement\": \"A person folds a dark polo shirt on a wooden surface, starting by smoothing and aligning its edges before folding.\",\n      \"support_refs\": [\n        \"fact:call_000011:f1\",\n        \"fact:call_000011:f2\"\n      ]\n    },\n    {\n      \"statement\": \"The person draws a horizontal line across the middle of the shirt and a vertical line down the center, intersecting at point 'A', with the top of the vertical line labeled 'B'.\",\n      \"support_refs\": [\n        \"fact:call_000004:f2\",\n        \"fact:call_000004:f3\",\n        \"fact:call_000004:f4\"\n      ]\n    },\n    {\n      \"statement\": \"The shirt has an embroidered logo on the left chest area and a watermark 'DAVEHAX.COM' in the bottom left corner.\",\n      \"support_refs\": [\n        \"fact:call_000004:f5\",\n        \"fact:call_000004:f6\"\n      ]\n    },\n    {\n      \"statement\": \"The shirt is marked with white lines forming a cross, dividing it into four sections, and the person points to labeled points A, B, and C.\",\n      \"support_refs\": [\n        \"fact:call_000005:f2\",\n        \"fact:call_000005:f3\"\n      ]\n    },\n    {\n      \"statement\": \"The person folds the shirt by bringing the top collar area down to the bottom hem, aligning it with point A.\",\n      \"support_refs\": [\n        \"fact:call_000005:f4\"\n      ]\n    },\n    {\n      \"statement\": \"The folded shirt is placed neatly on the wooden surface.\",\n      \"support_refs\": [\n        \"fact:call_000002:f2\"\n      ]\n    }\n  ],\n  \"omitted_refs\": [],\n  \"conflicts\": []\n}",
+    "metadata": {
+      "input_tokens": 1355,
+      "output_tokens": 445
+    },
+    "input_facts": {
+      "fact:call_000002:f2": {
+        "local_id": "f2",
+        "statement": "The shirt is folded neatly and placed on the wooden surface.",
+        "kind": "visual_observation",
+        "role": "outcome",
+        "raw_role": "outcome",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000004760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000005000"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f2",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000011:f1": {
+        "local_id": "f1",
+        "statement": "The video shows a person folding a dark polo shirt on a wooden surface.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000008760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000009000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000009240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000009480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000009760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000011:f1",
+        "segment_id": "seg_00001",
+        "call_id": "call_000011",
+        "core_interval": [
+          8.0,
+          16.0
+        ]
+      },
+      "fact:call_000011:f2": {
+        "local_id": "f2",
+        "statement": "The person smooths out the shirt and aligns its edges before folding.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000010000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000010240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000010480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000010760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000011000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000011240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000011480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000011760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000012000"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000011:f2",
+        "segment_id": "seg_00001",
+        "call_id": "call_000011",
+        "core_interval": [
+          8.0,
+          16.0
+        ]
+      },
+      "fact:call_000011:f3": {
+        "local_id": "f3",
+        "statement": "A white line is drawn horizontally across the shirt, likely to guide the folding process.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016000"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000011:f3",
+        "segment_id": "seg_00001",
+        "call_id": "call_000011",
+        "core_interval": [
+          8.0,
+          16.0
+        ]
+      },
+      "fact:call_000004:f1": {
+        "local_id": "f1",
+        "statement": "A person is drawing lines on a dark polo shirt laid out on a wooden surface.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020000"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f1",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f2": {
+        "local_id": "f2",
+        "statement": "The person draws a horizontal line across the middle of the shirt.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016000"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f2",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f3": {
+        "local_id": "f3",
+        "statement": "The person draws a vertical line down the center of the shirt, intersecting the horizontal line.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020000"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f3",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f4": {
+        "local_id": "f4",
+        "statement": "The person labels the intersection point of the lines as 'A' and the top of the vertical line as 'B' on the shirt.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024480"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f4",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f5": {
+        "local_id": "f5",
+        "statement": "The shirt has an embroidered logo on the left chest area.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000014000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000014240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000014480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000014760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000021000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000021240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000021480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000021760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025760"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f5",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f6": {
+        "local_id": "f6",
+        "statement": "The watermark 'DAVEHAX.COM' is visible in the bottom left corner of the frames.",
+        "kind": "screen_text",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000014000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000014240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000014480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000014760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000015760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000016760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000017760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000018760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000019760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000020760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000021000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000021240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000021480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000021760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025760"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f6",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000005:f1": {
+        "local_id": "f1",
+        "statement": "A person is demonstrating how to fold a dark polo shirt on a wooden surface.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000026000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000026240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000026480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000026760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000027000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000027240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000027480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000027760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000028000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000028240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000028480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000028760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000029000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000029240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000029480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000029760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000030000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000030240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000030480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000030760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000031000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000031240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000031480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000031760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000032000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000032240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000032480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000032760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000033000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000033240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000033480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000033760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f1",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f2": {
+        "local_id": "f2",
+        "statement": "The shirt is marked with white lines forming a cross, dividing it into four sections.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000026000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000026240"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f2",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f3": {
+        "local_id": "f3",
+        "statement": "The person points to specific points on the shirt labeled A, B, and C.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000022760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000023760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000024760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000025760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000026000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000026240"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f3",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f4": {
+        "local_id": "f4",
+        "statement": "The person folds the shirt by bringing the top collar area down to the bottom hem, aligning it with point A.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000030480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000030760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000031000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000031240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000031480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000031760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000032000",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000032240",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000032480",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000032760",
+          "frame:70820dee09a5:SRC-70820dee09a5ce7a0e57ec74e10cb194c17ccd32069d679724ffed634ae8f0ed-000000033000"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f4",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      }
+    },
+    "expected_claim_count": 6,
+    "expected_passthrough_refs": [
+      "fact:call_000011:f3",
+      "fact:call_000004:f1",
+      "fact:call_000005:f1"
+    ]
+  },
+  {
+    "request_id": "R5-MME-078-3",
+    "source_relative_path": "calls/R5-MME-078-3/00014.json",
+    "source_sha256": "40a84fced243e0e88630e87f040bb7280937b55cfaa33a9101574b45314670e6",
+    "item_sha256": "6d31ce4efa6bc3bdd78550d770a8beaf921eb1da6638d8ccf3068ca407477a82",
+    "payload": {
+      "units": [
+        {
+          "id": "fact:call_000002:f1",
+          "statement": "The video begins with a close-up of a man wearing a white shirt and a black bow tie.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f2",
+          "statement": "Text appears on screen, forming the phrase 'HOW TO TIE A BOW TIE'.",
+          "kind": "screen_text",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f3",
+          "statement": "The man is shown with the bow tie untied and draped around his neck, ready to be tied.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f4",
+          "statement": "The man begins the process of tying the bow tie, adjusting the fabric around his collar.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000011:f1",
+          "statement": "The video is a tutorial on how to tie a bow tie.",
+          "kind": "screen_text",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000011:f2",
+          "statement": "A man in a white shirt demonstrates the process of tying a black bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000011:f3",
+          "statement": "The bow tie is initially untied and draped around the man's neck.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000003:f1",
+          "statement": "A man in a white shirt is shown tying a black bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000003:f3",
+          "statement": "The man uses both hands to adjust and tie the bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000003:f4",
+          "statement": "An orange strap is visible around his neck, likely part of the bow tie's mechanism.",
+          "kind": "visual_observation",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000003:f5",
+          "statement": "The video focuses on the process of tying the bow tie, showing close-ups of his hands and the knot.",
+          "kind": "visual_observation",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f1",
+          "statement": "A man is tying a black bow tie while wearing a white dress shirt and an orange neck strap.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f1",
+          "statement": "A man is tying a black bow tie while wearing a white dress shirt and an orange neck strap.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f1",
+          "statement": "A man in a white dress shirt is adjusting a black bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f2",
+          "statement": "The man begins by holding the bow tie with both hands at the collar.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f3",
+          "statement": "The man manipulates the bow tie, pulling and shaping it into a knot.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f4",
+          "statement": "The man adjusts the bow tie to sit centered at his collar.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f5",
+          "statement": "The video shows a close-up of the man's neck and bow tie, revealing a red collar strap.",
+          "kind": "visual_observation",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f6",
+          "statement": "The man continues to fine-tune the bow tie's position and symmetry.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        }
+      ],
+      "child_ids": [
+        "card:seg_00000:call_000011:page0",
+        "card:seg_00001:call_000003:page0",
+        "card:seg_00002:call_000012:page0",
+        "card:seg_00003:call_000005:page0"
+      ],
+      "conflicts": [],
+      "claim_limit": 32,
+      "output_language": "same_as_question",
+      "question": "What is this video mainly about?"
+    },
+    "raw_response": "{\n  \"claims\": [\n    {\n      \"statement\": \"The video is a tutorial on how to tie a bow tie.\",\n      \"support_refs\": [\n        \"fact:call_000011:f1\"\n      ]\n    },\n    {\n      \"statement\": \"A man in a white shirt demonstrates tying a black bow tie.\",\n      \"support_refs\": [\n        \"fact:call_000011:f2\",\n        \"fact:call_000003:f1\"\n      ]\n    },\n    {\n      \"statement\": \"The bow tie is initially untied and draped around the man's neck before being tied.\",\n      \"support_refs\": [\n        \"fact:call_000002:f3\",\n        \"fact:call_000011:f3\"\n      ]\n    },\n    {\n      \"statement\": \"The man uses both hands to adjust and tie the bow tie, with close-ups showing the knot formation.\",\n      \"support_refs\": [\n        \"fact:call_000003:f3\",\n        \"fact:call_000005:f2\",\n        \"fact:call_000005:f3\"\n      ]\n    },\n    {\n      \"statement\": \"The video includes visual close-ups of the man’s hands and the bow tie as he manipulates it into a knot.\",\n      \"support_refs\": [\n        \"fact:call_000003:f5\",\n        \"fact:call_000005:f5\"\n      ]\n    },\n    {\n      \"statement\": \"The man adjusts the bow tie to sit centered at his collar and fine-tunes its position and symmetry.\",\n      \"support_refs\": [\n        \"fact:call_000005:f4\",\n        \"fact:call_000005:f6\"\n      ]\n    },\n    {\n      \"statement\": \"The video begins with a close-up of the man wearing a white shirt and black bow tie, with on-screen text reading 'HOW TO TIE A BOW TIE'.\",\n      \"support_refs\": [\n        \"fact:call_000002:f1\",\n        \"fact:call_000002:f2\"\n      ]\n    },\n    {\n      \"statement\": \"An orange strap is visible around the man’s neck, likely part of the bow tie’s mechanism.\",\n      \"support_refs\": [\n        \"fact:call_000003:f4\"\n      ]\n    },\n    {\n      \"statement\": \"The video shows the man tying the bow tie while wearing a white dress shirt and an orange neck strap.\",\n      \"support_refs\": [\n        \"fact:call_000004:f1\",\n        \"fact:call_000012:f1\"\n      ]\n    },\n    {\n      \"statement\": \"The video focuses on the step-by-step process of tying a bow tie, including initial setup, knot formation, and final adjustment.\",\n      \"support_refs\": [\n        \"fact:call_000002:f4\",\n        \"fact:call_000003:f5\",\n        \"fact:call_000005:f4\"\n      ]\n    }\n  ],\n  \"omitted_refs\": [],\n  \"conflicts\": []\n}",
+    "metadata": {
+      "input_tokens": 1692,
+      "output_tokens": 706
+    },
+    "input_facts": {
+      "fact:call_000002:f1": {
+        "local_id": "f1",
+        "statement": "The video begins with a close-up of a man wearing a white shirt and a black bow tie.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000000000"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f1",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000002:f2": {
+        "local_id": "f2",
+        "statement": "Text appears on screen, forming the phrase 'HOW TO TIE A BOW TIE'.",
+        "kind": "screen_text",
+        "role": "outcome",
+        "raw_role": "outcome",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000001480"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f2",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000002:f3": {
+        "local_id": "f3",
+        "statement": "The man is shown with the bow tie untied and draped around his neck, ready to be tied.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000004760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f3",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000002:f4": {
+        "local_id": "f4",
+        "statement": "The man begins the process of tying the bow tie, adjusting the fabric around his collar.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000007480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000007760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f4",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000011:f1": {
+        "local_id": "f1",
+        "statement": "The video is a tutorial on how to tie a bow tie.",
+        "kind": "screen_text",
+        "role": "outcome",
+        "raw_role": "outcome",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000001480"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000011:f1",
+        "segment_id": "seg_00000",
+        "call_id": "call_000011",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000011:f2": {
+        "local_id": "f2",
+        "statement": "A man in a white shirt demonstrates the process of tying a black bow tie.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000000000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000000240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000000480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000000760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000001000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000001240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000001480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000001760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000002000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000002240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000002480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000002760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000003000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000003240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000003480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000003760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000004000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000004240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000004480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000004760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000011:f2",
+        "segment_id": "seg_00000",
+        "call_id": "call_000011",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000011:f3": {
+        "local_id": "f3",
+        "statement": "The bow tie is initially untied and draped around the man's neck.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000004760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000011:f3",
+        "segment_id": "seg_00000",
+        "call_id": "call_000011",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000003:f1": {
+        "local_id": "f1",
+        "statement": "A man in a white shirt is shown tying a black bow tie.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000006000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000006240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000006480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000006760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000007000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000007240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000007480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000007760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000003:f1",
+        "segment_id": "seg_00001",
+        "call_id": "call_000003",
+        "core_interval": [
+          8.0,
+          16.0
+        ]
+      },
+      "fact:call_000003:f3": {
+        "local_id": "f3",
+        "statement": "The man uses both hands to adjust and tie the bow tie.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000007480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000007760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015480"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000003:f3",
+        "segment_id": "seg_00001",
+        "call_id": "call_000003",
+        "core_interval": [
+          8.0,
+          16.0
+        ]
+      },
+      "fact:call_000003:f4": {
+        "local_id": "f4",
+        "statement": "An orange strap is visible around his neck, likely part of the bow tie's mechanism.",
+        "kind": "visual_observation",
+        "role": "other",
+        "raw_role": "detail",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000008760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000009760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000010760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000011760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000012760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016000"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000003:f4",
+        "segment_id": "seg_00001",
+        "call_id": "call_000003",
+        "core_interval": [
+          8.0,
+          16.0
+        ]
+      },
+      "fact:call_000003:f5": {
+        "local_id": "f5",
+        "statement": "The video focuses on the process of tying the bow tie, showing close-ups of his hands and the knot.",
+        "kind": "visual_observation",
+        "role": "other",
+        "raw_role": "focus",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000013760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000003:f5",
+        "segment_id": "seg_00001",
+        "call_id": "call_000003",
+        "core_interval": [
+          8.0,
+          16.0
+        ]
+      },
+      "fact:call_000004:f1": {
+        "local_id": "f1",
+        "statement": "A man is tying a black bow tie while wearing a white dress shirt and an orange neck strap.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000018000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000018240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000018480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000018760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000019000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000019240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000019480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000019760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000020000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000020240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000020480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000020760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000021000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000021240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000021480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000021760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f1",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000012:f1": {
+        "local_id": "f1",
+        "statement": "A man is tying a black bow tie while wearing a white dress shirt and an orange neck strap.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000014760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000015760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000016760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000017760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000018000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000018240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000018480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000018760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000019000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000019240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000019480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000019760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000020000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000020240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000020480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000020760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000021000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000021240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000021480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000021760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000012:f1",
+        "segment_id": "seg_00002",
+        "call_id": "call_000012",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000005:f1": {
+        "local_id": "f1",
+        "statement": "A man in a white dress shirt is adjusting a black bow tie.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000033000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000033240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000033480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000033760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f1",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f2": {
+        "local_id": "f2",
+        "statement": "The man begins by holding the bow tie with both hands at the collar.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000022760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000023760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024000"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f2",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f3": {
+        "local_id": "f3",
+        "statement": "The man manipulates the bow tie, pulling and shaping it into a knot.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027480"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f3",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f4": {
+        "local_id": "f4",
+        "statement": "The man adjusts the bow tie to sit centered at his collar.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f4",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f5": {
+        "local_id": "f5",
+        "statement": "The video shows a close-up of the man's neck and bow tie, revealing a red collar strap.",
+        "kind": "visual_observation",
+        "role": "other",
+        "raw_role": "detail",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000024760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000025760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000026760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000027760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000028760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032480"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f5",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f6": {
+        "local_id": "f6",
+        "statement": "The man continues to fine-tune the bow tie's position and symmetry.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000029760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000030760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000031760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000032760",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000033000",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000033240",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000033480",
+          "frame:f60c6fea20cc:SRC-f60c6fea20cc30aafe49ff8afcb4426140775532c56e967e1843c61a90350dc3-000000033760"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f6",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      }
+    },
+    "expected_claim_count": 10,
+    "expected_passthrough_refs": [
+      "fact:call_000005:f1"
+    ]
+  },
+  {
+    "request_id": "R5-MME-186-3",
+    "source_relative_path": "calls/R5-MME-186-3/00013.json",
+    "source_sha256": "156922938959cfa0775676b9880292a9f144cedb9107afcaa73109e2b3c88067",
+    "item_sha256": "365f1d7b4050bb161341ad6f3f456f378e871ceafa71ae29a7fe693c86082991",
+    "payload": {
+      "units": [
+        {
+          "id": "fact:call_000002:f1",
+          "statement": "The performance features three performers in colorful, retro-style costumes dancing on a stage.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f2",
+          "statement": "The performers are wearing exaggerated wigs and sequined outfits, suggesting a musical or theatrical show.",
+          "kind": "visual_observation",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f3",
+          "statement": "A drum set and a guitar are visible on stage, indicating a musical performance.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f4",
+          "statement": "The background screen displays cartoon-like graphics, adding to the playful, child-friendly atmosphere.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f5",
+          "statement": "The performers are engaged in synchronized dance movements, typical of a musical or stage show.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f6",
+          "statement": "The stage is brightly lit with colorful platforms, enhancing the vibrant, energetic feel of the performance.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f1",
+          "statement": "The performance features a group of dancers in colorful, retro-style costumes with exaggerated wigs, performing synchronized choreography on a stage with a vibrant, swirling background.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f2",
+          "statement": "The costumes include flamboyant, glittery outfits and bold, brightly colored wigs, suggesting a theatrical or musical performance.",
+          "kind": "visual_observation",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f3",
+          "statement": "The dancers are performing energetic, synchronized movements, including arm gestures and steps, indicating a choreographed musical number.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f4",
+          "statement": "The stage background features large, curved green and purple stripes, contributing to a lively, theatrical atmosphere.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f5",
+          "statement": "The performers are positioned on a stage with a drum set visible in the background, suggesting a musical performance.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f6",
+          "statement": "The camera zooms in on individual performers, highlighting their expressive faces and dynamic movements, reinforcing the theatrical nature of the performance.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f1",
+          "statement": "The performance features a group of actors in colorful, flamboyant costumes with exaggerated wigs, suggesting a musical or theatrical show.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f2",
+          "statement": "The actors are engaged in synchronized dance movements and expressive gestures, indicating a choreographed performance.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f3",
+          "statement": "The stage backdrop consists of bold, swirling blue and green patterns, enhancing the vibrant, energetic atmosphere.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f4",
+          "statement": "The costumes include sequined tops, bright wigs, and distinctive patterns, typical of a musical theater or variety show.",
+          "kind": "visual_observation",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f5",
+          "statement": "The performance includes a drum set on stage, suggesting live music accompaniment.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f6",
+          "statement": "The actors' movements are dynamic and theatrical, with some frames showing them in mid-dance or expressive poses.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        }
+      ],
+      "child_ids": [
+        "card:seg_00000:call_000002:page0",
+        "card:seg_00001:call_000003:page0",
+        "card:seg_00002:call_000004:page0",
+        "card:seg_00003:call_000005:page0"
+      ],
+      "conflicts": [],
+      "claim_limit": 32,
+      "output_language": "same_as_question",
+      "question": "Which genre best describes the performance based on the activity and costumes?"
+    },
+    "raw_response": "{\n  \"claims\": [\n    {\n      \"statement\": \"The performance is a musical or theatrical show featuring three performers in colorful, retro-style costumes with exaggerated wigs and sequined outfits, engaging in synchronized dance movements on a stage.\",\n      \"support_refs\": [\n        \"fact:call_000002:f1\",\n        \"fact:call_000002:f2\",\n        \"fact:call_000002:f5\"\n      ]\n    },\n    {\n      \"statement\": \"The stage is equipped with a drum set and guitar, and features vibrant, colorful lighting and dynamic background visuals, including cartoon-like graphics and swirling patterns, contributing to a lively, child-friendly atmosphere.\",\n      \"support_refs\": [\n        \"fact:call_000002:f3\",\n        \"fact:call_000002:f4\",\n        \"fact:call_000002:f6\",\n        \"fact:call_000004:f4\",\n        \"fact:call_000004:f5\",\n        \"fact:call_000005:f3\",\n        \"fact:call_000005:f5\"\n      ]\n    },\n    {\n      \"statement\": \"Performers execute choreographed, energetic dance routines with expressive gestures and dynamic movements, often highlighted by camera zooms, reinforcing the theatrical nature of the performance.\",\n      \"support_refs\": [\n        \"fact:call_000002:f5\",\n        \"fact:call_000004:f3\",\n        \"fact:call_000004:f6\",\n        \"fact:call_000005:f2\",\n        \"fact:call_000005:f6\"\n      ]\n    }\n  ],\n  \"omitted_refs\": [],\n  \"conflicts\": []\n}",
+    "metadata": {
+      "input_tokens": 1701,
+      "output_tokens": 404
+    },
+    "input_facts": {
+      "fact:call_000002:f1": {
+        "local_id": "f1",
+        "statement": "The performance features three performers in colorful, retro-style costumes dancing on a stage.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000000751"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f1",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000002:f2": {
+        "local_id": "f2",
+        "statement": "The performers are wearing exaggerated wigs and sequined outfits, suggesting a musical or theatrical show.",
+        "kind": "visual_observation",
+        "role": "other",
+        "raw_role": "costume",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000000000",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000000250",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000000500",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000000751"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f2",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000002:f3": {
+        "local_id": "f3",
+        "statement": "A drum set and a guitar are visible on stage, indicating a musical performance.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000000751"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f3",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000002:f4": {
+        "local_id": "f4",
+        "statement": "The background screen displays cartoon-like graphics, adding to the playful, child-friendly atmosphere.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000001251"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f4",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000002:f5": {
+        "local_id": "f5",
+        "statement": "The performers are engaged in synchronized dance movements, typical of a musical or stage show.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000000751",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000001001",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000001251",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000001502",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000001752"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f5",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000002:f6": {
+        "local_id": "f6",
+        "statement": "The stage is brightly lit with colorful platforms, enhancing the vibrant, energetic feel of the performance.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000000751"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000002:f6",
+        "segment_id": "seg_00000",
+        "call_id": "call_000002",
+        "core_interval": [
+          0.0,
+          8.0
+        ]
+      },
+      "fact:call_000004:f1": {
+        "local_id": "f1",
+        "statement": "The performance features a group of dancers in colorful, retro-style costumes with exaggerated wigs, performing synchronized choreography on a stage with a vibrant, swirling background.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014014",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014264",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014514",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014765",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015015",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015265",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015516",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015766",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016016",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016266",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016516",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016767",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017017",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017267",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017768",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018018",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018268",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018769",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019019",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019269",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019520",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019770",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020020",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020270",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020520",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020771",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020979",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021230",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021480",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021730",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021980",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022231",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022481",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022731",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022981",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023232",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023482",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023732",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023982",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024233",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024483",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024733",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024983",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025234",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025484",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025734"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f1",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f2": {
+        "local_id": "f2",
+        "statement": "The costumes include flamboyant, glittery outfits and bold, brightly colored wigs, suggesting a theatrical or musical performance.",
+        "kind": "visual_observation",
+        "role": "other",
+        "raw_role": "costume",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014014",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014264",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014514",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014765",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015015",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015265",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015516",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015766",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016016",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016266",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016516",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016767",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017017",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017267",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017768",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018018",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018268",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018769",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019019",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019269"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f2",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f3": {
+        "local_id": "f3",
+        "statement": "The dancers are performing energetic, synchronized movements, including arm gestures and steps, indicating a choreographed musical number.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015766",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016016",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016266"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f3",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f4": {
+        "local_id": "f4",
+        "statement": "The stage background features large, curved green and purple stripes, contributing to a lively, theatrical atmosphere.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014014",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014264",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014514",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014765",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015015",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015265",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015516",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015766",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016016",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016266",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016516",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016767",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017017",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017267",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017768",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018018",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018268",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018769",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019019",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019269",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019520",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019770",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020020",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020270",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020520",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020771",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020979",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021230",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021480",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021730",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021980",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022231",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022481",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022731",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022981",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023232",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023482",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023732",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023982",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024233",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024483",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024733",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024983",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025234",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025484",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025734"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f4",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f5": {
+        "local_id": "f5",
+        "statement": "The performers are positioned on a stage with a drum set visible in the background, suggesting a musical performance.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014014",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014264",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014514",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000014765",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015015",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015265",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015516",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000015766",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016016",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016266",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016516",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000016767",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017017",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017267",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017768",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018018",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018268",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018769",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019019",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019269",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019520",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019770",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020020",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020270",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020520",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020771",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020979",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021230",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021480",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021730",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021980",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022231",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022481",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022731",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022981",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023232",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023482",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023732",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023982",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024233",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024483",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024733",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024983",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025234",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025484",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025734"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f5",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000004:f6": {
+        "local_id": "f6",
+        "statement": "The camera zooms in on individual performers, highlighting their expressive faces and dynamic movements, reinforcing the theatrical nature of the performance.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017017",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017267",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000017768",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018018",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018268",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018518",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000018769",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019019",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019269",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019520",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000019770",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020020",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020270",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020520",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020771",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000020979",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021230",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021480",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021730",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000021980",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022231",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022481"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000004:f6",
+        "segment_id": "seg_00002",
+        "call_id": "call_000004",
+        "core_interval": [
+          16.0,
+          24.0
+        ]
+      },
+      "fact:call_000005:f1": {
+        "local_id": "f1",
+        "statement": "The performance features a group of actors in colorful, flamboyant costumes with exaggerated wigs, suggesting a musical or theatrical show.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025734"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f1",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f2": {
+        "local_id": "f2",
+        "statement": "The actors are engaged in synchronized dance movements and expressive gestures, indicating a choreographed performance.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025734",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025984",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000026235",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000026485",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000026735",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000026985",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000027236",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000027486",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000027736",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000027986",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000028237",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000028487",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000028737",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000028987",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000029238",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000029488",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000029738",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000029988",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000030239",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000030489",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000030739",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000030989",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000031240"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f2",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f3": {
+        "local_id": "f3",
+        "statement": "The stage backdrop consists of bold, swirling blue and green patterns, enhancing the vibrant, energetic atmosphere.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025734"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f3",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f4": {
+        "local_id": "f4",
+        "statement": "The costumes include sequined tops, bright wigs, and distinctive patterns, typical of a musical theater or variety show.",
+        "kind": "visual_observation",
+        "role": "other",
+        "raw_role": "costume",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022231",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022481",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022731",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000022981",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023232",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023482",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023732",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000023982",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024233",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024483",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024733",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000024983",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025234",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025484",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025734"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f4",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f5": {
+        "local_id": "f5",
+        "statement": "The performance includes a drum set on stage, suggesting live music accompaniment.",
+        "kind": "visual_observation",
+        "role": "setting",
+        "raw_role": "setting",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000025734"
+        ],
+        "in_core": true,
+        "protected": true,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f5",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      },
+      "fact:call_000005:f6": {
+        "local_id": "f6",
+        "statement": "The actors' movements are dynamic and theatrical, with some frames showing them in mid-dance or expressive poses.",
+        "kind": "visual_observation",
+        "role": "action",
+        "raw_role": "action",
+        "evidence_refs": [
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000031240",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000031490",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000031740",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000031990",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000032241",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000032491",
+          "frame:4e986bdf52e7:SRC-4e986bdf52e761ef526e260148372e7e9e94179febe4fc3e7d83a6af09154ba7-000000032741"
+        ],
+        "in_core": true,
+        "protected": false,
+        "supersedes": [],
+        "correction_reason": null,
+        "support_status": "model_reported",
+        "reference_status": "validated",
+        "epistemic": "observed",
+        "id": "fact:call_000005:f6",
+        "segment_id": "seg_00003",
+        "call_id": "call_000005",
+        "core_interval": [
+          24.0,
+          32.0
+        ]
+      }
+    },
+    "expected_claim_count": 3,
+    "expected_passthrough_refs": [
+      "fact:call_000004:f1",
+      "fact:call_000004:f2",
+      "fact:call_000005:f1",
+      "fact:call_000005:f4"
+    ]
+  }
+]

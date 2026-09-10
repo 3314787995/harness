@@ -1,0 +1,108 @@
+{
+  "baseline_archive_sha256": "591a6e55911a106a37e65332a23396a6270fda1f7051c88b3611248492d24c46",
+  "files": {
+    "qwen3vl_agent/r5/agent.py": "7b10e29a3360e80cca59a94649103acd02562b39c299a820fd38c7a9dc577ce1",
+    "qwen3vl_agent/r5/config.py": "b3e0c8d90b6d879f5c4b857c9471dc880e39286e8cb6ad8f359e1722b355e742",
+    "qwen3vl_agent/r5/media.py": "c49f14ff178e16b3ade6c9b3a4497c8c9d8d19588c6764b62f6af5945ab1c342",
+    "qwen3vl_agent/r5/planning.py": "92e9aa6fc941934265a86cac94dd1024d34ffafdf24c1812048768ad5fc1efd9",
+    "qwen3vl_agent/r5/providers.py": "08ea4f6bd81db7f87e3a9734d54a330d5d9f6720ab515706404129451ed714ba",
+    "qwen3vl_agent/r5/types.py": "d58177a5bffe74a81f6c5be3b7d0de0db8db9f19c1d8d73ae0f4286466b6bf77",
+    "qwen3vl_agent/r5/checkpoint.py": "f4653feeeb69532f59f569cdcab7d533325a22ff82412cedd4e46fd9b1c58889",
+    "qwen3vl_agent/r5/evaluate.py": "0c28251324b9d8e30edee64dd39d9a36c09b36ba476f472bfb56ed693881bf24",
+    "configs/r5_8b.yaml": "f1da691cfcc70c6e0ee6df340014ce0dda9f30a85f6378e2ced5190ce6944794"
+  },
+  "functions": [
+    {
+      "path": "qwen3vl_agent/r5/synthesis.py",
+      "function": "compose",
+      "ast_sha256": "54703fab82a8904d5f57a64cf0fc59d0bb109080e2e3fc080a60efe85d8f88d8"
+    },
+    {
+      "path": "qwen3vl_agent/r5/synthesis.py",
+      "function": "parse_draft",
+      "ast_sha256": "a9939f6a87df1366af6d92900783432978127dab8e95fb6d023df7d3464583bc"
+    },
+    {
+      "path": "qwen3vl_agent/r5/synthesis.py",
+      "function": "build_tree",
+      "ast_sha256": "fa25dedc5960cd8d42ffe292aa61d2cb4b727979d97d45511dabcadb94ded00e"
+    },
+    {
+      "path": "qwen3vl_agent/r5/synthesis.py",
+      "function": "fallback_root",
+      "ast_sha256": "95058e16afb0a5b30bb1828e2c0bb653e2a988ef9d02ce90f01a53453f1f30e6"
+    },
+    {
+      "path": "qwen3vl_agent/r5/ledger.py",
+      "function": "parse_observation",
+      "ast_sha256": "9f3046694edf80244e6750dcf504bd02243af356b3c36dca39cb65a73c08352e"
+    },
+    {
+      "path": "qwen3vl_agent/r5/runtime.py",
+      "function": "invoke",
+      "ast_sha256": "1a0f097518d169c5b09698418406a462d27b360c9fd7aa536d26508cf4b113c2"
+    },
+    {
+      "path": "qwen3vl_agent/r5/runtime.py",
+      "function": "known_prediction",
+      "ast_sha256": "4ad4750fca804785e9d66b485ff03fa8f752ae61abbe21f8c99fa5a02f36c9be"
+    },
+    {
+      "path": "qwen3vl_agent/r5/runtime.py",
+      "function": "can_call",
+      "ast_sha256": "b15a482d8b66441b513c94be9ee24b477e44e36ef6ed72462b393d9ff3b05d12"
+    },
+    {
+      "path": "qwen3vl_agent/r5/runtime.py",
+      "function": "can_observe",
+      "ast_sha256": "157b6cd40ccc726f38954b8670ab4232f1fa553ad5f35cf21fd8abea35b56c79"
+    }
+  ],
+  "prompt_cases": [
+    {
+      "role": "compile",
+      "payload": {
+        "question": "What happens?"
+      },
+      "sha256": "c3ca6cd955ced7288f138249e6b5779120be918fa302b3567685410f89f22503"
+    },
+    {
+      "role": "observe",
+      "payload": {
+        "question": "What happens?"
+      },
+      "sha256": "fda6f603e79cf7d2f1ddf6f8bb08ab89bfa1268a024d37fa4fe4970b7305b893"
+    },
+    {
+      "role": "merge",
+      "payload": {
+        "question": "What happens?"
+      },
+      "sha256": "3fb7fdb6158a5479d3dcb6a78c5e3ba8ebb14acba78c5029da1fcc7498312bce"
+    },
+    {
+      "role": "compose",
+      "payload": {
+        "question": "What happens?"
+      },
+      "sha256": "9f109273d3fe53dabb6b75320c96e634b948ad39fd9cb797e03d5173b4d96e48"
+    },
+    {
+      "role": "repair",
+      "payload": {
+        "original_role": "compile",
+        "error": "schema"
+      },
+      "sha256": "6c8a5dceb93783de837fd32d1cbfdf50b6876b90d2585d9ba33f6c0340762302"
+    },
+    {
+      "role": "repair",
+      "payload": {
+        "original_role": "compose",
+        "error": "schema"
+      },
+      "sha256": "22ed4e60912a60df8ba12cec5abca4b0a1da7357bc1df98c4ab546858d2d076f"
+    }
+  ],
+  "ast_hash_format": "CPython 3.11 ast.dump; previous CPython 3.13 hashes verified against identical current R5 functions before migration."
+}

@@ -1,0 +1,63 @@
+# R1 V3.1 retains all V3.0 model, media, token and budget settings.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  device: auto
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  generation:
+    temperature: 0.0
+  video:
+    min_pixels: 65536
+    max_pixels: 262144
+    total_pixels: 12582912
+
+r1_v3:
+  max_candidates: 2
+  max_refinements: 2
+  max_relocations: 1
+  overlap_sec: 2.0
+  compiler_tokens: 1024
+  observer_tokens: 3072
+  final_tokens: 1536
+  max_provider_segments: 64
+  max_provider_text_chars: 16000
+  # At 8 fps, 16 frames cannot span a two-second overlap. R1 batches retain all
+  # samples in 32-frame batches, instead of P01's top-16 OCR frame retention.
+  ocr_batch_max_frames: 32
+  media:
+    cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/r1_v3
+    index_fps: 2.0
+    index_max_side: 768
+    shot_min_seconds: 2.0
+    shot_max_seconds: 20.0
+    shot_change_threshold: 0.16
+    locator_branch_factor: 12
+    locator_beam_width: 2
+    locator_max_levels: 3
+    static_frames: 9
+    static_max_frames: 16
+    dynamic_fps: 6.0
+    dynamic_refine_fps: 8.0
+    dynamic_max_frames: 72
+    dynamic_refine_max_frames: 96
+    ocr_search_fps: 8.0
+    caption_fps: 4.0
+    caption_refine_fps: 6.0
+    caption_max_frames: 96
+    caption_refine_max_frames: 112
+    max_detail_images: 6
+    decision_max_frames: 64
+    interval_medium_fps: 3.0
+    interval_medium_max_frames: 90
+    normal_min_pixels: 65536
+    normal_max_pixels: 262144
+    normal_total_pixels: 12582912
+    image_min_pixels: 131072
+    image_max_pixels: 262144
+    detail_max_pixels: 1048576
+    safe_normal_min_pixels: 32768
+    safe_normal_max_pixels: 196608
+    safe_normal_total_pixels: 8388608
+    safe_image_min_pixels: 65536
+    safe_image_max_pixels: 196608
+    safe_detail_max_pixels: 786432

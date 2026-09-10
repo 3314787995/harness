@@ -1,0 +1,32 @@
+[
+  {
+    "question": "R4-MME-077-2",
+    "call": "00002",
+    "sha256": "464559aec9beaea94c2856533bd78774d931653e159c08ff90e62e224f79fc07",
+    "output": "```json\n{\n  \"records\": [\n    {\n      \"id\": \"O1\",\n      \"set\": \"items\",\n      \"name\": \"glass cup\",\n      \"class\": \"cup\",\n      \"conditions\": {\n        \"target\": \"yes\",\n        \"predicate\": \"visually present\"\n      },\n      \"facts\": \"a clear glass cup being filled with water\",\n      \"boxes\": [\n        {\n          \"ref\": \"F11\",\n          \"xyxy\": [260, 120, 650, 600]\n        },\n        {\n          \"ref\": \"F12\",\n          \"xyxy\": [260, 120, 650, 600]\n        },\n        {\n          \"ref\": \"F13\",\n          \"xyxy\": [260, 120, 650, 600]\n        },\n        {\n          \"ref\": \"F14\",\n          \"xyxy\": [260, 120, 650, 600]\n        },\n        {\n          \"ref\": \"F15\",\n          \"xyxy\": [260, 120, 650, 600]\n        },\n        {\n          \"ref\": \"F16\",\n          \"xyxy\": [260, 120, 650, 600]\n        },\n        {\n          \"ref\": \"F17\",\n          \"xyxy\": [260, 120, 650, 600]\n        },\n        {\n          \"ref\": \"F18\",\n          \"xyxy\": [260, 120, 650, 600]\n        }\n      ]\n    }\n  ],\n  \"coverage\": \"complete\",\n  \"overflow\": false,\n  \"gaps\": []\n}\n```"
+  },
+  {
+    "question": "R4-MME-077-2",
+    "call": "00003",
+    "sha256": "42534041c6acfd72662409334e404df491862304ae66575bc1bbdd5d0c1ae0b1",
+    "output": "```json\n{\n  \"records\": [],\n  \"checks\": [],\n  \"coverage\": \"complete\",\n  \"overflow\": false,\n  \"gaps\": []\n}\n```"
+  },
+  {
+    "question": "R4-MME-225-1",
+    "call": "00004",
+    "sha256": "4e3c7ed7a9f998e1fe10f83cfb30895efe18bcfee18f800a9b896f43ab0e44c0",
+    "output": "```json\n{\n  \"records\": [\n    {\n      \"id\": \"O1\",\n      \"set\": \"items\",\n      \"name\": \"origami cat face\",\n      \"class\": \"animal face\",\n      \"conditions\": {\n        \"target\": \"yes\",\n        \"predicate\": \"visually present\"\n      },\n      \"facts\": \"a completed origami cat face with drawn eyes, nose, and whiskers is visible\",\n      \"query_value\": \"animal face\",\n      \"mapping_evidence\": \"the object is visually identifiable as an animal face (cat) with distinct facial features\",\n      \"refs\": [\n        \"F17\"\n      ],\n      \"boxes\": [\n        {\n          \"ref\": \"F17\",\n          \"xyxy\": [\n            350,\n            200,\n            650,\n            600\n          ]\n        }\n      ],\n      \"visibility\": \"clear\",\n      \"attributes\": {},\n      \"raw_text\": \"origami animal face\\nCheeky Cat\"\n    }\n  ],\n  \"checks\": [\n    {\n      \"set\": \"items\",\n      \"candidate\": \"animal face\",\n      \"state\": \"seen\",\n      \"refs\": [\n        \"F17\"\n      ],\n      \"facts\": \"the origami cat face is visually present and clearly identifiable as an animal face\"\n    }\n  ],\n  \"coverage\": \"complete\",\n  \"overflow\": false,\n  \"gaps\": []\n}\n```"
+  },
+  {
+    "question": "R4-MME-225-1",
+    "call": "00005",
+    "sha256": "bd078d2bd06fd173f5e00ee2e2fc34282eaad01988a953923c30f784fddcabd7",
+    "output": "```json\n{\n  \"records\": [\n    {\n      \"id\": \"O1\",\n      \"set\": \"items\",\n      \"name\": \"origami animal face\",\n      \"class\": \"animal face\",\n      \"conditions\": {\n        \"target\": \"yes\",\n        \"predicate\": \"visually present\"\n      },\n      \"facts\": \"a completed origami animal face with drawn eyes, nose, and whiskers is visible\",\n      \"query_value\": \"animal face\",\n      \"mapping_evidence\": \"the object is visually identifiable as an animal face\",\n      \"refs\": [\n        \"F17\"\n      ],\n      \"boxes\": [\n        {\n          \"ref\": \"F17\",\n          \"xyxy\": [\n            350,\n            200,\n            650,\n            600\n          ]\n        }\n      ],\n      \"visibility\": \"clear\",\n      \"attributes\": {},\n      \"raw_text\": \"origami animal face\\nCheeky Cat\"\n    }\n  ],\n  \"checks\": [],\n  \"coverage\": \"complete\",\n  \"overflow\": false,\n  \"gaps\": []\n}\n```"
+  },
+  {
+    "question": "R4-MME-251-1",
+    "call": "00013",
+    "sha256": "d797f29e43d7881dc8f6acb8268e3ef5dada3e3afb0a977796b6910a233a510a",
+    "output": "```json\n{\n  \"records\": [],\n  \"checks\": [\n    {\n      \"set\": \"activities\",\n      \"candidate\": \"Eating a meal.\",\n      \"state\": \"seen\",\n      \"refs\": [\"F1\", \"F2\", \"F3\", \"F4\", \"F5\"],\n      \"facts\": \"A hand is pouring sauce onto food on a plate, indicating the act of preparing or eating a meal.\"\n    }\n  ],\n  \"coverage\": \"complete\",\n  \"overflow\": false,\n  \"gaps\": []\n}\n```"
+  }
+]

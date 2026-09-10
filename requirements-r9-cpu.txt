@@ -1,0 +1,8 @@
+# No model weights or Torch required for engineering tests.
+pytest>=8,<10
+jsonschema>=4.23,<5
+PyYAML>=6,<7
+av>=14
+Pillow>=10
+numpy>=1.26
+ruff>=0.9

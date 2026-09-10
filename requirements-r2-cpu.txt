@@ -1,0 +1,8 @@
+# Independent CPU logic/media validation. Does not install model inference packages.
+av==18.1.0
+Pillow==12.3.0
+numpy==2.5.3
+jsonschema==4.26.0
+PyYAML==6.0.3
+pytest==9.1.1
+ruff==0.16.6

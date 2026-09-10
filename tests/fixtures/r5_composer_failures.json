@@ -1,0 +1,1045 @@
+[
+  {
+    "request_id": "R5-MME-075-3",
+    "source_sha256": "0810ef4b1fa703a5c18f3f3f14525cc12e793cf05c24336f6d013de4bed31e29",
+    "payload": {
+      "question": "What is this video mainly about?",
+      "spec": {
+        "operation": "global_activity_synopsis",
+        "focus": "The video's main content and overall subject matter.",
+        "required_modalities": [
+          "video"
+        ],
+        "unresolved": [],
+        "scope_interval": [
+          0.0,
+          64.88
+        ]
+      },
+      "units": [
+        {
+          "id": "fact:call_000002:f2",
+          "statement": "The shirt is folded neatly and placed on the wooden surface.",
+          "kind": "visual_observation",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f1",
+          "statement": "The video shows a person folding a dark polo shirt on a wooden surface.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f2",
+          "statement": "The person smooths out the shirt and aligns its edges before folding.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f3",
+          "statement": "A white line is drawn horizontally across the shirt, likely to guide the folding process.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f1",
+          "statement": "A person is drawing lines on a dark polo shirt laid out on a wooden surface.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f2",
+          "statement": "The person draws a horizontal line across the middle of the shirt.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f3",
+          "statement": "The person draws a vertical line down the center of the shirt, intersecting the horizontal line.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f4",
+          "statement": "The person labels the intersection point of the lines as 'A' and the top of the vertical line as 'B' on the shirt.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f5",
+          "statement": "The shirt has an embroidered logo on the left chest area.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f6",
+          "statement": "The watermark 'DAVEHAX.COM' is visible in the bottom left corner of the frames.",
+          "kind": "screen_text",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f1",
+          "statement": "A person is demonstrating how to fold a dark polo shirt on a wooden surface.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f2",
+          "statement": "The shirt is marked with white lines forming a cross, indicating folding points.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f4",
+          "statement": "The person folds the shirt by aligning the collar (point B) with the bottom hem (point C) along the vertical line.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000006:f1",
+          "statement": "A person is folding a dark polo shirt on a wooden surface.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00004",
+          "core_interval": [
+            32.0,
+            40.0
+          ]
+        },
+        {
+          "id": "fact:call_000006:f2",
+          "statement": "The shirt has an orange logo on the left chest area.",
+          "kind": "visual_observation",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00004",
+          "core_interval": [
+            32.0,
+            40.0
+          ]
+        },
+        {
+          "id": "fact:call_000006:f3",
+          "statement": "The folding process involves aligning the shirt's collar and sleeves, then folding the bottom hem upwards.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00004",
+          "core_interval": [
+            32.0,
+            40.0
+          ]
+        },
+        {
+          "id": "fact:call_000007:f1",
+          "statement": "The video shows a person folding different shirts on a wooden surface.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00005",
+          "core_interval": [
+            40.0,
+            48.0
+          ]
+        },
+        {
+          "id": "fact:call_000007:f2",
+          "statement": "The first shirt folded is a dark polo shirt with an orange logo.",
+          "kind": "visual_observation",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00005",
+          "core_interval": [
+            40.0,
+            48.0
+          ]
+        },
+        {
+          "id": "fact:call_000007:f3",
+          "statement": "The second shirt folded is a bright orange t-shirt with a graphic design.",
+          "kind": "visual_observation",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00005",
+          "core_interval": [
+            40.0,
+            48.0
+          ]
+        },
+        {
+          "id": "fact:call_000007:f4",
+          "statement": "The third shirt folded is a light-colored, short-sleeved shirt with a pocket.",
+          "kind": "visual_observation",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00005",
+          "core_interval": [
+            40.0,
+            48.0
+          ]
+        },
+        {
+          "id": "fact:call_000007:f6",
+          "statement": "The video is presented from a top-down perspective, focusing on the folding technique.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00005",
+          "core_interval": [
+            40.0,
+            48.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f1",
+          "statement": "The video demonstrates how to fold a polo shirt neatly.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f2",
+          "statement": "After folding the shirt, the video transitions to an end screen promoting other DIY projects.",
+          "kind": "visual_observation",
+          "role": "transition",
+          "protected": true,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f3",
+          "statement": "The end screen displays a blue dress shirt and thumbnails for other tutorials, including 'How To Make A Mini Bow And Arrow', 'How To Make The Coca-Cola Truck', 'How To Make A Light Bulb Vase', and 'How To Make A Coca-Cola Can Rose'.",
+          "kind": "screen_text",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f4",
+          "statement": "The end screen includes a 'Subscribe' button and the website 'DAVEHAX.COM'.",
+          "kind": "screen_text",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "id": "fact:call_000002:f2",
+          "statement": "The shirt is folded neatly and placed on the wooden surface.",
+          "kind": "visual_observation",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "label": "A",
+          "text": "It teaches how to fold a shirt."
+        },
+        {
+          "label": "B",
+          "text": "It teaches how to iron a shirt."
+        },
+        {
+          "label": "C",
+          "text": "It teaches how to wash a shirt."
+        },
+        {
+          "label": "D",
+          "text": "It teaches how to dry a shirt."
+        }
+      ],
+      "output_language": "same_as_question",
+      "length_instruction": "Concise, preserving the major stages and observed outcome.",
+      "claim_limit": 32,
+      "revision_feedback": {},
+      "candidate_explanations": []
+    },
+    "raw_response": "{\n  \"prediction\": \"A\",\n  \"claims\": [\n    {\n      \"id\": \"fact:call_000012:f1\",\n      \"statement\": \"The video shows a person folding a dark polo shirt on a wooden surface.\",\n      \"support_refs\": [\"fact:call_000012:f1\"]\n    },\n    {\n      \"id\": \"fact:call_000004:f1\",\n      \"statement\": \"A person is drawing lines on a dark polo shirt laid out on a wooden surface.\",\n      \"support_refs\": [\"fact:call_000004:f1\"]\n    },\n    {\n      \"id\": \"fact:call_000005:f1\",\n      \"statement\": \"A person is demonstrating how to fold a dark polo shirt on a wooden surface.\",\n      \"support_refs\": [\"fact:call_000005:f1\"]\n    },\n    {\n      \"id\": \"fact:call_000008:f1\",\n      \"statement\": \"The video demonstrates how to fold a polo shirt neatly.\",\n      \"support_refs\": [\"fact:call_000008:f1\"]\n    },\n    {\n      \"id\": \"fact:call_000007:f1\",\n      \"statement\": \"The video shows a person folding different shirts on a wooden surface.\",\n      \"support_refs\": [\"fact:call_000007:f1\"]\n    },\n    {\n      \"id\": \"fact:call_000008:f2\",\n      \"statement\": \"After folding the shirt, the video transitions to an end screen promoting other DIY projects.\",\n      \"support_refs\": [\"fact:call_000008:f2\"]\n    }\n  ],\n  \"options\": {\n    \"label\": [\"A\"]\n  }\n}",
+    "expected_prediction": "A"
+  },
+  {
+    "request_id": "R5-MME-078-3",
+    "source_sha256": "07ee2564889fac1ffa1c285e698ab03739fa43d4f8db89935db5d86bd36c27cd",
+    "payload": {
+      "question": "What is this video mainly about?",
+      "spec": {
+        "operation": "global_activity_synopsis",
+        "focus": "The video's main content and overall subject matter.",
+        "required_modalities": [
+          "video"
+        ],
+        "unresolved": [],
+        "scope_interval": [
+          0.0,
+          64.12
+        ]
+      },
+      "units": [
+        {
+          "id": "fact:call_000002:f1",
+          "statement": "The video begins with a close-up of a man wearing a white shirt and a black bow tie.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f2",
+          "statement": "Text appears on screen, forming the phrase 'HOW TO TIE A BOW TIE'.",
+          "kind": "screen_text",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f3",
+          "statement": "The man is shown with the bow tie untied and draped around his neck, ready to be tied.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f4",
+          "statement": "The man begins the process of tying the bow tie, adjusting the fabric around his collar.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f1",
+          "statement": "The video is a tutorial on how to tie a bow tie.",
+          "kind": "screen_text",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f2",
+          "statement": "A man in a white shirt demonstrates the process of tying a black bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f3",
+          "statement": "The bow tie is initially untied and draped around the man's neck.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000003:f1",
+          "statement": "A man in a white shirt is shown tying a black bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000003:f3",
+          "statement": "The man uses both hands to adjust and tie the bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000003:f4",
+          "statement": "An orange strap is visible around his neck, likely part of the bow tie's mechanism.",
+          "kind": "visual_observation",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000003:f5",
+          "statement": "The video focuses on the process of tying the bow tie, showing close-ups of his hands and the knot.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00001",
+          "core_interval": [
+            8.0,
+            16.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f1",
+          "statement": "A man is tying a black bow tie while wearing a white dress shirt and an orange neckband.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f3",
+          "statement": "The video focuses on the man's upper body and hands as he performs the task.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000004:f4",
+          "statement": "The background is plain and light-colored, keeping the focus on the man and his actions.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000013:f1",
+          "statement": "A man is tying a black bow tie while wearing a white dress shirt and an orange neckband.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000013:f2",
+          "statement": "The video focuses on the man's upper body and hands as he performs the task.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00002",
+          "core_interval": [
+            16.0,
+            24.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f5",
+          "statement": "The man uses his right hand to fine-tune the knot and position of the bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f6",
+          "statement": "A red collar strap is visible around the man's neck, likely part of the bow tie's adjustment system.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000005:f7",
+          "statement": "The video focuses on the process of tying and adjusting a bow tie.",
+          "kind": "visual_observation",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00003",
+          "core_interval": [
+            24.0,
+            32.0
+          ]
+        },
+        {
+          "id": "fact:call_000006:f1",
+          "statement": "A man is tying a black bow tie while wearing a white dress shirt and a red neck strap.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00004",
+          "core_interval": [
+            32.0,
+            40.0
+          ]
+        },
+        {
+          "id": "fact:call_000006:f2",
+          "statement": "The video shows a close-up of the man's neck and hands as he adjusts the bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00004",
+          "core_interval": [
+            32.0,
+            40.0
+          ]
+        },
+        {
+          "id": "fact:call_000006:f3",
+          "statement": "The man's hands are actively manipulating the bow tie to form the knot.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00004",
+          "core_interval": [
+            32.0,
+            40.0
+          ]
+        },
+        {
+          "id": "fact:call_000006:f4",
+          "statement": "The man is wearing a red neck strap under his white shirt collar.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00004",
+          "core_interval": [
+            32.0,
+            40.0
+          ]
+        },
+        {
+          "id": "fact:call_000007:f1",
+          "statement": "The video shows a person tying a black bow tie around their neck while wearing a white dress shirt and a red suspenders.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00005",
+          "core_interval": [
+            40.0,
+            48.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f1",
+          "statement": "A man in a white dress shirt is adjusting a black bow tie around his neck.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f2",
+          "statement": "The man's hands are positioned at the center of the bow tie, making fine adjustments.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f3",
+          "statement": "A dashed white line appears horizontally across the man's chest, indicating a guideline for bow tie placement.",
+          "kind": "visual_observation",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f4",
+          "statement": "The man continues adjusting the bow tie, ensuring it is centered and properly aligned with the guideline.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f5",
+          "statement": "The camera angle shifts slightly, providing a closer view of the man's neck and bow tie.",
+          "kind": "visual_observation",
+          "role": "transition",
+          "protected": true,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        },
+        {
+          "id": "fact:call_000008:f6",
+          "statement": "A red collar stays becomes visible around the man's neck as the camera angle changes.",
+          "kind": "visual_observation",
+          "role": "other",
+          "protected": false,
+          "segment_id": "seg_00006",
+          "core_interval": [
+            48.0,
+            56.0
+          ]
+        },
+        {
+          "id": "fact:call_000011:f3",
+          "statement": "The man puts on a black tuxedo jacket, completing his formal attire.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00007",
+          "core_interval": [
+            56.0,
+            64.0
+          ]
+        },
+        {
+          "id": "fact:call_000010:f3",
+          "statement": "The video ends with a black screen in frames F8 and F9.",
+          "kind": "visual_observation",
+          "role": "transition",
+          "protected": true,
+          "segment_id": "seg_00008",
+          "core_interval": [
+            64.0,
+            64.12
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "id": "fact:call_000002:f1",
+          "statement": "The video begins with a close-up of a man wearing a white shirt and a black bow tie.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f2",
+          "statement": "Text appears on screen, forming the phrase 'HOW TO TIE A BOW TIE'.",
+          "kind": "screen_text",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f3",
+          "statement": "The man is shown with the bow tie untied and draped around his neck, ready to be tied.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f4",
+          "statement": "The man begins the process of tying the bow tie, adjusting the fabric around his collar.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f1",
+          "statement": "The video is a tutorial on how to tie a bow tie.",
+          "kind": "screen_text",
+          "role": "outcome",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f2",
+          "statement": "A man in a white shirt demonstrates the process of tying a black bow tie.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000012:f3",
+          "statement": "The bow tie is initially untied and draped around the man's neck.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000010:f3",
+          "statement": "The video ends with a black screen in frames F8 and F9.",
+          "kind": "visual_observation",
+          "role": "transition",
+          "protected": true,
+          "segment_id": "seg_00008",
+          "core_interval": [
+            64.0,
+            64.12
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "label": "A",
+          "text": "It teaches how to tie a neck tie."
+        },
+        {
+          "label": "B",
+          "text": "It advertises a bow tie."
+        },
+        {
+          "label": "C",
+          "text": "It advertises a neck tie."
+        },
+        {
+          "label": "D",
+          "text": "It teaches how to tie a bow tie."
+        }
+      ],
+      "output_language": "same_as_question",
+      "length_instruction": "Concise, preserving the major stages and observed outcome.",
+      "claim_limit": 32,
+      "revision_feedback": {},
+      "candidate_explanations": []
+    },
+    "raw_response": "{\n  \"prediction\": \"D\",\n  \"claims\": [\n    {\n      \"id\": \"fact:call_000012:f1\",\n      \"statement\": \"The video is a tutorial on how to tie a bow tie.\",\n      \"support_refs\": [\n        \"fact:call_000012:f1\"\n      ]\n    },\n    {\n      \"id\": \"fact:call_000002:f2\",\n      \"statement\": \"Text appears on screen, forming the phrase 'HOW TO TIE A BOW TIE'.\",\n      \"support_refs\": [\n        \"fact:call_000002:f2\"\n      ]\n    },\n    {\n      \"id\": \"fact:call_000012:f2\",\n      \"statement\": \"A man in a white shirt demonstrates the process of tying a black bow tie.\",\n      \"support_refs\": [\n        \"fact:call_000012:f2\"\n      ]\n    }\n  ],\n  \"options\": {\n    \"label\": [\n      \"D\"\n    ]\n  }\n}",
+    "expected_prediction": "D"
+  },
+  {
+    "request_id": "R5-MME-186-3",
+    "source_sha256": "8390745e37ef9001aac11c82e0db5e7e9257fa8a056fd9c58b9419256b6bcebc",
+    "payload": {
+      "question": "Which genre best describes the performance based on the activity and costumes?",
+      "spec": {
+        "operation": "content_genre_selection",
+        "focus": "performance activity and costumes",
+        "required_modalities": [
+          "video",
+          "screen_text"
+        ],
+        "unresolved": [],
+        "scope_interval": [
+          0.0,
+          57.807744444444445
+        ]
+      },
+      "units": [
+        {
+          "id": "claim:fe317edef5a16449ce6183d0:0",
+          "statement": "The performance is a high-energy musical theater or stage show featuring dancers and actors in flamboyant, colorful, retro-style costumes with exaggerated wigs, performing synchronized choreography and dynamic movements.",
+          "kind": "synthesis"
+        },
+        {
+          "id": "claim:fe317edef5a16449ce6183d0:1",
+          "statement": "The stage is equipped with musical instruments including a drum set and guitar, and features vibrant, dynamic visual backdrops such as cartoon-like graphics, swirling blue and green patterns, and curved green and purple stripes, with live band accompaniment.",
+          "kind": "synthesis"
+        },
+        {
+          "id": "claim:fe317edef5a16449ce6183d0:2",
+          "statement": "The performance is characterized by bright stage lighting, energetic synchronized dance movements, and close-up camera shots focusing on individual performers, enhancing the theatrical and playful atmosphere.",
+          "kind": "synthesis"
+        }
+      ],
+      "facts": [
+        {
+          "id": "fact:call_000002:f1",
+          "statement": "The performance features three individuals in colorful, retro-style costumes dancing on a stage.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f2",
+          "statement": "The performers are wearing flamboyant outfits, including a pink wig, purple and orange pants, and sequined tops.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f3",
+          "statement": "A drum set and a guitar are visible on stage, suggesting a musical performance.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f4",
+          "statement": "The background screen displays cartoon-like graphics, adding to the playful, theatrical atmosphere.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f5",
+          "statement": "The performers are engaged in synchronized dance movements, indicating a choreographed routine.",
+          "kind": "visual_observation",
+          "role": "action",
+          "protected": false,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        },
+        {
+          "id": "fact:call_000002:f6",
+          "statement": "The stage is brightly lit with a blue backdrop, enhancing the vibrant and energetic mood of the performance.",
+          "kind": "visual_observation",
+          "role": "setting",
+          "protected": true,
+          "segment_id": "seg_00000",
+          "core_interval": [
+            0.0,
+            8.0
+          ]
+        }
+      ],
+      "choices": [
+        {
+          "label": "A",
+          "text": "Musical theatre."
+        },
+        {
+          "label": "B",
+          "text": "Situational comedy."
+        },
+        {
+          "label": "C",
+          "text": "Ballet."
+        },
+        {
+          "label": "D",
+          "text": "Can't be deduced."
+        }
+      ],
+      "output_language": "same_as_question",
+      "length_instruction": "Concise, preserving the major stages and observed outcome.",
+      "claim_limit": 32,
+      "revision_feedback": {},
+      "candidate_explanations": [
+        {
+          "statement": "The costumes and stage design suggest a children's or family-oriented entertainment show.",
+          "segment_id": "seg_00000",
+          "epistemic": "inferred",
+          "citable": false
+        },
+        {
+          "statement": "The overall presentation, including costumes, dance, and stage props, aligns with a musical theater or variety show format.",
+          "segment_id": "seg_00000",
+          "epistemic": "inferred",
+          "citable": false
+        },
+        {
+          "statement": "The overall aesthetic, with bright colors, glittery costumes, and energetic choreography, aligns with the style of a musical theater or stage production.",
+          "segment_id": "seg_00002",
+          "epistemic": "inferred",
+          "citable": false
+        }
+      ]
+    },
+    "raw_response": "{\n  \"prediction\": \"A\",\n  \"claims\": [\n    {\n      \"id\": \"claim:fe317edef5a16449ce6183d0:0\",\n      \"statement\": \"The performance is a high-energy musical theater or stage show featuring dancers and actors in flamboyant, colorful, retro-style costumes with exaggerated wigs, performing synchronized choreography and dynamic movements.\",\n      \"support_refs\": [\n        \"fact:call_000002:f1\",\n        \"fact:call_000002:f2\",\n        \"fact:call_000002:f5\"\n      ]\n    },\n    {\n      \"id\": \"claim:fe317edef5a16449ce6183d0:1\",\n      \"statement\": \"The stage is equipped with musical instruments including a drum set and guitar, and features vibrant, dynamic visual backdrops such as cartoon-like graphics, swirling blue and green patterns, and curved green and purple stripes, with live band accompaniment.\",\n      \"support_refs\": [\n        \"fact:call_000002:f3\",\n        \"fact:call_000002:f4\"\n      ]\n    },\n    {\n      \"id\": \"claim:fe317edef5a16449ce6183d0:2\",\n      \"statement\": \"The performance is characterized by bright stage lighting, energetic synchronized dance movements, and close-up camera shots focusing on individual performers, enhancing the theatrical and playful atmosphere.\",\n      \"support_refs\": [\n        \"fact:call_000002:f6\"\n      ]\n    }\n  ],\n  \"options\": {\n    \"label\": [\"A\"]\n  }\n}",
+    "expected_prediction": "A"
+  }
+]

@@ -1,0 +1,24 @@
+# R2 1.5 on two 4090D GPUs. This version awaits GPU validation.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  device: auto
+  device_map: balanced
+  max_memory:
+    0: 20GiB
+    1: 20GiB
+  required_cuda_devices: [0, 1]
+  forbid_offload: true
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  use_cache: true
+  generation:
+    temperature: 0.0
+
+# Unspecified fields use R2Config's shared defaults (128 calls / 4096 exposures).
+r2:
+  final_tokens: 3072
+  budget:
+    max_text_chars_per_call: 120000
+    terminal_call_reserve: 4
+  media:
+    cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/r2

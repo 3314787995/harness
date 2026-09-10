@@ -1,0 +1,77 @@
+{
+  "description": "Exact rejected/empty responses from the first R2 GPU run; no gold labels or scoring metadata.",
+  "cases": [
+    {
+      "source_request_id": "R2-tomato-0231-04",
+      "source_sha256": "9df2625e22eba48661e7926bf05ec16f63d315a30ea2cfe7aa4bf4f350d94ecc",
+      "calls": [
+        {
+          "call_id": "call_000001",
+          "role": "compile_intent",
+          "raw": "{\n  \"targets\": [],\n  \"slots\": [],\n  \"operations\": [],\n  \"scope\": {\n    \"kind\": \"full\",\n    \"interval\": [0.0, 5.632682291666667],\n    \"description\": \"The full permitted observation duration for the query.\"\n  },\n  \"anchors\": [],\n  \"fast_motion\": false,\n  \"unresolved\": []\n}"
+        },
+        {
+          "call_id": "call_000002",
+          "role": "compile_intent",
+          "raw": "{\n  \"targets\": [\n    {\n      \"id\": \"hand\",\n      \"description\": \"The person's hand visible in the video.\"\n    }\n  ],\n  \"slots\": [\n    {\n      \"id\": \"direction_slot\",\n      \"target_id\": \"hand\",\n      \"property\": \"direction\",\n      \"description\": \"The direction(s) of motion of the hand.\",\n      \"reference_frame\": \"body\"\n    }\n  ],\n  \"operations\": [\n    {\n      \"id\": \"direction_sequence_op\",\n      \"op\": \"direction_sequence\",\n      \"target_ids\": [\"hand\"],\n      \"slot_ids\": [\"direction_slot\"],\n      \"parameters\": {}\n    }\n  ],\n  \"scope\": {\n    \"kind\": \"full\",\n    \"interval\": [0.0, 5.632682291666667],\n    \"description\": \"The full permitted observation duration for the query.\"\n  },\n  \"anchors\": [],\n  \"fast_motion\": false,\n  \"unresolved\": []\n}"
+        },
+        {
+          "call_id": "call_000003",
+          "role": "compile_discriminants",
+          "raw": "{\"targets\": [{\"id\": \"hand\", \"description\": \"The person's hand visible in the video.\"}], \"slots\": [{\"id\": \"direction_slot\", \"target_id\": \"hand\", \"property\": \"direction\", \"description\": \"The direction(s) of motion of the hand.\", \"reference_frame\": \"body\"}], \"operations\": [{\"id\": \"direction_sequence_op\", \"op\": \"direction_sequence\", \"target_ids\": [\"hand\"], \"slot_ids\": [\"direction_slot\"], \"parameters\": {}}], \"scope\": {\"kind\": \"full\", \"interval\": [0.0, 5.632682291666667], \"description\": \"The full permitted observation duration for the query.\"}, \"anchors\": [], \"fast_motion\": false, \"unresolved\": []}"
+        },
+        {
+          "call_id": "call_000004",
+          "role": "observe",
+          "raw": "{\n  \"entities\": [],\n  \"records\": [],\n  \"associations\": [],\n  \"containments\": [],\n  \"gaps\": [],\n  \"reference_status\": \"stable\",\n  \"candidate_coverage_complete\": false,\n  \"complete\": false,\n  \"anchor_states\": []\n}"
+        },
+        {
+          "call_id": "call_000014",
+          "role": "final",
+          "raw": "{\n  \"prediction\": \"E\",\n  \"evidence_ids\": [],\n  \"assessments\": [],\n  \"weakest_premise\": \"No directly observed state for this operation\",\n  \"recheck\": {\n    \"kind\": \"detail\",\n    \"description\": \"No directly observed state for this operation\",\n    \"slot_id\": \"direction_slot\"\n  },\n  \"unresolved\": []\n}"
+        },
+        {
+          "call_id": "call_000015",
+          "role": "final",
+          "raw": "{\n  \"prediction\": \"E\",\n  \"evidence_ids\": [],\n  \"assessments\": [],\n  \"weakest_premise\": \"No directly observed state for this operation\",\n  \"recheck\": {\n    \"kind\": \"detail\",\n    \"description\": \"No directly observed state for this operation\",\n    \"slot_id\": \"direction_slot\"\n  },\n  \"unresolved\": []\n}"
+        }
+      ]
+    },
+    {
+      "source_request_id": "R2-tomato-0215-06",
+      "source_sha256": "86732488b46965f52424cc7afbfc52f037eeb533dbd3ae741c7d121fa2e34b2a",
+      "calls": [
+        {
+          "call_id": "call_000001",
+          "role": "compile_intent",
+          "raw": "{\n  \"targets\": [],\n  \"slots\": [],\n  \"operations\": [],\n  \"scope\": {\n    \"kind\": \"full\",\n    \"interval\": [0.0, 5.032682291666666],\n    \"description\": \"The entire video duration is the permitted observation scope.\"\n  },\n  \"anchors\": [],\n  \"fast_motion\": false,\n  \"unresolved\": []\n}"
+        },
+        {
+          "call_id": "call_000002",
+          "role": "compile_intent",
+          "raw": "{\n  \"targets\": [\n    {\n      \"id\": \"hand\",\n      \"description\": \"The person's hand visible in the video.\"\n    }\n  ],\n  \"slots\": [\n    {\n      \"id\": \"rotation_direction\",\n      \"target_id\": \"hand\",\n      \"property\": \"rotation_direction\",\n      \"description\": \"The direction of rotation of the hand.\",\n      \"reference_frame\": \"body\"\n    }\n  ],\n  \"operations\": [\n    {\n      \"id\": \"rotation_pattern\",\n      \"op\": \"rotation_pattern\",\n      \"target_ids\": [\"hand\"],\n      \"slot_ids\": [\"rotation_direction\"],\n      \"parameters\": {}\n    }\n  ],\n  \"scope\": {\n    \"kind\": \"full\",\n    \"interval\": [0.0, 5.032682291666666],\n    \"description\": \"The entire video duration is the permitted observation scope.\"\n  },\n  \"anchors\": [],\n  \"fast_motion\": false,\n  \"unresolved\": []\n}"
+        },
+        {
+          "call_id": "call_000003",
+          "role": "compile_discriminants",
+          "raw": "{\"targets\": [{\"id\": \"hand\", \"description\": \"The person's hand visible in the video.\"}], \"slots\": [{\"id\": \"rotation_direction\", \"target_id\": \"hand\", \"property\": \"rotation_direction\", \"description\": \"The direction of rotation of the hand.\", \"reference_frame\": \"body\"}], \"operations\": [{\"id\": \"rotation_pattern\", \"op\": \"rotation_pattern\", \"target_ids\": [\"hand\"], \"slot_ids\": [\"rotation_direction\"], \"parameters\": {}}], \"scope\": {\"kind\": \"full\", \"interval\": [0.0, 5.032682291666666], \"description\": \"The entire video duration is the permitted observation scope.\"}, \"anchors\": [], \"fast_motion\": false, \"unresolved\": []}"
+        },
+        {
+          "call_id": "call_000004",
+          "role": "observe",
+          "raw": "{\n  \"entities\": [],\n  \"records\": [],\n  \"associations\": [],\n  \"containments\": [],\n  \"gaps\": [],\n  \"reference_status\": \"stable\",\n  \"candidate_coverage_complete\": false,\n  \"complete\": false,\n  \"anchor_states\": []\n}"
+        },
+        {
+          "call_id": "call_000014",
+          "role": "final",
+          "raw": "{\n  \"prediction\": \"A\",\n  \"evidence_ids\": [],\n  \"assessments\": [],\n  \"weakest_premise\": \"No directly observed state for this operation\",\n  \"recheck\": null,\n  \"unresolved\": []\n}"
+        },
+        {
+          "call_id": "call_000015",
+          "role": "final",
+          "raw": "{\n  \"prediction\": \"A\",\n  \"evidence_ids\": [],\n  \"assessments\": [],\n  \"weakest_premise\": \"No directly observed state for this operation\",\n  \"recheck\": null,\n  \"unresolved\": []\n}"
+        }
+      ]
+    }
+  ]
+}

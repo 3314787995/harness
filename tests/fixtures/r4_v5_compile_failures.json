@@ -1,0 +1,122 @@
+{
+  "note": "Historical v5 compiler outputs only. Public requests and no gold/private review. These are not v5.1 inference results.",
+  "cases": [
+    {
+      "id": "R4-MME-077-2",
+      "question": "How many cups appear in this video?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "2."
+        },
+        {
+          "label": "B",
+          "text": "3."
+        },
+        {
+          "label": "C",
+          "text": "4."
+        },
+        {
+          "label": "D",
+          "text": "5."
+        }
+      ],
+      "expected_namespace": "physical_instance",
+      "target": "cup",
+      "count_unit": "individual cup",
+      "calls": [
+        {
+          "source": "calls/R4-MME-077-2/00001.json",
+          "sha256": "1e64dbc8c4280c287f15a630bf87b300ee23465e74d3ad74b690a068dc63faaf",
+          "raw_response": "{\n  \"version\": 5,\n  \"sets\": [\n    {\n      \"set_id\": \"cups\",\n      \"namespace\": \"semantic_category\",\n      \"target\": \"cup\",\n      \"count_unit\": \"cup\",\n      \"predicate\": \"shown\",\n      \"equivalence\": \"entity\",\n      \"optional_membership\": {},\n      \"attribute_keys\": [],\n      \"scope\": \"full\",\n      \"result_kind\": \"frame\"\n    }\n  ],\n  \"operations\": [\n    {\n      \"operation_id\": \"count_cups\",\n      \"op\": \"COUNT_DISTINCT\",\n      \"inputs\": [\n        \"cups\"\n      ]\n    }\n  ],\n  \"output_id\": \"count_cups\",\n  \"unresolved\": [],\n  \"query_scope\": null,\n  \"execution_subtype\": null\n}",
+          "output_tokens": 167
+        },
+        {
+          "source": "calls/R4-MME-077-2/00002.json",
+          "sha256": "01adf19e28fa0da600a188528815308871d9393880c59c723729aa77ab8a174e",
+          "raw_response": "{\n  \"version\": 5,\n  \"sets\": [\n    {\n      \"set_id\": \"cups\",\n      \"namespace\": \"semantic_category\",\n      \"target\": \"cup\",\n      \"count_unit\": \"cup\",\n      \"predicate\": \"shown\",\n      \"equivalence\": \"entity\",\n      \"optional_membership\": {},\n      \"attribute_keys\": [],\n      \"scope\": {\n        \"type\": \"full\"\n      },\n      \"result_kind\": \"frame\"\n    }\n  ],\n  \"operations\": [\n    {\n      \"operation_id\": \"count_cups\",\n      \"op\": \"COUNT_DISTINCT\",\n      \"inputs\": [\n        \"cups\"\n      ]\n    }\n  ],\n  \"output_id\": \"count_cups\",\n  \"unresolved\": [],\n  \"query_scope\": null,\n  \"execution_subtype\": null\n}",
+          "output_tokens": 174
+        }
+      ]
+    },
+    {
+      "id": "R4-MME-225-1",
+      "question": "How many different kinds of animal faces are made in this video?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "4."
+        },
+        {
+          "label": "B",
+          "text": "3."
+        },
+        {
+          "label": "C",
+          "text": "5."
+        },
+        {
+          "label": "D",
+          "text": "2."
+        }
+      ],
+      "expected_namespace": "semantic_category",
+      "target": "animal face",
+      "count_unit": "animal kind",
+      "calls": [
+        {
+          "source": "calls/R4-MME-225-1/00001.json",
+          "sha256": "1d232b45680937275a5c944124dfe762b415a302a1bf366381fb3fb60eabee89",
+          "raw_response": "{\n  \"version\": 5,\n  \"r4\": {\n    \"compile\": {\n      \"sets\": [\n        {\n          \"set_id\": \"animal_faces\",\n          \"namespace\": \"semantic_category\",\n          \"target\": \"animal face\",\n          \"count_unit\": \"kind\",\n          \"predicate\": \"made\",\n          \"equivalence\": \"entity\",\n          \"optional_membership\": {},\n          \"attribute_keys\": [],\n          \"scope\": \"full\",\n          \"result_kind\": \"frame\"\n        }\n      ],\n      \"operations\": [\n        {\n          \"operation_id\": \"count_distinct\",\n          \"op\": \"COUNT_DISTINCT\",\n          \"inputs\": [\n            \"animal_faces\"\n          ]\n        }\n      ],\n      \"output_id\": \"count_distinct\",\n      \"unresolved\": []\n    }\n  }\n}",
+          "output_tokens": 169
+        },
+        {
+          "source": "calls/R4-MME-225-1/00002.json",
+          "sha256": "db17c38a9f97427c58a14a7b5044555579025338892f3b01f87e30c3be0ceeaf",
+          "raw_response": "{\n  \"version\": 5,\n  \"r4\": {\n    \"compile\": {\n      \"sets\": [\n        {\n          \"set_id\": \"animal_faces\",\n          \"namespace\": \"semantic_category\",\n          \"target\": \"animal face\",\n          \"count_unit\": \"kind\",\n          \"predicate\": \"made\",\n          \"equivalence\": \"entity\",\n          \"optional_membership\": {},\n          \"attribute_keys\": [],\n          \"scope\": \"full\",\n          \"result_kind\": \"frame\"\n        }\n      ],\n      \"operations\": [\n        {\n          \"operation_id\": \"count_distinct\",\n          \"op\": \"COUNT_DISTINCT\",\n          \"inputs\": [\n            \"animal_faces\"\n          ]\n        }\n      ],\n      \"output_id\": \"count_distinct\",\n      \"unresolved\": []\n    }\n  }\n}",
+          "output_tokens": 169
+        }
+      ]
+    },
+    {
+      "id": "R4-MME-251-1",
+      "question": "Which daily activity is not shown in the video?",
+      "choices": [
+        {
+          "label": "A",
+          "text": "Cleaning the floor."
+        },
+        {
+          "label": "B",
+          "text": "Eating a meal."
+        },
+        {
+          "label": "C",
+          "text": "Ironing clothes."
+        },
+        {
+          "label": "D",
+          "text": "Cooking."
+        }
+      ],
+      "expected_namespace": "semantic_category",
+      "target": "daily activity",
+      "count_unit": "activity kind",
+      "calls": [
+        {
+          "source": "calls/R4-MME-251-1/00001.json",
+          "sha256": "bc41c0f674e92114c16d90273bee35291743fb68ef114291518a642037aebf28",
+          "raw_response": "{\n  \"version\": 5,\n  \"sets\": [\n    {\n      \"set_id\": \"activity_set\",\n      \"namespace\": \"semantic_category\",\n      \"target\": \"daily_activity\",\n      \"count_unit\": \"instance\",\n      \"predicate\": \"shown\",\n      \"equivalence\": \"activity\",\n      \"optional_membership\": {\n        \"1\": {\n          \"required_fact\": \"activity\"\n        }\n      },\n      \"attribute_keys\": [\n        \"activity\"\n      ],\n      \"scope\": \"full\",\n      \"result_kind\": \"frame\"\n    }\n  ],\n  \"operations\": [\n    {\n      \"operation_id\": \"op1\",\n      \"op\": \"missing_members\",\n      \"inputs\": [\n        \"activity_set\"\n      ]\n    }\n  ],\n  \"output_id\": \"op1\",\n  \"unresolved\": [],\n  \"version\": 5\n}",
+          "output_tokens": 181
+        },
+        {
+          "source": "calls/R4-MME-251-1/00002.json",
+          "sha256": "c74b4996b92c1fb219ad88c11b6d4886ac21f3913f3c37cb4d402097e6747bcc",
+          "raw_response": "{\n  \"version\": 5,\n  \"sets\": [\n    {\n      \"set_id\": \"activity_set\",\n      \"namespace\": \"semantic_category\",\n      \"target\": \"daily_activity\",\n      \"count_unit\": \"instance\",\n      \"predicate\": \"shown\",\n      \"equivalence\": \"activity\",\n      \"optional_membership\": {\n        \"1\": {\n          \"required_fact\": \"activity\"\n        }\n      },\n      \"attribute_keys\": [\n        \"activity\"\n      ],\n      \"scope\": \"full\",\n      \"result_kind\": \"frame\"\n    }\n  ],\n  \"operations\": [\n    {\n      \"operation_id\": \"op1\",\n      \"op\": \"missing_members\",\n      \"inputs\": [\n        \"activity_set\"\n      ]\n    }\n  ],\n  \"output_id\": \"op1\",\n  \"unresolved\": [],\n  \"version\": 5\n}",
+          "output_tokens": 181
+        }
+      ]
+    }
+  ]
+}

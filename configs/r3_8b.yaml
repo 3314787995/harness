@@ -1,0 +1,48 @@
+# R3 v5 engineering starting points; real inference acceptance remains separate.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  device: auto
+  device_map: balanced
+  max_memory:
+    0: 20GiB
+    1: 20GiB
+  required_cuda_devices: [0, 1]
+  forbid_offload: true
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  generation:
+    temperature: 0.0
+  video:
+    min_pixels: 65536
+    max_pixels: 262144
+    total_pixels: 12582912
+
+r3:
+  short_core_sec: 4.0
+  short_fps: 8.0
+  context_sec: 1.0
+  long_core_sec: 32.0
+  long_fps: 1.0
+  tail_sec: 2.0
+  neighbor_sec: 6.0
+  neighbor_fps: 8.0
+  refinement_fps: 16.0
+  max_refinements: 12
+  max_frames_per_call: 64
+  visual_token_target: 8192
+  visual_token_limit: 12288
+  query_tokens: 512
+  observer_tokens: 768
+  refinement_tokens: 768
+  final_tokens: 512
+  seed: 0
+  budget:
+    max_model_calls: 4096
+    terminal_call_reserve: 1
+    max_provider_calls: 4096
+    max_frame_exposures: 196608
+    max_media_pixels: 51539607552
+    max_text_chars_per_call: 60000
+  media:
+    cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/r3-v54
+    normal_total_pixels: 8388608

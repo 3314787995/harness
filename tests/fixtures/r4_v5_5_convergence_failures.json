@@ -1,0 +1,30 @@
+[
+  {
+    "request_id": "R4-MME-225-1",
+    "call": "00004",
+    "sha256": "ba6eed2a5741b8bc3788fa428f8e937a5975d9838b661a3345e906ed8021f77b",
+    "role": "R4:discover_candidates",
+    "output": "```json\n{\n  \"members\": [\n    {\n      \"set\": \"items\",\n      \"object\": \"O1\",\n      \"label\": \"animal face\",\n      \"judgments\": {\n        \"J1\": \"yes\",\n        \"J2\": \"yes\"\n      },\n      \"refs\": [\n        \"F17\"\n      ]\n    }\n  ],\n  \"coverage\": \"partial\",\n  \"gaps\": [\n    \"unjudgeable region\"\n  ]\n}\n```"
+  },
+  {
+    "request_id": "R4-MME-225-1",
+    "call": "00010",
+    "sha256": "abc1609dea409de8e33ccf5f912ed63737b8bc628537f7471523af011c0fc742",
+    "role": "R4:discover_candidates",
+    "output": "```json\n{\"members\": [], \"coverage\": \"partial\", \"gaps\": [\"unjudgeable region\"]}\n```"
+  },
+  {
+    "request_id": "R4-MME-251-1",
+    "call": "00003",
+    "sha256": "a0c4aa2cfdd97937e0ea511513779d6ac9f3b4b086a91f06f20e3a462315671b",
+    "role": "R4:discover_candidates",
+    "output": "```json\n{\n  \"answers\": [\n    {\n      \"task\": \"Q1\",\n      \"status\": \"uncertain\",\n      \"refs\": []\n    },\n    {\n      \"task\": \"Q2\",\n      \"status\": \"absent\",\n      \"refs\": []\n    },\n    {\n      \"task\": \"Q3\",\n      \"status\": \"observed\",\n      \"refs\": [\n        {\n          \"frame\": \"F15\",\n          \"box\": [\n            170,\n            520,\n            250,\n            600\n          ]\n        },\n        {\n          \"frame\": \"F16\",\n          \"box\": [\n            170,\n            520,\n            250,\n            600\n          ]\n        },\n        {\n          \"frame\": \"F17\",\n          \"box\": [\n            170,\n            520,\n            250,\n            600\n          ]\n        },\n        {\n          \"frame\": \"F18\",\n          \"box\": [\n            170,\n            520,\n            250,\n            600\n          ]\n        }\n      ]\n    },\n    {\n      \"task\": \"Q4\",\n      \"status\": \"absent\",\n      \"refs\": []\n    }\n  ]\n}\n```"
+  },
+  {
+    "request_id": "R4-MME-077-2",
+    "call": "00017",
+    "sha256": "c9b0c59ad5cd416995b193206c5a6b49a05760a276cdf8951673fb862a76d5c0",
+    "role": "R4:identity",
+    "output": "```json\n{\"decision\": \"UNKNOWN\", \"basis\": \"uncertain\", \"refs\": [], \"reason\": \"The supplied views do not establish object identity.\"}\n```"
+  }
+]

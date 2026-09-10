@@ -1,0 +1,366 @@
+{
+  "python": "3.11.16",
+  "count": 60,
+  "failures": [
+    {
+      "nodeid": "tests/test_r3_query_v5.py::test_empty_observations_bounded_reviews_and_single_visual_final",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert 6 <= 3\n +  where 6 = len([{'task': {'key': 'review:ad1f66c79141262b19373276', 'kind': 'review', 'recipe': 'cycles', 'span': [0.0, 2.0], ...}, '...ycles', 'span': [2.0, 4.0], ...}, 'done': True, 'reason': 'no new actual frames, clarity or effective visual context'}])"
+    },
+    {
+      "nodeid": "tests/test_r3_query_v5.py::test_full_executor_two_required_calls_no_compiler_final_or_gold",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (4 == 3)\n +  where 4 = len([([{'role': 'system', 'content': 'R3:observe_cycles r3-5.4\\nObserve only the actual images in this call. Frame labels ..., {'max_new_tokens': 768, 'temperature': 0.0, 'visual_token_limit': 12288, 'processed_pixel_limit': 51538403328, ...})])\n +    where [([{'role': 'system', 'content': 'R3:observe_cycles r3-5.4\\nObserve only the actual images in this call. Frame labels ..., {'max_new_tokens': 768, 'temperature': 0.0, 'visual_token_limit': 12288, "
+    },
+    {
+      "nodeid": "tests/test_r3_query_v5.py::test_inflight_recovery_keeps_lost_charge_and_old_version_rejected",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert (5 == 4)"
+    },
+    {
+      "nodeid": "tests/test_r3_query_v5.py::test_reread_that_resolves_unit_can_schedule_newly_necessary_attribute",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert ('B' == 'A'\n  \n  - A\n  + B)"
+    },
+    {
+      "nodeid": "tests/test_r3_query_v5.py::test_returned_response_resume_does_not_infer_again",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (2 == 2 and 4 == 3)\n +  where 4 = len([([{'role': 'system', 'content': 'R3:observe_cycles r3-5.4\\nObserve only the actual images in this call. Frame labels ..., {'max_new_tokens': 768, 'temperature': 0.0, 'visual_token_limit': 12288, 'processed_pixel_limit': 51538403328, ...})])\n +    where [([{'role': 'system', 'content': 'R3:observe_cycles r3-5.4\\nObserve only the actual images in this call. Frame labels ..., {'max_new_tokens': 768, 'temperature': 0.0, 'visual_token_limi"
+    },
+    {
+      "nodeid": "tests/test_r3_query_v5.py::test_semantic_binding_is_necessary_before_counting_and_range_is_relative",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "IndexError: list index out of range"
+    },
+    {
+      "nodeid": "tests/test_r3_query_v5.py::test_zero_requires_scan_and_one_dedicated_reread",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert 6 == 5\n +  where 6 = len([([{'role': 'system', 'content': 'R3:observe_cycles r3-5.4\\nObserve only the actual images in this call. Frame labels ..., {'max_new_tokens': 768, 'temperature': 0.0, 'visual_token_limit': 12288, 'processed_pixel_limit': 51537444864, ...})])\n +    where [([{'role': 'system', 'content': 'R3:observe_cycles r3-5.4\\nObserve only the actual images in this call. Frame labels ..., {'max_new_tokens': 768, 'temperature': 0.0, 'visual_token_limit': 12288, 'p"
+    },
+    {
+      "nodeid": "tests/test_r4_v5.py::test_format_prompt_fault_does_not_start_observation",
+      "category": "existing_prompt_or_example_contract_mismatch",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert 'execution' == 'observe_prompt'\n  \n  - observe_prompt\n  + execution"
+    },
+    {
+      "nodeid": "tests/test_r4_v5.py::test_interrupted_recovery_does_not_regain_allowance",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (None is None and 4 == 3)\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'count_unique', 'value': None, 'su...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', evidence_status='execution_failed').prediction\n +  and   4 = len([{'role': 'compile', 'payload': {'question': 'tools inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'label': 'B...s': {'max_new_tokens': 512, 'temperature': "
+    },
+    {
+      "nodeid": "tests/test_r4_v5.py::test_two_bad_outputs_fail_without_final_or_zero",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (None is None and 4 == 3)\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'count_unique', 'value': None, 'su...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', evidence_status='execution_failed').prediction\n +  and   4 = len([{'role': 'compile', 'payload': {'question': 'tools inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'label': 'B...kwargs': {'max_new_tokens': 512, 'temperatu"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_1_compile.py::test_bad_program_example_stops_before_any_model_call[scope]",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_1_compile.py::test_bad_program_example_stops_before_any_model_call[semantic_target]",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_1_compile.py::test_complete_fences_duplicate_paths_and_truncation_are_distinct",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_1_compile.py::test_interrupted_compile_recovery_retains_its_charge",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_1_compile.py::test_repeated_compile_failure_stops_at_two_and_keeps_both_errors[R4-MME-077-2]",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_1_compile.py::test_repeated_compile_failure_stops_at_two_and_keeps_both_errors[R4-MME-225-1]",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_1_compile.py::test_repeated_compile_failure_stops_at_two_and_keeps_both_errors[R4-MME-251-1]",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_actual_observer_prompt_has_separate_requirements_and_valid_examples[physical_instance]",
+      "category": "existing_prompt_or_example_contract_mismatch",
+      "present_in_frozen_source": true,
+      "message": "assert 2 == 3\n +  where 2 = len(['{\"members\": [{\"set\": \"items\", \"object\": \"O1\", \"label\": \"wrench\", \"judgments\": {\"J1\": \"yes\", \"J2\": \"yes\"}, \"boxes\": [...own\", \"J2\": \"unknown\"}, \"boxes\": [{\"ref\": \"F1\", \"xyxy\": [120, 180, 380, 620]}]}], \"coverage\": \"complete\", \"gaps\": []}'])\n +  and   3 = len([('empty', None, {'records': [], 'checks': [], 'coverage': 'complete', 'overflow': False, ...}), ('same_tool_across_fr...nch', ...}], 'coexisting': [{'ids': ['O1', 'O2'], 'ref': 'F1', 'independent_objects': T"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_actual_observer_prompt_has_separate_requirements_and_valid_examples[semantic_category]",
+      "category": "existing_schema_or_fixture_contract_mismatch",
+      "present_in_frozen_source": true,
+      "message": "qwen3vl_agent.r4.contracts.ContractError: $: Additional properties are not allowed ('members' was unexpected)"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_actual_observer_prompt_has_separate_requirements_and_valid_examples[text_value]",
+      "category": "existing_schema_or_fixture_contract_mismatch",
+      "present_in_frozen_source": true,
+      "message": "qwen3vl_agent.r4.contracts.ContractError: $: Additional properties are not allowed ('members' was unexpected)"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_applicable_check_cannot_be_removed_with_null",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert 4 == 3\n +  where 4 = len([{'role': 'compile', 'payload': {'question': 'fruit types inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'labe...kwargs': {'max_new_tokens': 512, 'temperature': 0.0, 'visual_token_limit': 8192, 'processed_pixel_limit': 4290772992}}])\n +    where [{'role': 'compile', 'payload': {'question': 'fruit types inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'labe...kwargs': {'max_new_tokens': 512, 'temperature': 0.0, 'visual_token_limit': 81"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_empty_recovery_cannot_erase_member",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (4 == 3)\n +  where 4 = len([{'role': 'compile', 'payload': {'question': 'tools inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'label': 'B...kwargs': {'max_new_tokens': 512, 'temperature': 0.0, 'visual_token_limit': 8192, 'processed_pixel_limit': 4290772992}}])\n +    where [{'role': 'compile', 'payload': {'question': 'tools inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'label': 'B...kwargs': {'max_new_tokens': 512, 'temperature': 0.0, 'visual_token_limit': "
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_finite_names_do_not_turn_category_count_into_presence",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert ('finite_candidate_checks' not in 'Protocol r4...uestion.\"}}}'\n  \n  'finite_candidate_checks' is contained here:\n    estion.\"}}} and 'category_mapping' in 'Protocol r4-inventory-v5.7. R4:discover_candidates. Return one complete JSON object. No final answer or option guessi...s represented? Separate the concrete kind from an umbrella title; justify it from the image and original question.\"}}}')"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_observation_recovery_preserves_slot_and_same_media",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert ('Do NOT copy' in 'Protocol r4-inventory-v5.7. R4:discover_candidates. Return one complete JSON object. No final answer or option guessi...2\": {\"field\": \"predicate\", \"question\": \"visible in the query scope\"}}}, \"existing_ids\": [], \"category_questions\": {}}}' and 'Do not erase records' in 'Protocol r4-inventory-v5.7. R4:discover_candidates. Return one complete JSON object. No final answer or option guessi...2\": {\"field\": \"predicate\", \"question\": \"visible in the query scope\"}}}, \"existing_i"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_presence_prompt_only_checks_and_semantic_demo",
+      "category": "existing_prompt_or_example_contract_mismatch",
+      "present_in_frozen_source": true,
+      "message": "assert ('Preparation' in 'Protocol r4-inventory-v5.7. R4:discover_candidates. Return one complete JSON object. No final answer or option guessi...required_modalities\":[\"video\"],\"population\":\"physical_objects\"}],\"candidates\":{\"items\":[\"apple\",\"pear\"]},\"catalog\":{}}' and 'support:direct/related/uncertain' in 'Protocol r4-inventory-v5.7. R4:discover_candidates. Return one complete JSON object. No final answer or option guessi...required_modalities\":[\"video\"],\"population\":\"physical_objects\"}],\"candi"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_qualification_pool_stays_bounded_for_persistent_conflict",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (None is None and 'execution_failed' == 'budget_exhausted'\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'missing_members', 'value': [], 's...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', evidence_status='execution_failed').prediction\n  \n  - budget_exhausted\n  + execution_failed)"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_2.py::test_real_outputs_remain_rejected_and_feedback_is_specific",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert False\n +  where False = any(<generator object test_real_outputs_remain_rejected_and_feedback_is_specific.<locals>.<genexpr> at <address>>)"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_3.py::test_contradictory_check_does_not_commit_absence",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert False\n +  where False = any(<generator object test_contradictory_check_does_not_commit_absence.<locals>.<genexpr> at <address>>)"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_4.py::test_actual_check_recovery_messages_are_applicable",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert 'For not_seen omit support' in 'Protocol r4-inventory-v5.7. R4:discover_candidates. Return one complete JSON object. No final answer or option guessi...}, \"requirements\": {}, \"existing_ids\": [], \"category_questions\": {}}, \"candidates\": {\"items\": [\"writing\", \"reading\"]}}'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_4.py::test_empty_recovery_cannot_erase_checks",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert False\n +  where False = any(<generator object test_empty_recovery_cannot_erase_checks.<locals>.<genexpr> at <address>>)"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_4.py::test_identity_feedback_and_unknown_do_not_invent_independence",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert ('independent_objects:true' in 'Protocol r4-inventory-v5.7. R4:identity. Return one complete JSON object. No final answer or option guessing.\\nJudge ...source-1\"}}, \"evidence_by_object\": {\"C1f20073574d2dc54\": [\"F1\", \"F2\", \"F3\"], \"Cd22cfc43efa2ed6d\": [\"F1\", \"F2\", \"F3\"]}}' and 'IDENTITY CORRECTION' in 'Protocol r4-inventory-v5.7. R4:identity. Return one complete JSON object. No final answer or option guessing.\\nJudge ...source-1\"}}, \"evidence_by_object\": {\"C1f20073574d2dc54\": [\"F1\", \"F2\", \""
+    },
+    {
+      "nodeid": "tests/test_r4_v5_4.py::test_record_judgment_recovery_retains_original_id",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert ('RECORD REPAIR' in 'Protocol r4-inventory-v5.7. R4:discover_candidates. Return one complete JSON object. No final answer or option guessi...2\": {\"field\": \"predicate\", \"question\": \"visible in the query scope\"}}}, \"existing_ids\": [], \"category_questions\": {}}}')"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_4.py::test_unit_label_stays_unresolved_until_targeted_review",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert 'TARGETED CATEGORY REVIEW' in 'Protocol r4-inventory-v5.7. R4:inspect_existing. Return one complete JSON object. No final answer or option guessing....brella label or alias; correct it from the image and explain the mapping. Verify the original question conditions.\"}]}'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_5.py::test_compact_member_executes_without_prose_boilerplate[physical_instance-wrench]",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert ('Q tasks' in 'Protocol r4-inventory-v5.7. R4:discover_candidates. Return one complete JSON object. No final answer or option guessi...2\": {\"field\": \"predicate\", \"question\": \"visible in the query scope\"}}}, \"existing_ids\": [], \"category_questions\": {}}}')"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_5.py::test_compact_member_executes_without_prose_boilerplate[semantic_category-apple]",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: {'pipeline_id': 'R4', 'prediction': None, 'value_state': {'results': [{'operation_id': 'answer', 'op': 'count_unique',...: {'groups': {}, 'roots': {}, 'different': [], 'conflicts': [], ...}, ...}, 'completion_state': 'execution_error', ...}\nassert None == 'A'\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'count_unique', 'value': None, 'su...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', ev"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_5.py::test_compact_member_executes_without_prose_boilerplate[text_value-OPEN]",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert ('Q tasks' in 'Protocol r4-inventory-v5.7. R4:discover_candidates. Return one complete JSON object. No final answer or option guessi...2\": {\"field\": \"predicate\", \"question\": \"visible in the query scope\"}}}, \"existing_ids\": [], \"category_questions\": {}}}')"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_5.py::test_final_example_uses_actual_schema_and_preserves_unknown",
+      "category": "existing_prompt_or_example_contract_mismatch",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert {'yes'} == {'unknown'}\n  \n  Extra items in the left set:\n  'yes'\n  Extra items in the right set:\n  'unknown'\n  Use -v to get more diff"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_5.py::test_fixed_candidates_have_no_support_or_name_copy",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (None == 'B')\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'missing_members', 'value': None, ...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', evidence_status='execution_failed').prediction"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_5.py::test_pairwise_comparison_is_small_and_unknown_is_accepted",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert (None is None and not [{'stage': 'execution', 'code': 'KeyError', 'message': \"'best_effort'\", 'errors': [], ...}])\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'count_unique', 'value': None, 'su...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', evidence_status='execution_failed').prediction"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_5.py::test_real_failed_record_can_recover_in_compact_protocol",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (None == 'A')\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'count_unique', 'value': None, 'su...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', evidence_status='execution_failed').prediction"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_5.py::test_recovery_reasks_same_tasks_without_losing_committed_checks",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (None == 'B')\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'missing_members', 'value': None, ...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', evidence_status='execution_failed').prediction"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_all_pairs_attempted_unknown_is_unresolved_not_budget_label",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert ('execution_failed' == 'unresolved'\n  \n  - unresolved\n  + execution_failed)"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_audit_cannot_commit_members_or_erase_earlier_cards",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert 0 == 1\n +  where 0 = len({})"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_budget_stop_names_unperformed_action_and_retains_headroom",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert 'execution_failed' == 'budget_exhausted'\n  \n  - budget_exhausted\n  + execution_failed"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_category_batch_uses_each_home_window_witness",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: {'pipeline_id': 'R4', 'prediction': None, 'value_state': {'results': [{'operation_id': 'answer', 'op': 'count_unique',...: {'groups': {}, 'roots': {}, 'different': [], 'conflicts': [], ...}, ...}, 'completion_state': 'execution_error', ...}\nassert None == 'A'\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'count_unique', 'value': None, 'su...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', ev"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_context_review_uses_original_core_not_only_old_context",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: {'pipeline_id': 'R4', 'prediction': None, 'value_state': {'results': [{'operation_id': 'answer', 'op': 'count_unique',...: {'groups': {}, 'roots': {}, 'different': [], 'conflicts': [], ...}, ...}, 'completion_state': 'execution_error', ...}\nassert None == 'A'\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'count_unique', 'value': None, 'su...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', ev"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_interrupted_coverage_audit_resumes_same_window_and_media",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert 5 == 4\n +  where 5 = len([{'role': 'compile', 'payload': {'question': 'fruit types inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'labe...s': {'max_new_tokens': 512, 'temperature': 0.0, 'visual_token_limit': 8192, 'processed_pixel_limit': 4288675840, ...}}])\n +    where [{'role': 'compile', 'payload': {'question': 'fruit types inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'labe...s': {'max_new_tokens': 512, 'temperature': 0.0, 'visual_token_limit': 8192, '"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_localized_gap_gets_refinement_and_clears_without_fake_zero",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: {'pipeline_id': 'R4', 'prediction': None, 'value_state': {'results': [{'operation_id': 'answer', 'op': 'count_unique',...: {'groups': {}, 'roots': {}, 'different': [], 'conflicts': [], ...}, ...}, 'completion_state': 'execution_error', ...}\nassert None == 'A'\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'count_unique', 'value': None, 'su...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', ev"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_q_examples_cover_observed_absent_uncertain_without_member_instructions",
+      "category": "existing_prompt_or_example_contract_mismatch",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert None == 'B'\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'missing_members', 'value': None, ...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', evidence_status='execution_failed').prediction"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_real_generic_label_enters_review_even_with_open_bounds",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: {'pipeline_id': 'R4', 'prediction': None, 'value_state': {'results': [{'operation_id': 'answer', 'op': 'count_unique',...: {'groups': {}, 'roots': {}, 'different': [], 'conflicts': [], ...}, ...}, 'completion_state': 'execution_error', ...}\nassert None == 'A'\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'count_unique', 'value': None, 'su...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', ev"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_6.py::test_unlocalized_gap_is_audited_once_then_unresolved_not_false_budget",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert ('execution_failed' == 'unresolved'\n  \n  - unresolved\n  + execution_failed)"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_composition.py::test_simultaneous_representatives_cannot_prove_missing_instants",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "assert [0, None] == [1, 2]\n  \n  At index 0 diff: 0 != 1\n  Use -v to get more diff"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_edges.py::test_final_examples_cover_motion_candidates_and_inspection[discover_candidates]",
+      "category": "existing_schema_or_fixture_contract_mismatch",
+      "present_in_frozen_source": true,
+      "message": "qwen3vl_agent.r4.contracts.ContractError: $.set: 'format_action' was expected"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_edges.py::test_final_examples_cover_motion_candidates_and_inspection[inspect_existing]",
+      "category": "existing_schema_or_fixture_contract_mismatch",
+      "present_in_frozen_source": true,
+      "message": "qwen3vl_agent.r4.contracts.ContractError: $.set: 'format_action' was expected"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_edges.py::test_global_recovery_cap_preserves_failures_and_continues_windows",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: {'pipeline_id': 'R4', 'prediction': None, 'value_state': {'results': [{'operation_id': 'answer', 'op': 'count_unique',...: {'groups': {}, 'roots': {}, 'different': [], 'conflicts': [], ...}, ...}, 'completion_state': 'execution_error', ...}\nassert 8 == 7\n +  where 8 = len([{'role': 'compile', 'payload': {'question': 'fruit types inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'labe...': {'max_new_tokens': 1024, 'temperature': 0.0, 'visual_token_limit': 8192, 'processed_pix"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_edges.py::test_presence_positive_stops_search_but_single_choice_does_not_prove_absence",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (None == 'A')\n +  where None = R4Result(prediction=None, value_state={'results': [{'operation_id': 'answer', 'op': 'membership', 'value': None, 'supp...ids': [], 'window_id': None}, result_status='execution_failed', answer_mode='none', evidence_status='execution_failed').prediction"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_edges.py::test_total_exposure_and_generation_limits_stop_before_extra_model_call[max_frame_exposures-1-1]",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_edges.py::test_total_exposure_and_generation_limits_stop_before_extra_model_call[max_generated_tokens-128-0]",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_edges.py::test_total_exposure_and_generation_limits_stop_before_extra_model_call[max_model_calls-1-1]",
+      "category": "existing_runtime_contract_error",
+      "present_in_frozen_source": true,
+      "message": "AttributeError: 'NoneType' object has no attribute 'choice_values'"
+    },
+    {
+      "nodeid": "tests/test_r4_v5_edges.py::test_truncated_top_level_never_commits_even_closed_first_row",
+      "category": "existing_result_budget_or_state_assertion",
+      "present_in_frozen_source": true,
+      "message": "AssertionError: assert (4 == 3)\n +  where 4 = len([{'role': 'compile', 'payload': {'question': 'tools inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'label': 'B...kwargs': {'max_new_tokens': 512, 'temperature': 0.0, 'visual_token_limit': 8192, 'processed_pixel_limit': 4290772992}}])\n +    where [{'role': 'compile', 'payload': {'question': 'tools inventory?', 'choices': [{'label': 'A', 'text': '1'}, {'label': 'B...kwargs': {'max_new_tokens': 512, 'temperature': 0.0, 'visual_token_limit': "
+    }
+  ]
+}

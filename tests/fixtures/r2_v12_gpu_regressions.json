@@ -1,0 +1,4399 @@
+{
+  "source": "1.2 GPU raw responses; no grading answers",
+  "cases": [
+    {
+      "request_id": "R2-tomato-0231-04",
+      "query": {
+        "targets": [
+          {
+            "id": "person_hand",
+            "description": "The person's hand as depicted in the video"
+          }
+        ],
+        "slots": [
+          {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          }
+        ],
+        "operations": [
+          {
+            "id": "direction_sequence",
+            "op": "direction_sequence",
+            "target_ids": [
+              "person_hand"
+            ],
+            "slot_ids": [
+              "hand_direction"
+            ],
+            "parameters": {}
+          }
+        ],
+        "scope": {
+          "kind": "full",
+          "interval": [
+            0.0,
+            5.632682291666667
+          ],
+          "description": "Full permitted observation duration"
+        },
+        "anchors": [],
+        "fast_motion": false,
+        "unresolved": []
+      },
+      "observations": [
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-15ba0f85f0fff66c013d8883",
+          "visibility": "visible",
+          "value": "pointing_left",
+          "point": [
+            120,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand is extended to the left, index finger pointing.",
+          "id": "base_00000/O001",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-15ba0f85f0fff66c013d8883",
+          "timestamp": 0.0,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            129.6,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-2876a2f4b3519b6fbe4eb1d6",
+          "visibility": "visible",
+          "value": "pointing_left",
+          "point": [
+            120,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the left, index finger pointing.",
+          "id": "base_00000/O002",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-2876a2f4b3519b6fbe4eb1d6",
+          "timestamp": 0.2490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            129.6,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-eb16eff930a4b041ca946897",
+          "visibility": "visible",
+          "value": "pointing_left",
+          "point": [
+            120,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the left, index finger pointing.",
+          "id": "base_00000/O003",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-eb16eff930a4b041ca946897",
+          "timestamp": 0.4990234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            129.6,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-57ef5f617c7e73384a3b045c",
+          "visibility": "visible",
+          "value": "pointing_left",
+          "point": [
+            120,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the left, index finger pointing.",
+          "id": "base_00000/O004",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-57ef5f617c7e73384a3b045c",
+          "timestamp": 0.7490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            129.6,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-ecd2ca1395c2df2cf42127a1",
+          "visibility": "visible",
+          "value": "fist",
+          "point": [
+            280,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand has moved inward and is now in a fist position.",
+          "id": "base_00000/O005",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-ecd2ca1395c2df2cf42127a1",
+          "timestamp": 0.9990234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            302.40000000000003,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-a9a82249cbb601a84c81de73",
+          "visibility": "visible",
+          "value": "fist",
+          "point": [
+            280,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains in a fist position.",
+          "id": "base_00000/O006",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-a9a82249cbb601a84c81de73",
+          "timestamp": 1.2490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            302.40000000000003,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-5d24895e69ed76525b5677fe",
+          "visibility": "visible",
+          "value": "fist",
+          "point": [
+            280,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains in a fist position.",
+          "id": "base_00000/O007",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-5d24895e69ed76525b5677fe",
+          "timestamp": 1.4990234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            302.40000000000003,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-6aa5898b2bfe2592e86312f1",
+          "visibility": "visible",
+          "value": "fist",
+          "point": [
+            280,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains in a fist position.",
+          "id": "base_00000/O008",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-6aa5898b2bfe2592e86312f1",
+          "timestamp": 1.7490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            302.40000000000003,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-85135b5bd5273fdd3a2fc32b",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand has moved to the right, index finger pointing.",
+          "id": "base_00000/O009",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-85135b5bd5273fdd3a2fc32b",
+          "timestamp": 1.9990234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-5df31b253a142bc48c1387a8",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O010",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-5df31b253a142bc48c1387a8",
+          "timestamp": 2.2490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-aa36301fa8438e15415b20c0",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O011",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-aa36301fa8438e15415b20c0",
+          "timestamp": 2.4990234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-e4145d9c1265e8958fbbec41",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O012",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-e4145d9c1265e8958fbbec41",
+          "timestamp": 2.7490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-9bb350edd47a20e6bdd9931e",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O013",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-9bb350edd47a20e6bdd9931e",
+          "timestamp": 2.9990234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-4b78fd08c16587811a874486",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O014",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-4b78fd08c16587811a874486",
+          "timestamp": 3.2490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-63c555a1f5462398d4b09850",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O015",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-63c555a1f5462398d4b09850",
+          "timestamp": 3.4990234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-661a792760342c0903365221",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O016",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-661a792760342c0903365221",
+          "timestamp": 3.7490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-efdde890ff6cfd6796b2cb91",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O017",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-efdde890ff6cfd6796b2cb91",
+          "timestamp": 3.9990234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-8f50110ffe5ded1da5a5ab5c",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O018",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-8f50110ffe5ded1da5a5ab5c",
+          "timestamp": 4.2490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-c740117a13d89bea7bfa4946",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O019",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-c740117a13d89bea7bfa4946",
+          "timestamp": 4.4990234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        },
+        {
+          "slot_id": "hand_direction",
+          "entity_id": "E1",
+          "frame_id": "R2F-b22241ff67681cbed3de9db3",
+          "visibility": "visible",
+          "value": "pointing_right",
+          "point": [
+            380,
+            280
+          ],
+          "basis": "visual_observation",
+          "description": "Hand remains extended to the right, index finger pointing.",
+          "id": "base_00000/O020",
+          "entity_node": "base_00000/E1",
+          "source_frame_id": "R2F-b22241ff67681cbed3de9db3",
+          "timestamp": 4.7490234375,
+          "window_id": "base_00000",
+          "call_id": "call_000003",
+          "slot": {
+            "id": "hand_direction",
+            "target_id": "person_hand",
+            "property": "direction",
+            "description": "Direction of hand movement",
+            "reference_frame": "screen"
+          },
+          "reference_status": "stable",
+          "source_size": [
+            1080,
+            1920
+          ],
+          "revision": 1,
+          "source_point": [
+            410.4,
+            537.6
+          ]
+        }
+      ],
+      "calls": [
+        {
+          "role": "observe",
+          "raw": "{\n  \"entities\": [\n    {\n      \"id\": \"E1\",\n      \"target_id\": \"person_hand\",\n      \"description\": \"The person's hand as depicted in the video\",\n      \"part_of\": \"person\"\n    }\n  ],\n  \"records\": [\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F01\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_left\",\n      \"point\": [\n        120,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand is extended to the left, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F02\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_left\",\n      \"point\": [\n        120,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the left, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F03\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_left\",\n      \"point\": [\n        120,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the left, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F04\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_left\",\n      \"point\": [\n        120,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the left, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F05\",\n      \"visibility\": \"visible\",\n      \"value\": \"fist\",\n      \"point\": [\n        280,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand has moved inward and is now in a fist position.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F06\",\n      \"visibility\": \"visible\",\n      \"value\": \"fist\",\n      \"point\": [\n        280,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains in a fist position.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F07\",\n      \"visibility\": \"visible\",\n      \"value\": \"fist\",\n      \"point\": [\n        280,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains in a fist position.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F08\",\n      \"visibility\": \"visible\",\n      \"value\": \"fist\",\n      \"point\": [\n        280,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains in a fist position.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F09\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand has moved to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F10\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F11\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F12\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F13\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F14\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F15\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F16\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F17\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F18\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F19\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F20\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [\n        380,\n        280\n      ],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    }\n  ],\n  \"gaps\": [],\n  \"reference_status\": \"stable\",\n  \"complete\": true\n}",
+          "payload": {
+            "window_id": "base_00000",
+            "core": [
+              0.0,
+              4.0
+            ],
+            "span": [
+              0.0,
+              5.0
+            ],
+            "frames": [
+              {
+                "frame_id": "F01",
+                "source_seconds": 0.0,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F02",
+                "source_seconds": 0.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F03",
+                "source_seconds": 0.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F04",
+                "source_seconds": 0.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F05",
+                "source_seconds": 0.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F06",
+                "source_seconds": 1.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F07",
+                "source_seconds": 1.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F08",
+                "source_seconds": 1.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F09",
+                "source_seconds": 1.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F10",
+                "source_seconds": 2.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F11",
+                "source_seconds": 2.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F12",
+                "source_seconds": 2.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F13",
+                "source_seconds": 2.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F14",
+                "source_seconds": 3.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F15",
+                "source_seconds": 3.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F16",
+                "source_seconds": 3.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F17",
+                "source_seconds": 3.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F18",
+                "source_seconds": 4.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F19",
+                "source_seconds": 4.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F20",
+                "source_seconds": 4.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              }
+            ],
+            "targets": [
+              {
+                "id": "person_hand",
+                "description": "The person's hand as depicted in the video"
+              }
+            ],
+            "slots": [
+              {
+                "id": "hand_direction",
+                "target_id": "person_hand",
+                "property": "direction",
+                "description": "Direction of hand movement",
+                "reference_frame": "screen"
+              }
+            ],
+            "anchors": [],
+            "query_time": null,
+            "observation_spec": {
+              "basis": "program_requirements",
+              "tasks": [
+                {
+                  "operation_id": "direction_sequence",
+                  "operation": "direction_sequence",
+                  "slot_id": "hand_direction",
+                  "target_id": "person_hand",
+                  "reference_frame": "screen",
+                  "required_fields": [
+                    "point"
+                  ],
+                  "one_of_fields": [],
+                  "axis": "x"
+                }
+              ]
+            },
+            "observation_task": "Read the specified measurements in order, including core boundaries and changes. Explain every unreadable slot.",
+            "max_records": 48
+          }
+        },
+        {
+          "role": "observe",
+          "raw": "{\n  \"entities\": [],\n  \"records\": [],\n  \"associations\": [],\n  \"gaps\": [],\n  \"reference_status\": \"stable\",\n  \"complete\": true\n}",
+          "payload": {
+            "window_id": "base_00001",
+            "core": [
+              4.0,
+              5.632682291666667
+            ],
+            "span": [
+              3.0,
+              5.632682291666667
+            ],
+            "frames": [
+              {
+                "frame_id": "F01",
+                "source_seconds": 3.016015625,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F02",
+                "source_seconds": 3.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F03",
+                "source_seconds": 3.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F04",
+                "source_seconds": 3.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F05",
+                "source_seconds": 3.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F06",
+                "source_seconds": 4.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F07",
+                "source_seconds": 4.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F08",
+                "source_seconds": 4.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F09",
+                "source_seconds": 4.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F10",
+                "source_seconds": 5.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F11",
+                "source_seconds": 5.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              }
+            ],
+            "targets": [
+              {
+                "id": "person_hand",
+                "description": "The person's hand as depicted in the video"
+              }
+            ],
+            "slots": [
+              {
+                "id": "hand_direction",
+                "target_id": "person_hand",
+                "property": "direction",
+                "description": "Direction of hand movement",
+                "reference_frame": "screen"
+              }
+            ],
+            "anchors": [],
+            "query_time": null,
+            "handoff": {
+              "entities": [
+                {
+                  "id": "E1",
+                  "target_id": "person_hand",
+                  "description": "The person's hand as depicted in the video",
+                  "part_of": "person",
+                  "node_id": "base_00000/E1",
+                  "persistent_id": "entity_00001",
+                  "window_id": "base_00000"
+                }
+              ],
+              "previous_observations": [
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-4b78fd08c16587811a874486",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O014",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-4b78fd08c16587811a874486",
+                  "timestamp": 3.2490234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-63c555a1f5462398d4b09850",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O015",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-63c555a1f5462398d4b09850",
+                  "timestamp": 3.4990234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-661a792760342c0903365221",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O016",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-661a792760342c0903365221",
+                  "timestamp": 3.7490234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-efdde890ff6cfd6796b2cb91",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O017",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-efdde890ff6cfd6796b2cb91",
+                  "timestamp": 3.9990234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-8f50110ffe5ded1da5a5ab5c",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O018",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-8f50110ffe5ded1da5a5ab5c",
+                  "timestamp": 4.2490234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-c740117a13d89bea7bfa4946",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O019",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-c740117a13d89bea7bfa4946",
+                  "timestamp": 4.4990234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-b22241ff67681cbed3de9db3",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O020",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-b22241ff67681cbed3de9db3",
+                  "timestamp": 4.7490234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                }
+              ],
+              "association_groups": [],
+              "containment_anchors": []
+            },
+            "observation_spec": {
+              "basis": "program_requirements",
+              "tasks": [
+                {
+                  "operation_id": "direction_sequence",
+                  "operation": "direction_sequence",
+                  "slot_id": "hand_direction",
+                  "target_id": "person_hand",
+                  "reference_frame": "screen",
+                  "required_fields": [
+                    "point"
+                  ],
+                  "one_of_fields": [],
+                  "axis": "x"
+                }
+              ]
+            },
+            "observation_task": "Read the specified measurements in order, including core boundaries and changes. Explain every unreadable slot.",
+            "max_records": 48,
+            "identity_requirements": [
+              {
+                "from_node": "base_00000/E1",
+                "target_id": "person_hand",
+                "slot_ids": [
+                  "hand_direction"
+                ],
+                "shared_frame_ids": [
+                  "F02",
+                  "F03",
+                  "F04",
+                  "F05",
+                  "F06",
+                  "F07",
+                  "F08"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "role": "observe",
+          "raw": "{\n  \"entities\": [\n    {\n      \"id\": \"E1\",\n      \"target_id\": \"person_hand\",\n      \"description\": \"The person's hand as depicted in the video\",\n      \"part_of\": \"person\"\n    }\n  ],\n  \"records\": [\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F01\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F02\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F03\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F04\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F05\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F06\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F07\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F08\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F09\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F10\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    },\n    {\n      \"slot_id\": \"hand_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F11\",\n      \"visibility\": \"visible\",\n      \"value\": \"pointing_right\",\n      \"point\": [380, 280],\n      \"basis\": \"visual_observation\",\n      \"description\": \"Hand remains extended to the right, index finger pointing.\"\n    }\n  ],\n  \"associations\": [],\n  \"gaps\": [],\n  \"reference_status\": \"stable\",\n  \"complete\": true\n}",
+          "payload": {
+            "window_id": "base_00001",
+            "core": [
+              4.0,
+              5.632682291666667
+            ],
+            "span": [
+              3.0,
+              5.632682291666667
+            ],
+            "frames": [
+              {
+                "frame_id": "F01",
+                "source_seconds": 3.016015625,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F02",
+                "source_seconds": 3.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F03",
+                "source_seconds": 3.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F04",
+                "source_seconds": 3.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F05",
+                "source_seconds": 3.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F06",
+                "source_seconds": 4.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F07",
+                "source_seconds": 4.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F08",
+                "source_seconds": 4.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F09",
+                "source_seconds": 4.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F10",
+                "source_seconds": 5.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F11",
+                "source_seconds": 5.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              }
+            ],
+            "targets": [
+              {
+                "id": "person_hand",
+                "description": "The person's hand as depicted in the video"
+              }
+            ],
+            "slots": [
+              {
+                "id": "hand_direction",
+                "target_id": "person_hand",
+                "property": "direction",
+                "description": "Direction of hand movement",
+                "reference_frame": "screen"
+              }
+            ],
+            "anchors": [],
+            "query_time": null,
+            "handoff": {
+              "entities": [
+                {
+                  "id": "E1",
+                  "target_id": "person_hand",
+                  "description": "The person's hand as depicted in the video",
+                  "part_of": "person",
+                  "node_id": "base_00000/E1",
+                  "persistent_id": "entity_00001",
+                  "window_id": "base_00000"
+                }
+              ],
+              "previous_observations": [
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-4b78fd08c16587811a874486",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O014",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-4b78fd08c16587811a874486",
+                  "timestamp": 3.2490234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-63c555a1f5462398d4b09850",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O015",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-63c555a1f5462398d4b09850",
+                  "timestamp": 3.4990234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-661a792760342c0903365221",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O016",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-661a792760342c0903365221",
+                  "timestamp": 3.7490234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-efdde890ff6cfd6796b2cb91",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O017",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-efdde890ff6cfd6796b2cb91",
+                  "timestamp": 3.9990234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-8f50110ffe5ded1da5a5ab5c",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O018",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-8f50110ffe5ded1da5a5ab5c",
+                  "timestamp": 4.2490234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-c740117a13d89bea7bfa4946",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O019",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-c740117a13d89bea7bfa4946",
+                  "timestamp": 4.4990234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                },
+                {
+                  "slot_id": "hand_direction",
+                  "entity_id": "E1",
+                  "frame_id": "R2F-b22241ff67681cbed3de9db3",
+                  "visibility": "visible",
+                  "value": "pointing_right",
+                  "point": [
+                    380,
+                    280
+                  ],
+                  "basis": "visual_observation",
+                  "description": "Hand remains extended to the right, index finger pointing.",
+                  "id": "base_00000/O020",
+                  "entity_node": "base_00000/E1",
+                  "source_frame_id": "R2F-b22241ff67681cbed3de9db3",
+                  "timestamp": 4.7490234375,
+                  "window_id": "base_00000",
+                  "call_id": "call_000003",
+                  "slot": {
+                    "id": "hand_direction",
+                    "target_id": "person_hand",
+                    "property": "direction",
+                    "description": "Direction of hand movement",
+                    "reference_frame": "screen"
+                  },
+                  "reference_status": "stable",
+                  "source_size": [
+                    1080,
+                    1920
+                  ],
+                  "revision": 1,
+                  "source_point": [
+                    410.4,
+                    537.6
+                  ]
+                }
+              ],
+              "association_groups": [],
+              "containment_anchors": []
+            },
+            "observation_spec": {
+              "basis": "program_requirements",
+              "tasks": [
+                {
+                  "operation_id": "direction_sequence",
+                  "operation": "direction_sequence",
+                  "slot_id": "hand_direction",
+                  "target_id": "person_hand",
+                  "reference_frame": "screen",
+                  "required_fields": [
+                    "point"
+                  ],
+                  "one_of_fields": [],
+                  "axis": "x"
+                }
+              ]
+            },
+            "observation_task": "Read the specified measurements in order, including core boundaries and changes. Explain every unreadable slot.",
+            "max_records": 48,
+            "identity_requirements": [
+              {
+                "from_node": "base_00000/E1",
+                "target_id": "person_hand",
+                "slot_ids": [
+                  "hand_direction"
+                ],
+                "shared_frame_ids": [
+                  "F02",
+                  "F03",
+                  "F04",
+                  "F05",
+                  "F06",
+                  "F07",
+                  "F08"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "role": "final",
+          "raw": "{\n  \"prediction\": \"D\",\n  \"evidence_ids\": [\n    \"base_00000/O001\",\n    \"base_00000/O009\"\n  ],\n  \"assessments\": [\n    {\n      \"label\": \"A\",\n      \"status\": \"contradicted\",\n      \"evidence_ids\": [\n        \"base_00000/O001\",\n        \"base_00000/O009\"\n      ]\n    },\n    {\n      \"label\": \"B\",\n      \"status\": \"supported\",\n      \"evidence_ids\": [\n        \"base_00000/O001\"\n      ]\n    },\n    {\n      \"label\": \"C\",\n      \"status\": \"supported\",\n      \"evidence_ids\": [\n        \"base_00000/O009\"\n      ]\n    },\n    {\n      \"label\": \"D\",\n      \"status\": \"supported\",\n      \"evidence_ids\": [\n        \"base_00000/O001\",\n        \"base_00000/O009\"\n      ]\n    },\n    {\n      \"label\": \"E\",\n      \"status\": \"contradicted\",\n      \"evidence_ids\": [\n        \"base_00000/O001\",\n        \"base_00000/O009\"\n      ]\n    }\n  ],\n  \"weakest_premise\": \"The hand moves from pointing left to pointing right, which is captured in the observations.\",\n  \"recheck\": null,\n  \"unresolved\": [\n    \"ProtocolError: Missing identity handoff for base_00000/E1: return associations or a slot-specific identity gap\"\n  ]\n}",
+          "payload": {
+            "question": "In which direction(s) did the person's hand move?",
+            "options": [
+              {
+                "label": "A",
+                "text": "Not moving at all"
+              },
+              {
+                "label": "B",
+                "text": "Left."
+              },
+              {
+                "label": "C",
+                "text": "Right."
+              },
+              {
+                "label": "D",
+                "text": "First to the right then to the left."
+              },
+              {
+                "label": "E",
+                "text": "First to the left then to the right."
+              }
+            ],
+            "derived": {
+              "operations": [
+                {
+                  "operation_id": "direction_sequence",
+                  "op": "direction_sequence",
+                  "value": {
+                    "tolerance": 0.005,
+                    "direction_segments": [
+                      "stationary",
+                      "right",
+                      "stationary",
+                      "right",
+                      "stationary"
+                    ]
+                  },
+                  "status": "supported",
+                  "evidence_ids": [
+                    "base_00000/O001",
+                    "base_00000/O002",
+                    "base_00000/O003",
+                    "base_00000/O004",
+                    "base_00000/O005",
+                    "base_00000/O006",
+                    "base_00000/O007",
+                    "base_00000/O008",
+                    "base_00000/O009",
+                    "base_00000/O010",
+                    "base_00000/O011",
+                    "base_00000/O012",
+                    "base_00000/O013",
+                    "base_00000/O014",
+                    "base_00000/O015",
+                    "base_00000/O016",
+                    "base_00000/O017",
+                    "base_00000/O018",
+                    "base_00000/O019",
+                    "base_00000/O020"
+                  ],
+                  "gaps": [],
+                  "basis": "program_reduction_of_visual_estimates"
+                }
+              ],
+              "gaps": [
+                {
+                  "kind": "coverage",
+                  "description": "Required temporal interval lacks completed observation coverage",
+                  "span": [
+                    0.0,
+                    5.632682291666667
+                  ]
+                }
+              ],
+              "sufficient": false,
+              "finite_sampling_only": true,
+              "revision": 1
+            },
+            "observations": [
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_left",
+                "basis": "visual_observation",
+                "description": "Hand is extended to the left, index finger pointing.",
+                "id": "base_00000/O001",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-15ba0f85f0fff66c013d8883",
+                "timestamp": 0.0,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  129.6,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_left",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the left, index finger pointing.",
+                "id": "base_00000/O002",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-2876a2f4b3519b6fbe4eb1d6",
+                "timestamp": 0.2490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  129.6,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_left",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the left, index finger pointing.",
+                "id": "base_00000/O003",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-eb16eff930a4b041ca946897",
+                "timestamp": 0.4990234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  129.6,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_left",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the left, index finger pointing.",
+                "id": "base_00000/O004",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-57ef5f617c7e73384a3b045c",
+                "timestamp": 0.7490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  129.6,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "fist",
+                "basis": "visual_observation",
+                "description": "Hand has moved inward and is now in a fist position.",
+                "id": "base_00000/O005",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-ecd2ca1395c2df2cf42127a1",
+                "timestamp": 0.9990234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  302.40000000000003,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "fist",
+                "basis": "visual_observation",
+                "description": "Hand remains in a fist position.",
+                "id": "base_00000/O006",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-a9a82249cbb601a84c81de73",
+                "timestamp": 1.2490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  302.40000000000003,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "fist",
+                "basis": "visual_observation",
+                "description": "Hand remains in a fist position.",
+                "id": "base_00000/O007",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-5d24895e69ed76525b5677fe",
+                "timestamp": 1.4990234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  302.40000000000003,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "fist",
+                "basis": "visual_observation",
+                "description": "Hand remains in a fist position.",
+                "id": "base_00000/O008",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-6aa5898b2bfe2592e86312f1",
+                "timestamp": 1.7490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  302.40000000000003,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand has moved to the right, index finger pointing.",
+                "id": "base_00000/O009",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-85135b5bd5273fdd3a2fc32b",
+                "timestamp": 1.9990234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O010",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-5df31b253a142bc48c1387a8",
+                "timestamp": 2.2490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O011",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-aa36301fa8438e15415b20c0",
+                "timestamp": 2.4990234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O012",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-e4145d9c1265e8958fbbec41",
+                "timestamp": 2.7490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O013",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-9bb350edd47a20e6bdd9931e",
+                "timestamp": 2.9990234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O014",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-4b78fd08c16587811a874486",
+                "timestamp": 3.2490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O015",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-63c555a1f5462398d4b09850",
+                "timestamp": 3.4990234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O016",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-661a792760342c0903365221",
+                "timestamp": 3.7490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O017",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-efdde890ff6cfd6796b2cb91",
+                "timestamp": 3.9990234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O018",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-8f50110ffe5ded1da5a5ab5c",
+                "timestamp": 4.2490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O019",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-c740117a13d89bea7bfa4946",
+                "timestamp": 4.4990234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              },
+              {
+                "slot_id": "hand_direction",
+                "visibility": "visible",
+                "value": "pointing_right",
+                "basis": "visual_observation",
+                "description": "Hand remains extended to the right, index finger pointing.",
+                "id": "base_00000/O020",
+                "entity_node": "base_00000/E1",
+                "source_frame_id": "R2F-b22241ff67681cbed3de9db3",
+                "timestamp": 4.7490234375,
+                "slot": {
+                  "id": "hand_direction",
+                  "target_id": "person_hand",
+                  "property": "direction",
+                  "description": "Direction of hand movement",
+                  "reference_frame": "screen"
+                },
+                "reference_status": "stable",
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "source_point": [
+                  410.4,
+                  537.6
+                ]
+              }
+            ],
+            "unresolved": [
+              "ProtocolError: Missing identity handoff for base_00000/E1: return associations or a slot-specific identity gap"
+            ],
+            "raw_windows": [
+              {
+                "window_id": "base_00000",
+                "frame_ids": [
+                  "R2F-57ef5f617c7e73384a3b045c",
+                  "R2F-ecd2ca1395c2df2cf42127a1",
+                  "R2F-a9a82249cbb601a84c81de73",
+                  "R2F-5d24895e69ed76525b5677fe",
+                  "R2F-6aa5898b2bfe2592e86312f1",
+                  "R2F-85135b5bd5273fdd3a2fc32b",
+                  "R2F-5df31b253a142bc48c1387a8",
+                  "R2F-aa36301fa8438e15415b20c0",
+                  "R2F-e4145d9c1265e8958fbbec41",
+                  "R2F-9bb350edd47a20e6bdd9931e",
+                  "R2F-4b78fd08c16587811a874486",
+                  "R2F-63c555a1f5462398d4b09850",
+                  "R2F-661a792760342c0903365221",
+                  "R2F-efdde890ff6cfd6796b2cb91",
+                  "R2F-8f50110ffe5ded1da5a5ab5c",
+                  "R2F-c740117a13d89bea7bfa4946"
+                ],
+                "source_frame_ids": [
+                  "R2F-57ef5f617c7e73384a3b045c",
+                  "R2F-ecd2ca1395c2df2cf42127a1",
+                  "R2F-a9a82249cbb601a84c81de73",
+                  "R2F-5d24895e69ed76525b5677fe",
+                  "R2F-6aa5898b2bfe2592e86312f1",
+                  "R2F-85135b5bd5273fdd3a2fc32b",
+                  "R2F-5df31b253a142bc48c1387a8",
+                  "R2F-aa36301fa8438e15415b20c0",
+                  "R2F-e4145d9c1265e8958fbbec41",
+                  "R2F-9bb350edd47a20e6bdd9931e",
+                  "R2F-4b78fd08c16587811a874486",
+                  "R2F-63c555a1f5462398d4b09850",
+                  "R2F-661a792760342c0903365221",
+                  "R2F-efdde890ff6cfd6796b2cb91",
+                  "R2F-8f50110ffe5ded1da5a5ab5c",
+                  "R2F-c740117a13d89bea7bfa4946"
+                ],
+                "continuous_local_sampling": true
+              },
+              {
+                "window_id": "base_00000",
+                "frame_ids": [
+                  "R2F-15ba0f85f0fff66c013d8883",
+                  "R2F-2876a2f4b3519b6fbe4eb1d6",
+                  "R2F-eb16eff930a4b041ca946897",
+                  "R2F-57ef5f617c7e73384a3b045c",
+                  "R2F-ecd2ca1395c2df2cf42127a1",
+                  "R2F-a9a82249cbb601a84c81de73",
+                  "R2F-5d24895e69ed76525b5677fe",
+                  "R2F-6aa5898b2bfe2592e86312f1",
+                  "R2F-85135b5bd5273fdd3a2fc32b",
+                  "R2F-5df31b253a142bc48c1387a8",
+                  "R2F-aa36301fa8438e15415b20c0",
+                  "R2F-e4145d9c1265e8958fbbec41",
+                  "R2F-9bb350edd47a20e6bdd9931e",
+                  "R2F-4b78fd08c16587811a874486",
+                  "R2F-63c555a1f5462398d4b09850",
+                  "R2F-661a792760342c0903365221"
+                ],
+                "source_frame_ids": [
+                  "R2F-15ba0f85f0fff66c013d8883",
+                  "R2F-2876a2f4b3519b6fbe4eb1d6",
+                  "R2F-eb16eff930a4b041ca946897",
+                  "R2F-57ef5f617c7e73384a3b045c",
+                  "R2F-ecd2ca1395c2df2cf42127a1",
+                  "R2F-a9a82249cbb601a84c81de73",
+                  "R2F-5d24895e69ed76525b5677fe",
+                  "R2F-6aa5898b2bfe2592e86312f1",
+                  "R2F-85135b5bd5273fdd3a2fc32b",
+                  "R2F-5df31b253a142bc48c1387a8",
+                  "R2F-aa36301fa8438e15415b20c0",
+                  "R2F-e4145d9c1265e8958fbbec41",
+                  "R2F-9bb350edd47a20e6bdd9931e",
+                  "R2F-4b78fd08c16587811a874486",
+                  "R2F-63c555a1f5462398d4b09850",
+                  "R2F-661a792760342c0903365221"
+                ],
+                "continuous_local_sampling": true
+              },
+              {
+                "window_id": "base_00001",
+                "frame_ids": [
+                  "R2F-523f55d55f5dbf6f0aa3ccbf",
+                  "R2F-4b78fd08c16587811a874486",
+                  "R2F-63c555a1f5462398d4b09850",
+                  "R2F-661a792760342c0903365221",
+                  "R2F-efdde890ff6cfd6796b2cb91",
+                  "R2F-8f50110ffe5ded1da5a5ab5c",
+                  "R2F-c740117a13d89bea7bfa4946",
+                  "R2F-b22241ff67681cbed3de9db3",
+                  "R2F-0e597137a7bdecf6e963c672",
+                  "R2F-65d34be3f1d8b410cad1562d",
+                  "R2F-a0b9fd5cd09cd76ebbe13d02"
+                ],
+                "source_frame_ids": [
+                  "R2F-523f55d55f5dbf6f0aa3ccbf",
+                  "R2F-4b78fd08c16587811a874486",
+                  "R2F-63c555a1f5462398d4b09850",
+                  "R2F-661a792760342c0903365221",
+                  "R2F-efdde890ff6cfd6796b2cb91",
+                  "R2F-8f50110ffe5ded1da5a5ab5c",
+                  "R2F-c740117a13d89bea7bfa4946",
+                  "R2F-b22241ff67681cbed3de9db3",
+                  "R2F-0e597137a7bdecf6e963c672",
+                  "R2F-65d34be3f1d8b410cad1562d",
+                  "R2F-a0b9fd5cd09cd76ebbe13d02"
+                ],
+                "continuous_local_sampling": true
+              }
+            ],
+            "raw_frames": [
+              {
+                "frame_id": "F01",
+                "source_frame_id": "R2F-15ba0f85f0fff66c013d8883",
+                "view_frame_id": "R2F-15ba0f85f0fff66c013d8883",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.0
+              },
+              {
+                "frame_id": "F02",
+                "source_frame_id": "R2F-2876a2f4b3519b6fbe4eb1d6",
+                "view_frame_id": "R2F-2876a2f4b3519b6fbe4eb1d6",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.2490234375
+              },
+              {
+                "frame_id": "F03",
+                "source_frame_id": "R2F-eb16eff930a4b041ca946897",
+                "view_frame_id": "R2F-eb16eff930a4b041ca946897",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.4990234375
+              },
+              {
+                "frame_id": "F04",
+                "source_frame_id": "R2F-57ef5f617c7e73384a3b045c",
+                "view_frame_id": "R2F-57ef5f617c7e73384a3b045c",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.7490234375
+              },
+              {
+                "frame_id": "F05",
+                "source_frame_id": "R2F-ecd2ca1395c2df2cf42127a1",
+                "view_frame_id": "R2F-ecd2ca1395c2df2cf42127a1",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.9990234375
+              },
+              {
+                "frame_id": "F06",
+                "source_frame_id": "R2F-a9a82249cbb601a84c81de73",
+                "view_frame_id": "R2F-a9a82249cbb601a84c81de73",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 1.2490234375
+              },
+              {
+                "frame_id": "F07",
+                "source_frame_id": "R2F-5d24895e69ed76525b5677fe",
+                "view_frame_id": "R2F-5d24895e69ed76525b5677fe",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 1.4990234375
+              },
+              {
+                "frame_id": "F08",
+                "source_frame_id": "R2F-6aa5898b2bfe2592e86312f1",
+                "view_frame_id": "R2F-6aa5898b2bfe2592e86312f1",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 1.7490234375
+              },
+              {
+                "frame_id": "F09",
+                "source_frame_id": "R2F-85135b5bd5273fdd3a2fc32b",
+                "view_frame_id": "R2F-85135b5bd5273fdd3a2fc32b",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 1.9990234375
+              },
+              {
+                "frame_id": "F10",
+                "source_frame_id": "R2F-5df31b253a142bc48c1387a8",
+                "view_frame_id": "R2F-5df31b253a142bc48c1387a8",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 2.2490234375
+              },
+              {
+                "frame_id": "F11",
+                "source_frame_id": "R2F-aa36301fa8438e15415b20c0",
+                "view_frame_id": "R2F-aa36301fa8438e15415b20c0",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 2.4990234375
+              },
+              {
+                "frame_id": "F12",
+                "source_frame_id": "R2F-e4145d9c1265e8958fbbec41",
+                "view_frame_id": "R2F-e4145d9c1265e8958fbbec41",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 2.7490234375
+              },
+              {
+                "frame_id": "F13",
+                "source_frame_id": "R2F-9bb350edd47a20e6bdd9931e",
+                "view_frame_id": "R2F-9bb350edd47a20e6bdd9931e",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 2.9990234375
+              },
+              {
+                "frame_id": "F14",
+                "source_frame_id": "R2F-523f55d55f5dbf6f0aa3ccbf",
+                "view_frame_id": "R2F-523f55d55f5dbf6f0aa3ccbf",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 3.016015625
+              },
+              {
+                "frame_id": "F15",
+                "source_frame_id": "R2F-4b78fd08c16587811a874486",
+                "view_frame_id": "R2F-4b78fd08c16587811a874486",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 3.2490234375
+              },
+              {
+                "frame_id": "F16",
+                "source_frame_id": "R2F-63c555a1f5462398d4b09850",
+                "view_frame_id": "R2F-63c555a1f5462398d4b09850",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 3.4990234375
+              },
+              {
+                "frame_id": "F17",
+                "source_frame_id": "R2F-661a792760342c0903365221",
+                "view_frame_id": "R2F-661a792760342c0903365221",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 3.7490234375
+              },
+              {
+                "frame_id": "F18",
+                "source_frame_id": "R2F-efdde890ff6cfd6796b2cb91",
+                "view_frame_id": "R2F-efdde890ff6cfd6796b2cb91",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 3.9990234375
+              },
+              {
+                "frame_id": "F19",
+                "source_frame_id": "R2F-8f50110ffe5ded1da5a5ab5c",
+                "view_frame_id": "R2F-8f50110ffe5ded1da5a5ab5c",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 4.2490234375
+              },
+              {
+                "frame_id": "F20",
+                "source_frame_id": "R2F-c740117a13d89bea7bfa4946",
+                "view_frame_id": "R2F-c740117a13d89bea7bfa4946",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 4.4990234375
+              },
+              {
+                "frame_id": "F21",
+                "source_frame_id": "R2F-b22241ff67681cbed3de9db3",
+                "view_frame_id": "R2F-b22241ff67681cbed3de9db3",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 4.7490234375
+              },
+              {
+                "frame_id": "F22",
+                "source_frame_id": "R2F-0e597137a7bdecf6e963c672",
+                "view_frame_id": "R2F-0e597137a7bdecf6e963c672",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 4.9990234375
+              },
+              {
+                "frame_id": "F23",
+                "source_frame_id": "R2F-65d34be3f1d8b410cad1562d",
+                "view_frame_id": "R2F-65d34be3f1d8b410cad1562d",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 5.2490234375
+              },
+              {
+                "frame_id": "F24",
+                "source_frame_id": "R2F-a0b9fd5cd09cd76ebbe13d02",
+                "view_frame_id": "R2F-a0b9fd5cd09cd76ebbe13d02",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 5.4990234375
+              }
+            ],
+            "context_omissions": {
+              "derived_arrays": [],
+              "observation_count": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "request_id": "R2-tomato-0215-06",
+      "query": {
+        "targets": [
+          {
+            "id": "person_hand",
+            "description": "The hand of a person visible in the video"
+          }
+        ],
+        "slots": [
+          {
+            "id": "rotation_direction",
+            "target_id": "person_hand",
+            "property": "rotation_direction",
+            "description": "The direction of rotation of the hand",
+            "reference_frame": "screen"
+          }
+        ],
+        "operations": [
+          {
+            "id": "rotation_pattern",
+            "op": "rotation_pattern",
+            "target_ids": [
+              "person_hand"
+            ],
+            "slot_ids": [
+              "rotation_direction"
+            ],
+            "parameters": {
+              "rotation_type": "unknown"
+            }
+          },
+          {
+            "id": "direction_sequence",
+            "op": "direction_sequence",
+            "target_ids": [
+              "person_hand"
+            ],
+            "slot_ids": [
+              "rotation_direction"
+            ],
+            "parameters": {
+              "rotation_type": "unknown"
+            }
+          }
+        ],
+        "scope": {
+          "kind": "full",
+          "interval": [
+            0.0,
+            5.032682291666666
+          ],
+          "description": "The full permitted observation duration"
+        },
+        "anchors": [
+          {
+            "id": "start_anchor",
+            "kind": "start",
+            "time": 0.0,
+            "description": "Start of the video"
+          },
+          {
+            "id": "end_anchor",
+            "kind": "end",
+            "time": 5.032682291666666,
+            "description": "End of the video"
+          }
+        ],
+        "fast_motion": false,
+        "unresolved": []
+      },
+      "observations": [],
+      "calls": [
+        {
+          "role": "observe",
+          "raw": "{\n  \"entities\": [\n    {\n      \"id\": \"E1\",\n      \"target_id\": \"person_hand\",\n      \"description\": \"The hand of a person visible in the video\",\n      \"part_of\": \"person\"\n    }\n  ],\n  \"records\": [\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F01\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand is visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F02\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F03\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F04\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F05\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F06\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F07\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F08\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F09\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F10\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F11\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F12\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F13\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F14\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F15\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F16\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F17\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F18\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F19\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F20\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    }\n  ],\n  \"gaps\": [],\n  \"reference_status\": \"stable\",\n  \"complete\": true,\n  \"anchor_states\": [\n    {\n      \"anchor_id\": \"start_anchor\",\n      \"frame_id\": \"F01\",\n      \"status\": \"at\",\n      \"description\": \"The video starts with the hand visible and pointing upward.\"\n    },\n    {\n      \"anchor_id\": \"end_anchor\",\n      \"frame_id\": \"F20\",\n      \"status\": \"at\",\n      \"description\": \"The video ends with the hand visible and pointing upward.\"\n    }\n  ]\n}",
+          "payload": {
+            "window_id": "base_00000",
+            "core": [
+              0.0,
+              4.0
+            ],
+            "span": [
+              0.0,
+              5.0
+            ],
+            "frames": [
+              {
+                "frame_id": "F01",
+                "source_seconds": 0.0,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F02",
+                "source_seconds": 0.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F03",
+                "source_seconds": 0.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F04",
+                "source_seconds": 0.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F05",
+                "source_seconds": 0.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F06",
+                "source_seconds": 1.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F07",
+                "source_seconds": 1.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F08",
+                "source_seconds": 1.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F09",
+                "source_seconds": 1.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F10",
+                "source_seconds": 2.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F11",
+                "source_seconds": 2.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F12",
+                "source_seconds": 2.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F13",
+                "source_seconds": 2.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F14",
+                "source_seconds": 3.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F15",
+                "source_seconds": 3.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F16",
+                "source_seconds": 3.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F17",
+                "source_seconds": 3.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F18",
+                "source_seconds": 4.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F19",
+                "source_seconds": 4.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F20",
+                "source_seconds": 4.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              }
+            ],
+            "targets": [
+              {
+                "id": "person_hand",
+                "description": "The hand of a person visible in the video"
+              }
+            ],
+            "slots": [
+              {
+                "id": "rotation_direction",
+                "target_id": "person_hand",
+                "property": "rotation_direction",
+                "description": "The direction of rotation of the hand",
+                "reference_frame": "screen"
+              }
+            ],
+            "anchors": [
+              {
+                "id": "start_anchor",
+                "kind": "start",
+                "time": 0.0,
+                "description": "Start of the video"
+              },
+              {
+                "id": "end_anchor",
+                "kind": "end",
+                "time": 5.032682291666666,
+                "description": "End of the video"
+              }
+            ],
+            "query_time": null,
+            "observation_spec": {
+              "basis": "program_requirements",
+              "tasks": [
+                {
+                  "operation_id": "rotation_pattern",
+                  "operation": "rotation_pattern",
+                  "slot_id": "rotation_direction",
+                  "target_id": "person_hand",
+                  "reference_frame": "screen",
+                  "required_fields": [
+                    "rotation_type",
+                    "feature_identifiable",
+                    "adjacency_resolved"
+                  ],
+                  "one_of_fields": [
+                    [
+                      "orientation_angle"
+                    ],
+                    [
+                      "point",
+                      "reference_point"
+                    ]
+                  ],
+                  "rotation_type_hint": "unknown"
+                },
+                {
+                  "operation_id": "direction_sequence",
+                  "operation": "direction_sequence",
+                  "slot_id": "rotation_direction",
+                  "target_id": "person_hand",
+                  "reference_frame": "screen",
+                  "required_fields": [
+                    "point"
+                  ],
+                  "one_of_fields": [],
+                  "axis": "x"
+                }
+              ]
+            },
+            "observation_task": "Read the specified measurements in order, including core boundaries and changes. Explain every unreadable slot.",
+            "max_records": 48
+          }
+        },
+        {
+          "role": "observe",
+          "raw": "{\n  \"entities\": [\n    {\n      \"id\": \"E1\",\n      \"target_id\": \"person_hand\",\n      \"description\": \"The hand of a person visible in the video\",\n      \"part_of\": \"person\"\n    }\n  ],\n  \"records\": [\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F01\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand is visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F02\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F03\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F04\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F05\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F06\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F07\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F08\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F09\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F10\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F11\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F12\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F13\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F14\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F15\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F16\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F17\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F18\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F19\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    },\n    {\n      \"slot_id\": \"rotation_direction\",\n      \"entity_id\": \"E1\",\n      \"frame_id\": \"F20\",\n      \"visibility\": \"visible\",\n      \"value\": \"unknown\",\n      \"point\": [\n        250,\n        200\n      ],\n      \"reference_point\": [\n        500,\n        500\n      ],\n      \"orientation_angle\": null,\n      \"rotation_type\": \"unknown\",\n      \"feature_identifiable\": false,\n      \"adjacency_resolved\": false,\n      \"basis\": \"visual_observation\",\n      \"description\": \"The hand remains visible and pointing upward, but rotation direction cannot be determined without a reference point or angle measurement.\"\n    }\n  ],\n  \"gaps\": [],\n  \"reference_status\": \"stable\",\n  \"complete\": true,\n  \"anchor_states\": [\n    {\n      \"anchor_id\": \"start_anchor\",\n      \"frame_id\": \"F01\",\n      \"status\": \"at\",\n      \"description\": \"The video starts with the hand pointing upward.\"\n    },\n    {\n      \"anchor_id\": \"end_anchor\",\n      \"frame_id\": \"F20\",\n      \"status\": \"at\",\n      \"description\": \"The video ends with the hand pointing upward.\"\n    }\n  ]\n}",
+          "payload": {
+            "window_id": "base_00000",
+            "core": [
+              0.0,
+              4.0
+            ],
+            "span": [
+              0.0,
+              5.0
+            ],
+            "frames": [
+              {
+                "frame_id": "F01",
+                "source_seconds": 0.0,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F02",
+                "source_seconds": 0.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F03",
+                "source_seconds": 0.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F04",
+                "source_seconds": 0.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F05",
+                "source_seconds": 0.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F06",
+                "source_seconds": 1.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F07",
+                "source_seconds": 1.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F08",
+                "source_seconds": 1.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F09",
+                "source_seconds": 1.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F10",
+                "source_seconds": 2.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F11",
+                "source_seconds": 2.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F12",
+                "source_seconds": 2.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F13",
+                "source_seconds": 2.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F14",
+                "source_seconds": 3.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F15",
+                "source_seconds": 3.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F16",
+                "source_seconds": 3.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F17",
+                "source_seconds": 3.9990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F18",
+                "source_seconds": 4.2490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F19",
+                "source_seconds": 4.4990234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              },
+              {
+                "frame_id": "F20",
+                "source_seconds": 4.7490234375,
+                "source_size": [
+                  1080,
+                  1920
+                ],
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ]
+              }
+            ],
+            "targets": [
+              {
+                "id": "person_hand",
+                "description": "The hand of a person visible in the video"
+              }
+            ],
+            "slots": [
+              {
+                "id": "rotation_direction",
+                "target_id": "person_hand",
+                "property": "rotation_direction",
+                "description": "The direction of rotation of the hand",
+                "reference_frame": "screen"
+              }
+            ],
+            "anchors": [
+              {
+                "id": "start_anchor",
+                "kind": "start",
+                "time": 0.0,
+                "description": "Start of the video"
+              },
+              {
+                "id": "end_anchor",
+                "kind": "end",
+                "time": 5.032682291666666,
+                "description": "End of the video"
+              }
+            ],
+            "query_time": null,
+            "observation_spec": {
+              "basis": "program_requirements",
+              "tasks": [
+                {
+                  "operation_id": "rotation_pattern",
+                  "operation": "rotation_pattern",
+                  "slot_id": "rotation_direction",
+                  "target_id": "person_hand",
+                  "reference_frame": "screen",
+                  "required_fields": [
+                    "rotation_type",
+                    "feature_identifiable",
+                    "adjacency_resolved"
+                  ],
+                  "one_of_fields": [
+                    [
+                      "orientation_angle"
+                    ],
+                    [
+                      "point",
+                      "reference_point"
+                    ]
+                  ],
+                  "rotation_type_hint": "unknown"
+                },
+                {
+                  "operation_id": "direction_sequence",
+                  "operation": "direction_sequence",
+                  "slot_id": "rotation_direction",
+                  "target_id": "person_hand",
+                  "reference_frame": "screen",
+                  "required_fields": [
+                    "point"
+                  ],
+                  "one_of_fields": [],
+                  "axis": "x"
+                }
+              ]
+            },
+            "observation_task": "Read the specified measurements in order, including core boundaries and changes. Explain every unreadable slot.",
+            "max_records": 48
+          }
+        },
+        {
+          "role": "final",
+          "raw": "{\n  \"prediction\": \"A\",\n  \"evidence_ids\": [],\n  \"assessments\": [\n    {\n      \"label\": \"A\",\n      \"status\": \"unknown\",\n      \"evidence_ids\": []\n    },\n    {\n      \"label\": \"B\",\n      \"status\": \"unknown\",\n      \"evidence_ids\": []\n    },\n    {\n      \"label\": \"C\",\n      \"status\": \"unknown\",\n      \"evidence_ids\": []\n    },\n    {\n      \"label\": \"D\",\n      \"status\": \"unknown\",\n      \"evidence_ids\": []\n    },\n    {\n      \"label\": \"E\",\n      \"status\": \"unknown\",\n      \"evidence_ids\": []\n    }\n  ],\n  \"weakest_premise\": \"No directly observed state for this operation\",\n  \"recheck\": {\n    \"kind\": \"detail\",\n    \"description\": \"No directly observed state for this operation\",\n    \"slot_id\": \"rotation_direction\"\n  },\n  \"unresolved\": [\n    \"ProtocolError: None is not of type 'number'\",\n    \"Failed validating 'type' in schema['properties']['records']['items']['properties']['orientation_angle']:\\n    {'type': 'number'}\\n\\nOn instance['records'][0]['orientation_angle']:\\n    None\"\n  ]\n}",
+          "payload": {
+            "question": "Which direction(s) does the person's hand rotate in?",
+            "options": [
+              {
+                "label": "A",
+                "text": "No rotation."
+              },
+              {
+                "label": "B",
+                "text": "Clockwise then counter-clockwise."
+              },
+              {
+                "label": "C",
+                "text": "Counter-clockwise then clockwise."
+              },
+              {
+                "label": "D",
+                "text": "Clockwise throughout."
+              },
+              {
+                "label": "E",
+                "text": "Counter-clockwise throughout."
+              }
+            ],
+            "derived": {
+              "operations": [
+                {
+                  "operation_id": "rotation_pattern",
+                  "op": "rotation_pattern",
+                  "value": {},
+                  "status": "unresolved",
+                  "evidence_ids": [],
+                  "gaps": [
+                    {
+                      "kind": "detail",
+                      "description": "No directly observed state for this operation",
+                      "slot_id": "rotation_direction"
+                    }
+                  ],
+                  "basis": "program_reduction_of_visual_estimates"
+                },
+                {
+                  "operation_id": "direction_sequence",
+                  "op": "direction_sequence",
+                  "value": {},
+                  "status": "unresolved",
+                  "evidence_ids": [],
+                  "gaps": [
+                    {
+                      "kind": "detail",
+                      "description": "No directly observed state for this operation",
+                      "slot_id": "rotation_direction"
+                    }
+                  ],
+                  "basis": "program_reduction_of_visual_estimates"
+                }
+              ],
+              "gaps": [
+                {
+                  "kind": "coverage",
+                  "description": "Required temporal interval lacks completed observation coverage",
+                  "span": [
+                    0.0,
+                    5.032682291666666
+                  ]
+                },
+                {
+                  "kind": "detail",
+                  "description": "No directly observed state for this operation",
+                  "slot_id": "rotation_direction"
+                },
+                {
+                  "kind": "detail",
+                  "description": "No directly observed state for this operation",
+                  "slot_id": "rotation_direction"
+                }
+              ],
+              "sufficient": false,
+              "finite_sampling_only": true,
+              "revision": 0
+            },
+            "observations": [],
+            "unresolved": [
+              "ProtocolError: None is not of type 'number'\n\nFailed validating 'type' in schema['properties']['records']['items']['properties']['orientation_angle']:\n    {'type': 'number'}\n\nOn instance['records'][0]['orientation_angle']:\n    None"
+            ],
+            "raw_windows": [
+              {
+                "window_id": "base_00000",
+                "frame_ids": [
+                  "R2F-562b05c27ed89920b4e5d919",
+                  "R2F-91c00fc171730827e6794580",
+                  "R2F-905e5c4612b5eb2acfbceff9",
+                  "R2F-1dbe690e97ac8e2c266d57f6",
+                  "R2F-4a8f4797333903955d8df53c",
+                  "R2F-222f233dd8ed7b8550cc229e",
+                  "R2F-95db9000869e4a5ae11c4114",
+                  "R2F-40b575349d08b0e841327f27",
+                  "R2F-d3f83fe1a41cc289118c5297",
+                  "R2F-84bf8b37573726e0c70c21ab",
+                  "R2F-2d120c29fe2cdc40bb5478b8",
+                  "R2F-06e63ed35d6f9d7ee9a3249a",
+                  "R2F-e05273ffb966958295093eb2",
+                  "R2F-23370a370c423c123fbc7df0",
+                  "R2F-f4b64a1300c4845f787598a9",
+                  "R2F-bd777bee7f709dc874824670"
+                ],
+                "source_frame_ids": [
+                  "R2F-562b05c27ed89920b4e5d919",
+                  "R2F-91c00fc171730827e6794580",
+                  "R2F-905e5c4612b5eb2acfbceff9",
+                  "R2F-1dbe690e97ac8e2c266d57f6",
+                  "R2F-4a8f4797333903955d8df53c",
+                  "R2F-222f233dd8ed7b8550cc229e",
+                  "R2F-95db9000869e4a5ae11c4114",
+                  "R2F-40b575349d08b0e841327f27",
+                  "R2F-d3f83fe1a41cc289118c5297",
+                  "R2F-84bf8b37573726e0c70c21ab",
+                  "R2F-2d120c29fe2cdc40bb5478b8",
+                  "R2F-06e63ed35d6f9d7ee9a3249a",
+                  "R2F-e05273ffb966958295093eb2",
+                  "R2F-23370a370c423c123fbc7df0",
+                  "R2F-f4b64a1300c4845f787598a9",
+                  "R2F-bd777bee7f709dc874824670"
+                ],
+                "continuous_local_sampling": true
+              },
+              {
+                "window_id": "base_00000",
+                "frame_ids": [
+                  "R2F-e4ef8377d84f5815bec79120",
+                  "R2F-31a30aacbfd62b9d03e00841",
+                  "R2F-562b05c27ed89920b4e5d919",
+                  "R2F-91c00fc171730827e6794580",
+                  "R2F-905e5c4612b5eb2acfbceff9",
+                  "R2F-1dbe690e97ac8e2c266d57f6",
+                  "R2F-4a8f4797333903955d8df53c",
+                  "R2F-222f233dd8ed7b8550cc229e",
+                  "R2F-95db9000869e4a5ae11c4114",
+                  "R2F-40b575349d08b0e841327f27",
+                  "R2F-d3f83fe1a41cc289118c5297",
+                  "R2F-84bf8b37573726e0c70c21ab",
+                  "R2F-2d120c29fe2cdc40bb5478b8",
+                  "R2F-06e63ed35d6f9d7ee9a3249a",
+                  "R2F-e05273ffb966958295093eb2",
+                  "R2F-23370a370c423c123fbc7df0"
+                ],
+                "source_frame_ids": [
+                  "R2F-e4ef8377d84f5815bec79120",
+                  "R2F-31a30aacbfd62b9d03e00841",
+                  "R2F-562b05c27ed89920b4e5d919",
+                  "R2F-91c00fc171730827e6794580",
+                  "R2F-905e5c4612b5eb2acfbceff9",
+                  "R2F-1dbe690e97ac8e2c266d57f6",
+                  "R2F-4a8f4797333903955d8df53c",
+                  "R2F-222f233dd8ed7b8550cc229e",
+                  "R2F-95db9000869e4a5ae11c4114",
+                  "R2F-40b575349d08b0e841327f27",
+                  "R2F-d3f83fe1a41cc289118c5297",
+                  "R2F-84bf8b37573726e0c70c21ab",
+                  "R2F-2d120c29fe2cdc40bb5478b8",
+                  "R2F-06e63ed35d6f9d7ee9a3249a",
+                  "R2F-e05273ffb966958295093eb2",
+                  "R2F-23370a370c423c123fbc7df0"
+                ],
+                "continuous_local_sampling": true
+              },
+              {
+                "window_id": "base_00000",
+                "frame_ids": [
+                  "R2F-905e5c4612b5eb2acfbceff9",
+                  "R2F-1dbe690e97ac8e2c266d57f6",
+                  "R2F-4a8f4797333903955d8df53c",
+                  "R2F-222f233dd8ed7b8550cc229e",
+                  "R2F-95db9000869e4a5ae11c4114",
+                  "R2F-40b575349d08b0e841327f27",
+                  "R2F-d3f83fe1a41cc289118c5297",
+                  "R2F-84bf8b37573726e0c70c21ab",
+                  "R2F-2d120c29fe2cdc40bb5478b8",
+                  "R2F-06e63ed35d6f9d7ee9a3249a",
+                  "R2F-e05273ffb966958295093eb2",
+                  "R2F-23370a370c423c123fbc7df0",
+                  "R2F-f4b64a1300c4845f787598a9",
+                  "R2F-bd777bee7f709dc874824670",
+                  "R2F-79d11aa91b260ef211169080",
+                  "R2F-8db9c8a0b9d1d2e89ded4d34"
+                ],
+                "source_frame_ids": [
+                  "R2F-905e5c4612b5eb2acfbceff9",
+                  "R2F-1dbe690e97ac8e2c266d57f6",
+                  "R2F-4a8f4797333903955d8df53c",
+                  "R2F-222f233dd8ed7b8550cc229e",
+                  "R2F-95db9000869e4a5ae11c4114",
+                  "R2F-40b575349d08b0e841327f27",
+                  "R2F-d3f83fe1a41cc289118c5297",
+                  "R2F-84bf8b37573726e0c70c21ab",
+                  "R2F-2d120c29fe2cdc40bb5478b8",
+                  "R2F-06e63ed35d6f9d7ee9a3249a",
+                  "R2F-e05273ffb966958295093eb2",
+                  "R2F-23370a370c423c123fbc7df0",
+                  "R2F-f4b64a1300c4845f787598a9",
+                  "R2F-bd777bee7f709dc874824670",
+                  "R2F-79d11aa91b260ef211169080",
+                  "R2F-8db9c8a0b9d1d2e89ded4d34"
+                ],
+                "continuous_local_sampling": true
+              }
+            ],
+            "raw_frames": [
+              {
+                "frame_id": "F01",
+                "source_frame_id": "R2F-e4ef8377d84f5815bec79120",
+                "view_frame_id": "R2F-e4ef8377d84f5815bec79120",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.0
+              },
+              {
+                "frame_id": "F02",
+                "source_frame_id": "R2F-31a30aacbfd62b9d03e00841",
+                "view_frame_id": "R2F-31a30aacbfd62b9d03e00841",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.2490234375
+              },
+              {
+                "frame_id": "F03",
+                "source_frame_id": "R2F-562b05c27ed89920b4e5d919",
+                "view_frame_id": "R2F-562b05c27ed89920b4e5d919",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.4990234375
+              },
+              {
+                "frame_id": "F04",
+                "source_frame_id": "R2F-91c00fc171730827e6794580",
+                "view_frame_id": "R2F-91c00fc171730827e6794580",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.7490234375
+              },
+              {
+                "frame_id": "F05",
+                "source_frame_id": "R2F-905e5c4612b5eb2acfbceff9",
+                "view_frame_id": "R2F-905e5c4612b5eb2acfbceff9",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 0.9990234375
+              },
+              {
+                "frame_id": "F06",
+                "source_frame_id": "R2F-1dbe690e97ac8e2c266d57f6",
+                "view_frame_id": "R2F-1dbe690e97ac8e2c266d57f6",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 1.2490234375
+              },
+              {
+                "frame_id": "F07",
+                "source_frame_id": "R2F-4a8f4797333903955d8df53c",
+                "view_frame_id": "R2F-4a8f4797333903955d8df53c",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 1.4990234375
+              },
+              {
+                "frame_id": "F08",
+                "source_frame_id": "R2F-222f233dd8ed7b8550cc229e",
+                "view_frame_id": "R2F-222f233dd8ed7b8550cc229e",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 1.7490234375
+              },
+              {
+                "frame_id": "F09",
+                "source_frame_id": "R2F-95db9000869e4a5ae11c4114",
+                "view_frame_id": "R2F-95db9000869e4a5ae11c4114",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 1.9990234375
+              },
+              {
+                "frame_id": "F10",
+                "source_frame_id": "R2F-40b575349d08b0e841327f27",
+                "view_frame_id": "R2F-40b575349d08b0e841327f27",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 2.2490234375
+              },
+              {
+                "frame_id": "F11",
+                "source_frame_id": "R2F-d3f83fe1a41cc289118c5297",
+                "view_frame_id": "R2F-d3f83fe1a41cc289118c5297",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 2.4990234375
+              },
+              {
+                "frame_id": "F12",
+                "source_frame_id": "R2F-84bf8b37573726e0c70c21ab",
+                "view_frame_id": "R2F-84bf8b37573726e0c70c21ab",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 2.7490234375
+              },
+              {
+                "frame_id": "F13",
+                "source_frame_id": "R2F-2d120c29fe2cdc40bb5478b8",
+                "view_frame_id": "R2F-2d120c29fe2cdc40bb5478b8",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 2.9990234375
+              },
+              {
+                "frame_id": "F14",
+                "source_frame_id": "R2F-06e63ed35d6f9d7ee9a3249a",
+                "view_frame_id": "R2F-06e63ed35d6f9d7ee9a3249a",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 3.2490234375
+              },
+              {
+                "frame_id": "F15",
+                "source_frame_id": "R2F-e05273ffb966958295093eb2",
+                "view_frame_id": "R2F-e05273ffb966958295093eb2",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 3.4990234375
+              },
+              {
+                "frame_id": "F16",
+                "source_frame_id": "R2F-23370a370c423c123fbc7df0",
+                "view_frame_id": "R2F-23370a370c423c123fbc7df0",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 3.7490234375
+              },
+              {
+                "frame_id": "F17",
+                "source_frame_id": "R2F-f4b64a1300c4845f787598a9",
+                "view_frame_id": "R2F-f4b64a1300c4845f787598a9",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 3.9990234375
+              },
+              {
+                "frame_id": "F18",
+                "source_frame_id": "R2F-bd777bee7f709dc874824670",
+                "view_frame_id": "R2F-bd777bee7f709dc874824670",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 4.2490234375
+              },
+              {
+                "frame_id": "F19",
+                "source_frame_id": "R2F-79d11aa91b260ef211169080",
+                "view_frame_id": "R2F-79d11aa91b260ef211169080",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 4.4990234375
+              },
+              {
+                "frame_id": "F20",
+                "source_frame_id": "R2F-8db9c8a0b9d1d2e89ded4d34",
+                "view_frame_id": "R2F-8db9c8a0b9d1d2e89ded4d34",
+                "view_box": [
+                  0,
+                  0,
+                  1080,
+                  1920
+                ],
+                "source_seconds": 4.7490234375
+              }
+            ],
+            "context_omissions": {
+              "derived_arrays": [],
+              "observation_count": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

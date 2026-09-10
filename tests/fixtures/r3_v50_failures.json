@@ -1,0 +1,3934 @@
+[
+  {
+    "case": "R3-MVB-action-count-000",
+    "question": "How many times did the person launch objects on the table?",
+    "source_file": "R3-MVB-action-count-000.json",
+    "source_sha256": "ca505cd8f2081d6334b15fc4b909c35cffb74cbd7de2f606f2860efa728d98b8",
+    "call_id": "base:0",
+    "task": {
+      "key": "base:0",
+      "kind": "base",
+      "recipe": "cycles",
+      "core": [
+        0.0,
+        4.0
+      ],
+      "span": [
+        0,
+        5.0
+      ],
+      "fps": 8.0,
+      "last": false,
+      "tail_refs": [],
+      "observed_targets": [
+        "the person launch objects on the table"
+      ]
+    },
+    "refs": {
+      "F01": {
+        "id": "R3V5F-bf6ef82ca8be8f4485e5cf01",
+        "source_frame_id": "R3V5F-bf6ef82ca8be8f4485e5cf01",
+        "timestamp_seconds": 0.0,
+        "pts": 0,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F02": {
+        "id": "R3V5F-adc212ecd59de7c401d80c54",
+        "source_frame_id": "R3V5F-adc212ecd59de7c401d80c54",
+        "timestamp_seconds": 0.13465293206759577,
+        "pts": 2000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F03": {
+        "id": "R3V5F-0c98350fd8db08c9b9686cce",
+        "source_frame_id": "R3V5F-0c98350fd8db08c9b9686cce",
+        "timestamp_seconds": 0.2356426311182926,
+        "pts": 3500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F04": {
+        "id": "R3V5F-5a91021934fba2317b16331e",
+        "source_frame_id": "R3V5F-5a91021934fba2317b16331e",
+        "timestamp_seconds": 0.37029556318588835,
+        "pts": 5500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F05": {
+        "id": "R3V5F-83f9efdbacac66b117c38bc5",
+        "source_frame_id": "R3V5F-83f9efdbacac66b117c38bc5",
+        "timestamp_seconds": 0.5049484952534842,
+        "pts": 7500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F06": {
+        "id": "R3V5F-785af1cf6ba8204f05c24f9e",
+        "source_frame_id": "R3V5F-785af1cf6ba8204f05c24f9e",
+        "timestamp_seconds": 0.6396014273210799,
+        "pts": 9500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F07": {
+        "id": "R3V5F-bbd4f16a04a234c2702f47c9",
+        "source_frame_id": "R3V5F-bbd4f16a04a234c2702f47c9",
+        "timestamp_seconds": 0.7405911263717767,
+        "pts": 11000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F08": {
+        "id": "R3V5F-7ac85275693e08044c21e7a0",
+        "source_frame_id": "R3V5F-7ac85275693e08044c21e7a0",
+        "timestamp_seconds": 0.8752440584393725,
+        "pts": 13000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F09": {
+        "id": "R3V5F-bf46670377348a4fc1563010",
+        "source_frame_id": "R3V5F-bf46670377348a4fc1563010",
+        "timestamp_seconds": 1.0098969905069684,
+        "pts": 15000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F10": {
+        "id": "R3V5F-af75952ccc9d7090e2924518",
+        "source_frame_id": "R3V5F-af75952ccc9d7090e2924518",
+        "timestamp_seconds": 1.110886689557665,
+        "pts": 16500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F11": {
+        "id": "R3V5F-14df7d5df7b6c0b123e636b9",
+        "source_frame_id": "R3V5F-14df7d5df7b6c0b123e636b9",
+        "timestamp_seconds": 1.245539621625261,
+        "pts": 18500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F12": {
+        "id": "R3V5F-8aff654507877508750c89fd",
+        "source_frame_id": "R3V5F-8aff654507877508750c89fd",
+        "timestamp_seconds": 1.3801925536928568,
+        "pts": 20500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F13": {
+        "id": "R3V5F-1a123e897166c195b9f4bc5a",
+        "source_frame_id": "R3V5F-1a123e897166c195b9f4bc5a",
+        "timestamp_seconds": 1.5148454857604525,
+        "pts": 22500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F14": {
+        "id": "R3V5F-e632626d467462650317228a",
+        "source_frame_id": "R3V5F-e632626d467462650317228a",
+        "timestamp_seconds": 1.6158351848111492,
+        "pts": 24000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F15": {
+        "id": "R3V5F-585e5f86e144885d1a7518bb",
+        "source_frame_id": "R3V5F-585e5f86e144885d1a7518bb",
+        "timestamp_seconds": 1.750488116878745,
+        "pts": 26000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F16": {
+        "id": "R3V5F-4acc498ad32eb8f6f0df56f2",
+        "source_frame_id": "R3V5F-4acc498ad32eb8f6f0df56f2",
+        "timestamp_seconds": 1.8851410489463407,
+        "pts": 28000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F17": {
+        "id": "R3V5F-f4125d8e34b5861342a5cb38",
+        "source_frame_id": "R3V5F-f4125d8e34b5861342a5cb38",
+        "timestamp_seconds": 1.9861307479970376,
+        "pts": 29500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F18": {
+        "id": "R3V5F-6e92f0afe59e1319b49d4054",
+        "source_frame_id": "R3V5F-6e92f0afe59e1319b49d4054",
+        "timestamp_seconds": 2.1207836800646334,
+        "pts": 31500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F19": {
+        "id": "R3V5F-14c8f95c0ff58e916e47532c",
+        "source_frame_id": "R3V5F-14c8f95c0ff58e916e47532c",
+        "timestamp_seconds": 2.2554366121322293,
+        "pts": 33500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F20": {
+        "id": "R3V5F-53376fec07f14bd52b7a7710",
+        "source_frame_id": "R3V5F-53376fec07f14bd52b7a7710",
+        "timestamp_seconds": 2.390089544199825,
+        "pts": 35500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F21": {
+        "id": "R3V5F-d5b8176b3babda30bb87444f",
+        "source_frame_id": "R3V5F-d5b8176b3babda30bb87444f",
+        "timestamp_seconds": 2.491079243250522,
+        "pts": 37000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F22": {
+        "id": "R3V5F-0b2b802bdd30fa282231174e",
+        "source_frame_id": "R3V5F-0b2b802bdd30fa282231174e",
+        "timestamp_seconds": 2.6257321753181175,
+        "pts": 39000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F23": {
+        "id": "R3V5F-6341a219e923901ef6eb2a1d",
+        "source_frame_id": "R3V5F-6341a219e923901ef6eb2a1d",
+        "timestamp_seconds": 2.7603851073857135,
+        "pts": 41000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F24": {
+        "id": "R3V5F-9099fc6cf9b50403a542b7a1",
+        "source_frame_id": "R3V5F-9099fc6cf9b50403a542b7a1",
+        "timestamp_seconds": 2.86137480643641,
+        "pts": 42500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F25": {
+        "id": "R3V5F-d8129aed9cd01013e8bb2c88",
+        "source_frame_id": "R3V5F-d8129aed9cd01013e8bb2c88",
+        "timestamp_seconds": 2.9960277385040057,
+        "pts": 44500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F26": {
+        "id": "R3V5F-e340793d94cd73f4a0b54635",
+        "source_frame_id": "R3V5F-e340793d94cd73f4a0b54635",
+        "timestamp_seconds": 3.1306806705716017,
+        "pts": 46500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F27": {
+        "id": "R3V5F-9b0c7f93cec107477f3f5359",
+        "source_frame_id": "R3V5F-9b0c7f93cec107477f3f5359",
+        "timestamp_seconds": 3.2653336026391973,
+        "pts": 48500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F28": {
+        "id": "R3V5F-01267a8fd6ffa4538f503f01",
+        "source_frame_id": "R3V5F-01267a8fd6ffa4538f503f01",
+        "timestamp_seconds": 3.3663233016898944,
+        "pts": 50000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F29": {
+        "id": "R3V5F-da45f8be52b36b4bf4f29385",
+        "source_frame_id": "R3V5F-da45f8be52b36b4bf4f29385",
+        "timestamp_seconds": 3.50097623375749,
+        "pts": 52000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F30": {
+        "id": "R3V5F-652a88b75333c0c28172e40d",
+        "source_frame_id": "R3V5F-652a88b75333c0c28172e40d",
+        "timestamp_seconds": 3.635629165825086,
+        "pts": 54000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F31": {
+        "id": "R3V5F-22c82c57a1fceeeb6821b064",
+        "source_frame_id": "R3V5F-22c82c57a1fceeeb6821b064",
+        "timestamp_seconds": 3.7366188648757825,
+        "pts": 55500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F32": {
+        "id": "R3V5F-e7252351af11711181eaadae",
+        "source_frame_id": "R3V5F-e7252351af11711181eaadae",
+        "timestamp_seconds": 3.8712717969433785,
+        "pts": 57500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F33": {
+        "id": "R3V5F-59f6afdb533fb0bf2a2d8b11",
+        "source_frame_id": "R3V5F-59f6afdb533fb0bf2a2d8b11",
+        "timestamp_seconds": 4.0059247290109745,
+        "pts": 59500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F34": {
+        "id": "R3V5F-ab2e6a00c23a25ca80ad5c3b",
+        "source_frame_id": "R3V5F-ab2e6a00c23a25ca80ad5c3b",
+        "timestamp_seconds": 4.14057766107857,
+        "pts": 61500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F35": {
+        "id": "R3V5F-a2bb03f91d755e71bb46113d",
+        "source_frame_id": "R3V5F-a2bb03f91d755e71bb46113d",
+        "timestamp_seconds": 4.241567360129267,
+        "pts": 63000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F36": {
+        "id": "R3V5F-2ecf766dde1c3128baa28fd1",
+        "source_frame_id": "R3V5F-2ecf766dde1c3128baa28fd1",
+        "timestamp_seconds": 4.376220292196862,
+        "pts": 65000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F37": {
+        "id": "R3V5F-2292ac476351b1b66424c240",
+        "source_frame_id": "R3V5F-2292ac476351b1b66424c240",
+        "timestamp_seconds": 4.510873224264459,
+        "pts": 67000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F38": {
+        "id": "R3V5F-4785dbca5b1a386be114c48b",
+        "source_frame_id": "R3V5F-4785dbca5b1a386be114c48b",
+        "timestamp_seconds": 4.611862923315155,
+        "pts": 68500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F39": {
+        "id": "R3V5F-9d534e357e5c5f849e42192d",
+        "source_frame_id": "R3V5F-9d534e357e5c5f849e42192d",
+        "timestamp_seconds": 4.746515855382751,
+        "pts": 70500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F40": {
+        "id": "R3V5F-70dae83fcd1a703d08a14b1b",
+        "source_frame_id": "R3V5F-70dae83fcd1a703d08a14b1b",
+        "timestamp_seconds": 4.881168787450346,
+        "pts": 72500,
+        "time_base": [
+          1,
+          14853
+        ]
+      }
+    },
+    "raw": "{\"at\":[\"F01\",\"F02\"],\"decision\":\"not_target\",\"note\":\"No person or object launch visible; only static items on table.\"}\n{\"at\":[\"F03\",\"F04\"],\"decision\":\"not_target\",\"note\":\"Hand enters but no object is launched; hand is preparing to interact.\"}\n{\"at\":[\"F05\",\"F06\"],\"decision\":\"not_target\",\"note\":\"Hand moves object but does not launch it; object is placed on table.\"}\n{\"at\":[\"F07\",\"F08\"],\"decision\":\"not_target\",\"note\":\"Hand rests; no launch action observed.\"}\n{\"at\":[\"F09\",\"F10\"],\"decision\":\"not_target\",\"note\":\"Hand re-enters but no object is launched; hand is preparing to interact.\"}\n{\"at\":[\"F11\",\"F12\"],\"decision\":\"not_target\",\"note\":\"Hand moves object but does not launch it; object is placed on table.\"}\n{\"at\":[\"F13\",\"F14\"],\"decision\":\"not_target\",\"note\":\"Hand rests; no launch action observed.\"}\n{\"at\":[\"F03\",\"F14\"],\"decision\":\"end\",\"status\":\"complete\",\"note\":\"No launch action observed; hand interacts with objects but does not launch them.\"}",
+    "output_tokens": 261
+  },
+  {
+    "case": "R3-MVB-action-count-000",
+    "question": "How many times did the person launch objects on the table?",
+    "source_file": "R3-MVB-action-count-000.json",
+    "source_sha256": "ca505cd8f2081d6334b15fc4b909c35cffb74cbd7de2f606f2860efa728d98b8",
+    "call_id": "base:1",
+    "task": {
+      "key": "base:1",
+      "kind": "base",
+      "recipe": "cycles",
+      "core": [
+        4.0,
+        8.0
+      ],
+      "span": [
+        3.0,
+        9.0
+      ],
+      "fps": 8.0,
+      "last": false,
+      "tail_refs": [
+        "R3V5F-d3d5f62957ddda40e14b92e6",
+        "R3V5F-e340793d94cd73f4a0b54635",
+        "R3V5F-9b0c7f93cec107477f3f5359",
+        "R3V5F-01267a8fd6ffa4538f503f01",
+        "R3V5F-da45f8be52b36b4bf4f29385",
+        "R3V5F-652a88b75333c0c28172e40d",
+        "R3V5F-22c82c57a1fceeeb6821b064",
+        "R3V5F-e7252351af11711181eaadae"
+      ],
+      "observed_targets": [
+        "the person launch objects on the table"
+      ]
+    },
+    "refs": {
+      "F01": {
+        "id": "R3V5F-d3d5f62957ddda40e14b92e6",
+        "source_frame_id": "R3V5F-d3d5f62957ddda40e14b92e6",
+        "timestamp_seconds": 3.029690971520905,
+        "pts": 45000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F02": {
+        "id": "R3V5F-e340793d94cd73f4a0b54635",
+        "source_frame_id": "R3V5F-e340793d94cd73f4a0b54635",
+        "timestamp_seconds": 3.1306806705716017,
+        "pts": 46500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F03": {
+        "id": "R3V5F-9b0c7f93cec107477f3f5359",
+        "source_frame_id": "R3V5F-9b0c7f93cec107477f3f5359",
+        "timestamp_seconds": 3.2653336026391973,
+        "pts": 48500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F04": {
+        "id": "R3V5F-01267a8fd6ffa4538f503f01",
+        "source_frame_id": "R3V5F-01267a8fd6ffa4538f503f01",
+        "timestamp_seconds": 3.3663233016898944,
+        "pts": 50000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F05": {
+        "id": "R3V5F-da45f8be52b36b4bf4f29385",
+        "source_frame_id": "R3V5F-da45f8be52b36b4bf4f29385",
+        "timestamp_seconds": 3.50097623375749,
+        "pts": 52000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F06": {
+        "id": "R3V5F-652a88b75333c0c28172e40d",
+        "source_frame_id": "R3V5F-652a88b75333c0c28172e40d",
+        "timestamp_seconds": 3.635629165825086,
+        "pts": 54000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F07": {
+        "id": "R3V5F-22c82c57a1fceeeb6821b064",
+        "source_frame_id": "R3V5F-22c82c57a1fceeeb6821b064",
+        "timestamp_seconds": 3.7366188648757825,
+        "pts": 55500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F08": {
+        "id": "R3V5F-e7252351af11711181eaadae",
+        "source_frame_id": "R3V5F-e7252351af11711181eaadae",
+        "timestamp_seconds": 3.8712717969433785,
+        "pts": 57500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F09": {
+        "id": "R3V5F-59f6afdb533fb0bf2a2d8b11",
+        "source_frame_id": "R3V5F-59f6afdb533fb0bf2a2d8b11",
+        "timestamp_seconds": 4.0059247290109745,
+        "pts": 59500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F10": {
+        "id": "R3V5F-ab2e6a00c23a25ca80ad5c3b",
+        "source_frame_id": "R3V5F-ab2e6a00c23a25ca80ad5c3b",
+        "timestamp_seconds": 4.14057766107857,
+        "pts": 61500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F11": {
+        "id": "R3V5F-a2bb03f91d755e71bb46113d",
+        "source_frame_id": "R3V5F-a2bb03f91d755e71bb46113d",
+        "timestamp_seconds": 4.241567360129267,
+        "pts": 63000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F12": {
+        "id": "R3V5F-2ecf766dde1c3128baa28fd1",
+        "source_frame_id": "R3V5F-2ecf766dde1c3128baa28fd1",
+        "timestamp_seconds": 4.376220292196862,
+        "pts": 65000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F13": {
+        "id": "R3V5F-2292ac476351b1b66424c240",
+        "source_frame_id": "R3V5F-2292ac476351b1b66424c240",
+        "timestamp_seconds": 4.510873224264459,
+        "pts": 67000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F14": {
+        "id": "R3V5F-4785dbca5b1a386be114c48b",
+        "source_frame_id": "R3V5F-4785dbca5b1a386be114c48b",
+        "timestamp_seconds": 4.611862923315155,
+        "pts": 68500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F15": {
+        "id": "R3V5F-9d534e357e5c5f849e42192d",
+        "source_frame_id": "R3V5F-9d534e357e5c5f849e42192d",
+        "timestamp_seconds": 4.746515855382751,
+        "pts": 70500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F16": {
+        "id": "R3V5F-70dae83fcd1a703d08a14b1b",
+        "source_frame_id": "R3V5F-70dae83fcd1a703d08a14b1b",
+        "timestamp_seconds": 4.881168787450346,
+        "pts": 72500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F17": {
+        "id": "R3V5F-acb4bb20adb1177c97a1f14f",
+        "source_frame_id": "R3V5F-acb4bb20adb1177c97a1f14f",
+        "timestamp_seconds": 5.015821719517943,
+        "pts": 74500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F18": {
+        "id": "R3V5F-85ef17ee8bc9ec9409ffd19d",
+        "source_frame_id": "R3V5F-85ef17ee8bc9ec9409ffd19d",
+        "timestamp_seconds": 5.1168114185686395,
+        "pts": 76000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F19": {
+        "id": "R3V5F-c1b74dba3bcd63fd2653df8d",
+        "source_frame_id": "R3V5F-c1b74dba3bcd63fd2653df8d",
+        "timestamp_seconds": 5.251464350636235,
+        "pts": 78000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F20": {
+        "id": "R3V5F-734c5f391304be489d38bff1",
+        "source_frame_id": "R3V5F-734c5f391304be489d38bff1",
+        "timestamp_seconds": 5.386117282703831,
+        "pts": 80000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F21": {
+        "id": "R3V5F-47b09285f8ac4b629d59e0e2",
+        "source_frame_id": "R3V5F-47b09285f8ac4b629d59e0e2",
+        "timestamp_seconds": 5.487106981754527,
+        "pts": 81500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F22": {
+        "id": "R3V5F-4201f2f7f031c5265db31941",
+        "source_frame_id": "R3V5F-4201f2f7f031c5265db31941",
+        "timestamp_seconds": 5.621759913822124,
+        "pts": 83500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F23": {
+        "id": "R3V5F-1a09d14cd0c7eae75af70346",
+        "source_frame_id": "R3V5F-1a09d14cd0c7eae75af70346",
+        "timestamp_seconds": 5.756412845889719,
+        "pts": 85500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F24": {
+        "id": "R3V5F-9a69a4e1c5a6482c57713458",
+        "source_frame_id": "R3V5F-9a69a4e1c5a6482c57713458",
+        "timestamp_seconds": 5.891065777957315,
+        "pts": 87500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F25": {
+        "id": "R3V5F-0d7f7d4343ea706f44c4c83f",
+        "source_frame_id": "R3V5F-0d7f7d4343ea706f44c4c83f",
+        "timestamp_seconds": 5.992055477008011,
+        "pts": 89000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F26": {
+        "id": "R3V5F-daef8b3bf91f6a0dff4f97db",
+        "source_frame_id": "R3V5F-daef8b3bf91f6a0dff4f97db",
+        "timestamp_seconds": 6.126708409075608,
+        "pts": 91000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F27": {
+        "id": "R3V5F-f1c08e3b3d0bb91fe0186dd3",
+        "source_frame_id": "R3V5F-f1c08e3b3d0bb91fe0186dd3",
+        "timestamp_seconds": 6.261361341143203,
+        "pts": 93000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F28": {
+        "id": "R3V5F-de2b156291ca4170144a6186",
+        "source_frame_id": "R3V5F-de2b156291ca4170144a6186",
+        "timestamp_seconds": 6.3623510401939,
+        "pts": 94500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F29": {
+        "id": "R3V5F-7d3abd33868a1e43689bb800",
+        "source_frame_id": "R3V5F-7d3abd33868a1e43689bb800",
+        "timestamp_seconds": 6.497003972261496,
+        "pts": 96500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F30": {
+        "id": "R3V5F-d93475ba86c1c89aa0c4cb4a",
+        "source_frame_id": "R3V5F-d93475ba86c1c89aa0c4cb4a",
+        "timestamp_seconds": 6.631656904329092,
+        "pts": 98500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F31": {
+        "id": "R3V5F-5fcff9841f7aceec26afd37f",
+        "source_frame_id": "R3V5F-5fcff9841f7aceec26afd37f",
+        "timestamp_seconds": 6.766309836396688,
+        "pts": 100500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F32": {
+        "id": "R3V5F-9813461bee3e8e0a42f4f37a",
+        "source_frame_id": "R3V5F-9813461bee3e8e0a42f4f37a",
+        "timestamp_seconds": 6.867299535447384,
+        "pts": 102000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F33": {
+        "id": "R3V5F-55ea411d6922d7161b41f292",
+        "source_frame_id": "R3V5F-55ea411d6922d7161b41f292",
+        "timestamp_seconds": 7.00195246751498,
+        "pts": 104000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F34": {
+        "id": "R3V5F-e46efaeb2fe8db1f17b79be8",
+        "source_frame_id": "R3V5F-e46efaeb2fe8db1f17b79be8",
+        "timestamp_seconds": 7.136605399582576,
+        "pts": 106000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F35": {
+        "id": "R3V5F-b797cf80f007d84d39950ad2",
+        "source_frame_id": "R3V5F-b797cf80f007d84d39950ad2",
+        "timestamp_seconds": 7.237595098633273,
+        "pts": 107500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F36": {
+        "id": "R3V5F-8986389ec967fea8dae5a712",
+        "source_frame_id": "R3V5F-8986389ec967fea8dae5a712",
+        "timestamp_seconds": 7.372248030700868,
+        "pts": 109500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F37": {
+        "id": "R3V5F-e3c59c3fb04ed75e99d7c092",
+        "source_frame_id": "R3V5F-e3c59c3fb04ed75e99d7c092",
+        "timestamp_seconds": 7.506900962768464,
+        "pts": 111500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F38": {
+        "id": "R3V5F-81d2cc66be220738643d46bf",
+        "source_frame_id": "R3V5F-81d2cc66be220738643d46bf",
+        "timestamp_seconds": 7.64155389483606,
+        "pts": 113500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F39": {
+        "id": "R3V5F-53351d2928904978023ba61a",
+        "source_frame_id": "R3V5F-53351d2928904978023ba61a",
+        "timestamp_seconds": 7.742543593886757,
+        "pts": 115000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F40": {
+        "id": "R3V5F-64bb1230823b654c0b5fe8e8",
+        "source_frame_id": "R3V5F-64bb1230823b654c0b5fe8e8",
+        "timestamp_seconds": 7.877196525954353,
+        "pts": 117000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F41": {
+        "id": "R3V5F-8225fd35a083d1e4bec9fde3",
+        "source_frame_id": "R3V5F-8225fd35a083d1e4bec9fde3",
+        "timestamp_seconds": 8.011849458021949,
+        "pts": 119000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F42": {
+        "id": "R3V5F-337286c7948ebe9e27e96a10",
+        "source_frame_id": "R3V5F-337286c7948ebe9e27e96a10",
+        "timestamp_seconds": 8.112839157072646,
+        "pts": 120500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F43": {
+        "id": "R3V5F-a97e30191c16fc9d5ec6f594",
+        "source_frame_id": "R3V5F-a97e30191c16fc9d5ec6f594",
+        "timestamp_seconds": 8.247492089140241,
+        "pts": 122500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F44": {
+        "id": "R3V5F-e30ea72342c9944e269645de",
+        "source_frame_id": "R3V5F-e30ea72342c9944e269645de",
+        "timestamp_seconds": 8.382145021207837,
+        "pts": 124500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F45": {
+        "id": "R3V5F-19b408d454ae0530b37fc4b8",
+        "source_frame_id": "R3V5F-19b408d454ae0530b37fc4b8",
+        "timestamp_seconds": 8.516797953275432,
+        "pts": 126500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F46": {
+        "id": "R3V5F-fca45a28c45d480f06b69f04",
+        "source_frame_id": "R3V5F-fca45a28c45d480f06b69f04",
+        "timestamp_seconds": 8.617787652326129,
+        "pts": 128000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F47": {
+        "id": "R3V5F-b582a4c50a6c16c82d77c78d",
+        "source_frame_id": "R3V5F-b582a4c50a6c16c82d77c78d",
+        "timestamp_seconds": 8.752440584393725,
+        "pts": 130000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F48": {
+        "id": "R3V5F-d4448ab50a6d35808d18d259",
+        "source_frame_id": "R3V5F-d4448ab50a6d35808d18d259",
+        "timestamp_seconds": 8.88709351646132,
+        "pts": 132000,
+        "time_base": [
+          1,
+          14853
+        ]
+      }
+    },
+    "raw": "{\"at\":[\"F04\"],\"decision\":\"not_target\",\"note\":\"Hand enters frame but no object is launched.\"}\n{\"at\":[\"F05\",\"F06\",\"F07\",\"F08\"],\"decision\":\"occurrence\",\"note\":\"Hand picks up and places down a green tube; no launch occurs.\"}\n{\"at\":[\"F09\",\"F10\",\"F11\",\"F12\"],\"decision\":\"not_target\",\"note\":\"Hand re-enters and moves the tube again; no launch.\"}\n{\"at\":[\"F13\",\"F14\"],\"decision\":\"not_target\",\"note\":\"Hand exits; no launch observed.\"}\n{\"at\":[\"F04\",\"F14\"],\"decision\":\"end\",\"status\":\"complete\",\"note\":\"All frames show hand interaction with a tube, no object launch.\"}",
+    "output_tokens": 168
+  },
+  {
+    "case": "R3-MVB-action-count-000",
+    "question": "How many times did the person launch objects on the table?",
+    "source_file": "R3-MVB-action-count-000.json",
+    "source_sha256": "ca505cd8f2081d6334b15fc4b909c35cffb74cbd7de2f606f2860efa728d98b8",
+    "call_id": "base:2",
+    "task": {
+      "key": "base:2",
+      "kind": "base",
+      "recipe": "cycles",
+      "core": [
+        8.0,
+        12.0
+      ],
+      "span": [
+        7.0,
+        13.0
+      ],
+      "fps": 8.0,
+      "last": false,
+      "tail_refs": [
+        "R3V5F-55ea411d6922d7161b41f292",
+        "R3V5F-e46efaeb2fe8db1f17b79be8",
+        "R3V5F-b797cf80f007d84d39950ad2",
+        "R3V5F-8986389ec967fea8dae5a712",
+        "R3V5F-e3c59c3fb04ed75e99d7c092",
+        "R3V5F-81d2cc66be220738643d46bf",
+        "R3V5F-53351d2928904978023ba61a",
+        "R3V5F-64bb1230823b654c0b5fe8e8"
+      ],
+      "observed_targets": [
+        "the person launch objects on the table"
+      ]
+    },
+    "refs": {
+      "F01": {
+        "id": "R3V5F-55ea411d6922d7161b41f292",
+        "source_frame_id": "R3V5F-55ea411d6922d7161b41f292",
+        "timestamp_seconds": 7.00195246751498,
+        "pts": 104000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F02": {
+        "id": "R3V5F-e46efaeb2fe8db1f17b79be8",
+        "source_frame_id": "R3V5F-e46efaeb2fe8db1f17b79be8",
+        "timestamp_seconds": 7.136605399582576,
+        "pts": 106000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F03": {
+        "id": "R3V5F-b797cf80f007d84d39950ad2",
+        "source_frame_id": "R3V5F-b797cf80f007d84d39950ad2",
+        "timestamp_seconds": 7.237595098633273,
+        "pts": 107500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F04": {
+        "id": "R3V5F-8986389ec967fea8dae5a712",
+        "source_frame_id": "R3V5F-8986389ec967fea8dae5a712",
+        "timestamp_seconds": 7.372248030700868,
+        "pts": 109500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F05": {
+        "id": "R3V5F-e3c59c3fb04ed75e99d7c092",
+        "source_frame_id": "R3V5F-e3c59c3fb04ed75e99d7c092",
+        "timestamp_seconds": 7.506900962768464,
+        "pts": 111500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F06": {
+        "id": "R3V5F-81d2cc66be220738643d46bf",
+        "source_frame_id": "R3V5F-81d2cc66be220738643d46bf",
+        "timestamp_seconds": 7.64155389483606,
+        "pts": 113500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F07": {
+        "id": "R3V5F-53351d2928904978023ba61a",
+        "source_frame_id": "R3V5F-53351d2928904978023ba61a",
+        "timestamp_seconds": 7.742543593886757,
+        "pts": 115000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F08": {
+        "id": "R3V5F-64bb1230823b654c0b5fe8e8",
+        "source_frame_id": "R3V5F-64bb1230823b654c0b5fe8e8",
+        "timestamp_seconds": 7.877196525954353,
+        "pts": 117000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F09": {
+        "id": "R3V5F-8225fd35a083d1e4bec9fde3",
+        "source_frame_id": "R3V5F-8225fd35a083d1e4bec9fde3",
+        "timestamp_seconds": 8.011849458021949,
+        "pts": 119000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F10": {
+        "id": "R3V5F-337286c7948ebe9e27e96a10",
+        "source_frame_id": "R3V5F-337286c7948ebe9e27e96a10",
+        "timestamp_seconds": 8.112839157072646,
+        "pts": 120500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F11": {
+        "id": "R3V5F-a97e30191c16fc9d5ec6f594",
+        "source_frame_id": "R3V5F-a97e30191c16fc9d5ec6f594",
+        "timestamp_seconds": 8.247492089140241,
+        "pts": 122500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F12": {
+        "id": "R3V5F-e30ea72342c9944e269645de",
+        "source_frame_id": "R3V5F-e30ea72342c9944e269645de",
+        "timestamp_seconds": 8.382145021207837,
+        "pts": 124500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F13": {
+        "id": "R3V5F-19b408d454ae0530b37fc4b8",
+        "source_frame_id": "R3V5F-19b408d454ae0530b37fc4b8",
+        "timestamp_seconds": 8.516797953275432,
+        "pts": 126500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F14": {
+        "id": "R3V5F-fca45a28c45d480f06b69f04",
+        "source_frame_id": "R3V5F-fca45a28c45d480f06b69f04",
+        "timestamp_seconds": 8.617787652326129,
+        "pts": 128000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F15": {
+        "id": "R3V5F-b582a4c50a6c16c82d77c78d",
+        "source_frame_id": "R3V5F-b582a4c50a6c16c82d77c78d",
+        "timestamp_seconds": 8.752440584393725,
+        "pts": 130000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F16": {
+        "id": "R3V5F-d4448ab50a6d35808d18d259",
+        "source_frame_id": "R3V5F-d4448ab50a6d35808d18d259",
+        "timestamp_seconds": 8.88709351646132,
+        "pts": 132000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F17": {
+        "id": "R3V5F-6161370b0ba92d8a72de9720",
+        "source_frame_id": "R3V5F-6161370b0ba92d8a72de9720",
+        "timestamp_seconds": 8.988083215512018,
+        "pts": 133500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F18": {
+        "id": "R3V5F-69ee9b1f6c7b0fe3d2f3f580",
+        "source_frame_id": "R3V5F-69ee9b1f6c7b0fe3d2f3f580",
+        "timestamp_seconds": 9.122736147579614,
+        "pts": 135500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F19": {
+        "id": "R3V5F-1852ec19f7c8cdbeabc69b9d",
+        "source_frame_id": "R3V5F-1852ec19f7c8cdbeabc69b9d",
+        "timestamp_seconds": 9.25738907964721,
+        "pts": 137500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F20": {
+        "id": "R3V5F-e8b45e1ef9e4711107aca02d",
+        "source_frame_id": "R3V5F-e8b45e1ef9e4711107aca02d",
+        "timestamp_seconds": 9.358378778697906,
+        "pts": 139000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F21": {
+        "id": "R3V5F-6de9aceeaa4d04ddf9df5a83",
+        "source_frame_id": "R3V5F-6de9aceeaa4d04ddf9df5a83",
+        "timestamp_seconds": 9.493031710765502,
+        "pts": 141000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F22": {
+        "id": "R3V5F-4ccc809a1abba8abb888ac19",
+        "source_frame_id": "R3V5F-4ccc809a1abba8abb888ac19",
+        "timestamp_seconds": 9.627684642833097,
+        "pts": 143000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F23": {
+        "id": "R3V5F-7ab0bad13d338c4461b28dd6",
+        "source_frame_id": "R3V5F-7ab0bad13d338c4461b28dd6",
+        "timestamp_seconds": 9.762337574900693,
+        "pts": 145000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F24": {
+        "id": "R3V5F-5658090f60329476a447ecaf",
+        "source_frame_id": "R3V5F-5658090f60329476a447ecaf",
+        "timestamp_seconds": 9.86332727395139,
+        "pts": 146500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F25": {
+        "id": "R3V5F-e164696475f7e0ca50811630",
+        "source_frame_id": "R3V5F-e164696475f7e0ca50811630",
+        "timestamp_seconds": 9.997980206018987,
+        "pts": 148500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F26": {
+        "id": "R3V5F-ef5916088ad93ceaf53a3eac",
+        "source_frame_id": "R3V5F-ef5916088ad93ceaf53a3eac",
+        "timestamp_seconds": 10.132633138086582,
+        "pts": 150500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F27": {
+        "id": "R3V5F-a04ceef1aae4426bb7cc8f22",
+        "source_frame_id": "R3V5F-a04ceef1aae4426bb7cc8f22",
+        "timestamp_seconds": 10.233622837137279,
+        "pts": 152000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F28": {
+        "id": "R3V5F-7be75f1aa8f7f460dfeec505",
+        "source_frame_id": "R3V5F-7be75f1aa8f7f460dfeec505",
+        "timestamp_seconds": 10.368275769204875,
+        "pts": 154000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F29": {
+        "id": "R3V5F-de48f1dbd0c98cfc0e032ed1",
+        "source_frame_id": "R3V5F-de48f1dbd0c98cfc0e032ed1",
+        "timestamp_seconds": 10.50292870127247,
+        "pts": 156000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F30": {
+        "id": "R3V5F-2043734fb91d549aec5c55fd",
+        "source_frame_id": "R3V5F-2043734fb91d549aec5c55fd",
+        "timestamp_seconds": 10.637581633340066,
+        "pts": 158000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F31": {
+        "id": "R3V5F-2aa3abaa646db4a1f2f93c3c",
+        "source_frame_id": "R3V5F-2aa3abaa646db4a1f2f93c3c",
+        "timestamp_seconds": 10.738571332390762,
+        "pts": 159500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F32": {
+        "id": "R3V5F-185bcbc5b5613124eda67c4b",
+        "source_frame_id": "R3V5F-185bcbc5b5613124eda67c4b",
+        "timestamp_seconds": 10.873224264458358,
+        "pts": 161500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F33": {
+        "id": "R3V5F-b11354fcbfc4cda500455e03",
+        "source_frame_id": "R3V5F-b11354fcbfc4cda500455e03",
+        "timestamp_seconds": 11.007877196525955,
+        "pts": 163500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F34": {
+        "id": "R3V5F-a82a34a0c93555917c11d79a",
+        "source_frame_id": "R3V5F-a82a34a0c93555917c11d79a",
+        "timestamp_seconds": 11.108866895576652,
+        "pts": 165000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F35": {
+        "id": "R3V5F-de3f4ad08b935ddae815a83e",
+        "source_frame_id": "R3V5F-de3f4ad08b935ddae815a83e",
+        "timestamp_seconds": 11.243519827644247,
+        "pts": 167000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F36": {
+        "id": "R3V5F-be2c3d3aa3bdf4e6b3acb628",
+        "source_frame_id": "R3V5F-be2c3d3aa3bdf4e6b3acb628",
+        "timestamp_seconds": 11.378172759711843,
+        "pts": 169000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F37": {
+        "id": "R3V5F-f0cd024719f0401af0776527",
+        "source_frame_id": "R3V5F-f0cd024719f0401af0776527",
+        "timestamp_seconds": 11.512825691779438,
+        "pts": 171000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F38": {
+        "id": "R3V5F-de7b1933db0c5b3d1c9523d9",
+        "source_frame_id": "R3V5F-de7b1933db0c5b3d1c9523d9",
+        "timestamp_seconds": 11.613815390830135,
+        "pts": 172500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F39": {
+        "id": "R3V5F-37fc3fbc7c82f1e5d5febd8d",
+        "source_frame_id": "R3V5F-37fc3fbc7c82f1e5d5febd8d",
+        "timestamp_seconds": 11.74846832289773,
+        "pts": 174500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F40": {
+        "id": "R3V5F-e90842d747b750150268fef7",
+        "source_frame_id": "R3V5F-e90842d747b750150268fef7",
+        "timestamp_seconds": 11.883121254965326,
+        "pts": 176500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F41": {
+        "id": "R3V5F-c514472617f5e787cfa0a2d7",
+        "source_frame_id": "R3V5F-c514472617f5e787cfa0a2d7",
+        "timestamp_seconds": 11.984110954016023,
+        "pts": 178000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F42": {
+        "id": "R3V5F-56aeb46e0e5c305d23e5dbec",
+        "source_frame_id": "R3V5F-56aeb46e0e5c305d23e5dbec",
+        "timestamp_seconds": 12.11876388608362,
+        "pts": 180000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F43": {
+        "id": "R3V5F-572a9f4746f9251d8f819a60",
+        "source_frame_id": "R3V5F-572a9f4746f9251d8f819a60",
+        "timestamp_seconds": 12.253416818151216,
+        "pts": 182000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F44": {
+        "id": "R3V5F-788fb63ed02e76a48ca53880",
+        "source_frame_id": "R3V5F-788fb63ed02e76a48ca53880",
+        "timestamp_seconds": 12.388069750218811,
+        "pts": 184000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F45": {
+        "id": "R3V5F-43b5be8fa2b4a676168de3b4",
+        "source_frame_id": "R3V5F-43b5be8fa2b4a676168de3b4",
+        "timestamp_seconds": 12.489059449269508,
+        "pts": 185500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F46": {
+        "id": "R3V5F-fdcbdbe8e5d71c70a27e7df5",
+        "source_frame_id": "R3V5F-fdcbdbe8e5d71c70a27e7df5",
+        "timestamp_seconds": 12.623712381337103,
+        "pts": 187500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F47": {
+        "id": "R3V5F-b09486e8f798bdae9c32f0ef",
+        "source_frame_id": "R3V5F-b09486e8f798bdae9c32f0ef",
+        "timestamp_seconds": 12.758365313404699,
+        "pts": 189500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F48": {
+        "id": "R3V5F-b945eabaeda1474cb43aa1b6",
+        "source_frame_id": "R3V5F-b945eabaeda1474cb43aa1b6",
+        "timestamp_seconds": 12.859355012455396,
+        "pts": 191000,
+        "time_base": [
+          1,
+          14853
+        ]
+      }
+    },
+    "raw": "{\"at\":[\"F09\"],\"decision\":\"not_target\",\"note\":\"Hand enters frame but no object is launched.\"}\n{\"at\":[\"F10\",\"F11\"],\"decision\":\"occurrence\",\"note\":\"Glue stick is placed on the table and then picked up.\"}\n{\"at\":[\"F12\",\"F13\"],\"decision\":\"not_target\",\"note\":\"Hand moves away; no launching action.\"}\n{\"at\":[\"F14\",\"F15\"],\"decision\":\"not_target\",\"note\":\"Hand re-enters but no object is launched.\"}\n{\"at\":[\"F16\",\"F17\"],\"decision\":\"not_target\",\"note\":\"Hand moves away; no launching action.\"}\n{\"at\":[\"F18\",\"F19\"],\"decision\":\"not_target\",\"note\":\"Hand re-enters but no object is launched.\"}\n{\"at\":[\"F20\",\"F21\"],\"decision\":\"not_target\",\"note\":\"Hand moves away; no launching action.\"}\n{\"at\":[\"F22\",\"F23\"],\"decision\":\"not_target\",\"note\":\"Hand re-enters but no object is launched.\"}\n{\"at\":[\"F24\",\"F25\"],\"decision\":\"not_target\",\"note\":\"Hand moves away; no launching action.\"}\n{\"at\":[\"F26\",\"F27\"],\"decision\":\"not_target\",\"note\":\"Hand re-enters but no object is launched.\"}\n{\"at\":[\"F28\",\"F29\"],\"decision\":\"not_target\",\"note\":\"Hand moves away; no launching action.\"}\n{\"at\":[\"F30\",\"F31\"],\"decision\":\"not_target\",\"note\":\"Hand re-enters but no object is launched.\"}\n{\"at\":[\"F32\",\"F33\"],\"decision\":\"not_target\",\"note\":\"Hand moves away; no launching action.\"}\n{\"at\":[\"F34\",\"F35\"],\"decision\":\"not_target\",\"note\":\"Hand re-enters but no object is launched.\"}\n{\"at\":[\"F36\",\"F37\"],\"decision\":\"not_target\",\"note\":\"Hand moves away; no launching action.\"}\n{\"at\":[\"F38\",\"F39\"],\"decision\":\"not_target\",\"note\":\"Hand re-enters but no object is launched.\"}\n{\"at\":[\"F40\",\"F41\"],\"decision\":\"not_target\",\"note\":\"Hand moves away; no launching action.\"}\n{\"at\":[\"F09\",\"F41\"],\"decision\":\"end\",\"status\":\"complete\",\"note\":\"No object was launched; hand movements are visible but no launching action occurred.\"}",
+    "output_tokens": 520
+  },
+  {
+    "case": "R3-MVB-action-count-000",
+    "question": "How many times did the person launch objects on the table?",
+    "source_file": "R3-MVB-action-count-000.json",
+    "source_sha256": "ca505cd8f2081d6334b15fc4b909c35cffb74cbd7de2f606f2860efa728d98b8",
+    "call_id": "base:3",
+    "task": {
+      "key": "base:3",
+      "kind": "base",
+      "recipe": "cycles",
+      "core": [
+        12.0,
+        15.384097488722817
+      ],
+      "span": [
+        11.0,
+        15.384097488722817
+      ],
+      "fps": 8.0,
+      "last": true,
+      "tail_refs": [
+        "R3V5F-b11354fcbfc4cda500455e03",
+        "R3V5F-a82a34a0c93555917c11d79a",
+        "R3V5F-de3f4ad08b935ddae815a83e",
+        "R3V5F-be2c3d3aa3bdf4e6b3acb628",
+        "R3V5F-f0cd024719f0401af0776527",
+        "R3V5F-de7b1933db0c5b3d1c9523d9",
+        "R3V5F-37fc3fbc7c82f1e5d5febd8d",
+        "R3V5F-e90842d747b750150268fef7",
+        "R3V5F-c514472617f5e787cfa0a2d7"
+      ],
+      "observed_targets": [
+        "the person launch objects on the table"
+      ]
+    },
+    "refs": {
+      "F01": {
+        "id": "R3V5F-b11354fcbfc4cda500455e03",
+        "source_frame_id": "R3V5F-b11354fcbfc4cda500455e03",
+        "timestamp_seconds": 11.007877196525955,
+        "pts": 163500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F02": {
+        "id": "R3V5F-a82a34a0c93555917c11d79a",
+        "source_frame_id": "R3V5F-a82a34a0c93555917c11d79a",
+        "timestamp_seconds": 11.108866895576652,
+        "pts": 165000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F03": {
+        "id": "R3V5F-de3f4ad08b935ddae815a83e",
+        "source_frame_id": "R3V5F-de3f4ad08b935ddae815a83e",
+        "timestamp_seconds": 11.243519827644247,
+        "pts": 167000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F04": {
+        "id": "R3V5F-be2c3d3aa3bdf4e6b3acb628",
+        "source_frame_id": "R3V5F-be2c3d3aa3bdf4e6b3acb628",
+        "timestamp_seconds": 11.378172759711843,
+        "pts": 169000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F05": {
+        "id": "R3V5F-f0cd024719f0401af0776527",
+        "source_frame_id": "R3V5F-f0cd024719f0401af0776527",
+        "timestamp_seconds": 11.512825691779438,
+        "pts": 171000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F06": {
+        "id": "R3V5F-de7b1933db0c5b3d1c9523d9",
+        "source_frame_id": "R3V5F-de7b1933db0c5b3d1c9523d9",
+        "timestamp_seconds": 11.613815390830135,
+        "pts": 172500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F07": {
+        "id": "R3V5F-37fc3fbc7c82f1e5d5febd8d",
+        "source_frame_id": "R3V5F-37fc3fbc7c82f1e5d5febd8d",
+        "timestamp_seconds": 11.74846832289773,
+        "pts": 174500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F08": {
+        "id": "R3V5F-e90842d747b750150268fef7",
+        "source_frame_id": "R3V5F-e90842d747b750150268fef7",
+        "timestamp_seconds": 11.883121254965326,
+        "pts": 176500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F09": {
+        "id": "R3V5F-c514472617f5e787cfa0a2d7",
+        "source_frame_id": "R3V5F-c514472617f5e787cfa0a2d7",
+        "timestamp_seconds": 11.984110954016023,
+        "pts": 178000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F10": {
+        "id": "R3V5F-56aeb46e0e5c305d23e5dbec",
+        "source_frame_id": "R3V5F-56aeb46e0e5c305d23e5dbec",
+        "timestamp_seconds": 12.11876388608362,
+        "pts": 180000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F11": {
+        "id": "R3V5F-572a9f4746f9251d8f819a60",
+        "source_frame_id": "R3V5F-572a9f4746f9251d8f819a60",
+        "timestamp_seconds": 12.253416818151216,
+        "pts": 182000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F12": {
+        "id": "R3V5F-788fb63ed02e76a48ca53880",
+        "source_frame_id": "R3V5F-788fb63ed02e76a48ca53880",
+        "timestamp_seconds": 12.388069750218811,
+        "pts": 184000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F13": {
+        "id": "R3V5F-43b5be8fa2b4a676168de3b4",
+        "source_frame_id": "R3V5F-43b5be8fa2b4a676168de3b4",
+        "timestamp_seconds": 12.489059449269508,
+        "pts": 185500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F14": {
+        "id": "R3V5F-fdcbdbe8e5d71c70a27e7df5",
+        "source_frame_id": "R3V5F-fdcbdbe8e5d71c70a27e7df5",
+        "timestamp_seconds": 12.623712381337103,
+        "pts": 187500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F15": {
+        "id": "R3V5F-b09486e8f798bdae9c32f0ef",
+        "source_frame_id": "R3V5F-b09486e8f798bdae9c32f0ef",
+        "timestamp_seconds": 12.758365313404699,
+        "pts": 189500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F16": {
+        "id": "R3V5F-b945eabaeda1474cb43aa1b6",
+        "source_frame_id": "R3V5F-b945eabaeda1474cb43aa1b6",
+        "timestamp_seconds": 12.859355012455396,
+        "pts": 191000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F17": {
+        "id": "R3V5F-61a162638871e1d516b4ece3",
+        "source_frame_id": "R3V5F-61a162638871e1d516b4ece3",
+        "timestamp_seconds": 12.994007944522991,
+        "pts": 193000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F18": {
+        "id": "R3V5F-8b4dc0d31245ce6583832e9c",
+        "source_frame_id": "R3V5F-8b4dc0d31245ce6583832e9c",
+        "timestamp_seconds": 13.128660876590589,
+        "pts": 195000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F19": {
+        "id": "R3V5F-0567492745b3457232b2dd84",
+        "source_frame_id": "R3V5F-0567492745b3457232b2dd84",
+        "timestamp_seconds": 13.263313808658184,
+        "pts": 197000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F20": {
+        "id": "R3V5F-160739bcc76bc2fc64c3cf71",
+        "source_frame_id": "R3V5F-160739bcc76bc2fc64c3cf71",
+        "timestamp_seconds": 13.36430350770888,
+        "pts": 198500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F21": {
+        "id": "R3V5F-2bdd8d4bca3bcd0e8e5590eb",
+        "source_frame_id": "R3V5F-2bdd8d4bca3bcd0e8e5590eb",
+        "timestamp_seconds": 13.498956439776476,
+        "pts": 200500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F22": {
+        "id": "R3V5F-f9e91b02350509f1c3b5e570",
+        "source_frame_id": "R3V5F-f9e91b02350509f1c3b5e570",
+        "timestamp_seconds": 13.633609371844072,
+        "pts": 202500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F23": {
+        "id": "R3V5F-ec04d15e0cc1b32275bd0772",
+        "source_frame_id": "R3V5F-ec04d15e0cc1b32275bd0772",
+        "timestamp_seconds": 13.734599070894769,
+        "pts": 204000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F24": {
+        "id": "R3V5F-254e7cbc7c2ab5400ef2ae1d",
+        "source_frame_id": "R3V5F-254e7cbc7c2ab5400ef2ae1d",
+        "timestamp_seconds": 13.869252002962364,
+        "pts": 206000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F25": {
+        "id": "R3V5F-a4d7b65a283cc4f33e3a8dfa",
+        "source_frame_id": "R3V5F-a4d7b65a283cc4f33e3a8dfa",
+        "timestamp_seconds": 14.00390493502996,
+        "pts": 208000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F26": {
+        "id": "R3V5F-c4df0f6c23e017799dec5757",
+        "source_frame_id": "R3V5F-c4df0f6c23e017799dec5757",
+        "timestamp_seconds": 14.138557867097557,
+        "pts": 210000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F27": {
+        "id": "R3V5F-3b2f4da34cd2890bf16f7178",
+        "source_frame_id": "R3V5F-3b2f4da34cd2890bf16f7178",
+        "timestamp_seconds": 14.239547566148254,
+        "pts": 211500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F28": {
+        "id": "R3V5F-0dd37cf244c7d189f9f7b63a",
+        "source_frame_id": "R3V5F-0dd37cf244c7d189f9f7b63a",
+        "timestamp_seconds": 14.374200498215849,
+        "pts": 213500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F29": {
+        "id": "R3V5F-b05baa6258d8f9d637e62b9e",
+        "source_frame_id": "R3V5F-b05baa6258d8f9d637e62b9e",
+        "timestamp_seconds": 14.508853430283445,
+        "pts": 215500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F30": {
+        "id": "R3V5F-5c9d6638d1bcf5459526e4d5",
+        "source_frame_id": "R3V5F-5c9d6638d1bcf5459526e4d5",
+        "timestamp_seconds": 14.609843129334141,
+        "pts": 217000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F31": {
+        "id": "R3V5F-f8595529815a04ae9db94af3",
+        "source_frame_id": "R3V5F-f8595529815a04ae9db94af3",
+        "timestamp_seconds": 14.744496061401737,
+        "pts": 219000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F32": {
+        "id": "R3V5F-4f9cfce94a39599607aa3f89",
+        "source_frame_id": "R3V5F-4f9cfce94a39599607aa3f89",
+        "timestamp_seconds": 14.879148993469332,
+        "pts": 221000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F33": {
+        "id": "R3V5F-d38f0e06dbf95bbcef14c56f",
+        "source_frame_id": "R3V5F-d38f0e06dbf95bbcef14c56f",
+        "timestamp_seconds": 15.013801925536928,
+        "pts": 223000,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F34": {
+        "id": "R3V5F-868e123b714f44d421d1bce1",
+        "source_frame_id": "R3V5F-868e123b714f44d421d1bce1",
+        "timestamp_seconds": 15.114791624587625,
+        "pts": 224500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F35": {
+        "id": "R3V5F-b53f45c9cdfb1fe7e4811803",
+        "source_frame_id": "R3V5F-b53f45c9cdfb1fe7e4811803",
+        "timestamp_seconds": 15.249444556655222,
+        "pts": 226500,
+        "time_base": [
+          1,
+          14853
+        ]
+      },
+      "F36": {
+        "id": "R3V5F-ae1c0213aeeedb7cd18cf6eb",
+        "source_frame_id": "R3V5F-ae1c0213aeeedb7cd18cf6eb",
+        "timestamp_seconds": 15.350434255705919,
+        "pts": 228000,
+        "time_base": [
+          1,
+          14853
+        ]
+      }
+    },
+    "raw": "{\"at\":[\"F10\"],\"decision\":\"not_target\",\"note\":\"Hand enters frame but no object is launched.\"}\n{\"at\":[\"F12\"],\"decision\":\"occurrence\",\"note\":\"Object (green tube) is placed on the table.\"}\n{\"at\":[\"F14\"],\"decision\":\"end\",\"status\":\"complete\",\"note\":\"Object is visible on the table; no further launching actions.\"}",
+    "output_tokens": 81
+  },
+  {
+    "case": "R3-MME-225-3",
+    "question": "What is the second paper animal made in this video?",
+    "source_file": "R3-MME-225-3.json",
+    "source_sha256": "604a20e94620a6183f8a513226c21726266c502d2b0e267878748c86b55d4f6d",
+    "call_id": "query",
+    "task": {
+      "key": "query",
+      "kind": "query"
+    },
+    "refs": {},
+    "raw": "{\"op\":\"nth_occurrence\",\"target\":\"making a paper animal\",\"unit\":\"production_instance\",\"basis\":\"ambiguous\",\"k\":2,\"project\":\"animal type\"}",
+    "output_tokens": 33
+  },
+  {
+    "case": "R3-MME-225-3",
+    "question": "What is the second paper animal made in this video?",
+    "source_file": "R3-MME-225-3.json",
+    "source_sha256": "604a20e94620a6183f8a513226c21726266c502d2b0e267878748c86b55d4f6d",
+    "call_id": "base:0",
+    "task": {
+      "key": "base:0",
+      "kind": "base",
+      "recipe": "instances",
+      "core": [
+        0.0,
+        32.0
+      ],
+      "span": [
+        0,
+        32.0
+      ],
+      "fps": 1.0,
+      "last": false,
+      "tail_refs": [],
+      "observed_targets": [
+        "making a paper animal"
+      ]
+    },
+    "refs": {
+      "F01": {
+        "id": "R3V5F-2c364b822706dc943c9020c9",
+        "source_frame_id": "R3V5F-2c364b822706dc943c9020c9",
+        "timestamp_seconds": 0.0,
+        "pts": 0,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F02": {
+        "id": "R3V5F-ac66e335daa139bd613422d9",
+        "source_frame_id": "R3V5F-ac66e335daa139bd613422d9",
+        "timestamp_seconds": 1.001,
+        "pts": 30030,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F03": {
+        "id": "R3V5F-9d0a8a2121991eafbc67e288",
+        "source_frame_id": "R3V5F-9d0a8a2121991eafbc67e288",
+        "timestamp_seconds": 2.002,
+        "pts": 60060,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F04": {
+        "id": "R3V5F-e6c752fae6bde8503a2dd9eb",
+        "source_frame_id": "R3V5F-e6c752fae6bde8503a2dd9eb",
+        "timestamp_seconds": 3.003,
+        "pts": 90090,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F05": {
+        "id": "R3V5F-41de33960dbd7294e97fe2a6",
+        "source_frame_id": "R3V5F-41de33960dbd7294e97fe2a6",
+        "timestamp_seconds": 4.004,
+        "pts": 120120,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F06": {
+        "id": "R3V5F-4cf250c110155ff5c1e057aa",
+        "source_frame_id": "R3V5F-4cf250c110155ff5c1e057aa",
+        "timestamp_seconds": 5.005,
+        "pts": 150150,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F07": {
+        "id": "R3V5F-90d7c2dbdf537df218a1c2b6",
+        "source_frame_id": "R3V5F-90d7c2dbdf537df218a1c2b6",
+        "timestamp_seconds": 6.006,
+        "pts": 180180,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F08": {
+        "id": "R3V5F-ac4bd058eb105ed317188309",
+        "source_frame_id": "R3V5F-ac4bd058eb105ed317188309",
+        "timestamp_seconds": 7.007,
+        "pts": 210210,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F09": {
+        "id": "R3V5F-d825bbcaed742e3b88644186",
+        "source_frame_id": "R3V5F-d825bbcaed742e3b88644186",
+        "timestamp_seconds": 8.008,
+        "pts": 240240,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F10": {
+        "id": "R3V5F-45c8a9370a2baf8673874149",
+        "source_frame_id": "R3V5F-45c8a9370a2baf8673874149",
+        "timestamp_seconds": 9.009,
+        "pts": 270270,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F11": {
+        "id": "R3V5F-80e19cd29a09576086e638c7",
+        "source_frame_id": "R3V5F-80e19cd29a09576086e638c7",
+        "timestamp_seconds": 10.01,
+        "pts": 300300,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F12": {
+        "id": "R3V5F-ba296b18e2558fef35e24a26",
+        "source_frame_id": "R3V5F-ba296b18e2558fef35e24a26",
+        "timestamp_seconds": 11.011,
+        "pts": 330330,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F13": {
+        "id": "R3V5F-142bfb69b4852071ebc97621",
+        "source_frame_id": "R3V5F-142bfb69b4852071ebc97621",
+        "timestamp_seconds": 12.012,
+        "pts": 360360,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F14": {
+        "id": "R3V5F-b8a7d79ea28ad0457a9ef072",
+        "source_frame_id": "R3V5F-b8a7d79ea28ad0457a9ef072",
+        "timestamp_seconds": 13.013,
+        "pts": 390390,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F15": {
+        "id": "R3V5F-63b0ea1e94f74c454f62ad97",
+        "source_frame_id": "R3V5F-63b0ea1e94f74c454f62ad97",
+        "timestamp_seconds": 14.014,
+        "pts": 420420,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F16": {
+        "id": "R3V5F-b11020494a0d1b2c4769c4e5",
+        "source_frame_id": "R3V5F-b11020494a0d1b2c4769c4e5",
+        "timestamp_seconds": 15.015,
+        "pts": 450450,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F17": {
+        "id": "R3V5F-843c79d84e3cdf566a1d5923",
+        "source_frame_id": "R3V5F-843c79d84e3cdf566a1d5923",
+        "timestamp_seconds": 16.016,
+        "pts": 480480,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F18": {
+        "id": "R3V5F-393e636bc03d283c1f3363d2",
+        "source_frame_id": "R3V5F-393e636bc03d283c1f3363d2",
+        "timestamp_seconds": 16.983633333333334,
+        "pts": 509509,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F19": {
+        "id": "R3V5F-1e0e1231c634ed7b3c14ff5a",
+        "source_frame_id": "R3V5F-1e0e1231c634ed7b3c14ff5a",
+        "timestamp_seconds": 17.984633333333335,
+        "pts": 539539,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F20": {
+        "id": "R3V5F-5f593f25d6c219c5bda4ee2c",
+        "source_frame_id": "R3V5F-5f593f25d6c219c5bda4ee2c",
+        "timestamp_seconds": 18.985633333333332,
+        "pts": 569569,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F21": {
+        "id": "R3V5F-2d60c951ee5ddcf7cd67f773",
+        "source_frame_id": "R3V5F-2d60c951ee5ddcf7cd67f773",
+        "timestamp_seconds": 19.986633333333334,
+        "pts": 599599,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F22": {
+        "id": "R3V5F-062dc6320d6323ebcced3de5",
+        "source_frame_id": "R3V5F-062dc6320d6323ebcced3de5",
+        "timestamp_seconds": 20.987633333333335,
+        "pts": 629629,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F23": {
+        "id": "R3V5F-16ee7dc833ef2902d5c4af4f",
+        "source_frame_id": "R3V5F-16ee7dc833ef2902d5c4af4f",
+        "timestamp_seconds": 21.988633333333333,
+        "pts": 659659,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F24": {
+        "id": "R3V5F-5818558fe5e2a575352f57e3",
+        "source_frame_id": "R3V5F-5818558fe5e2a575352f57e3",
+        "timestamp_seconds": 22.989633333333334,
+        "pts": 689689,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F25": {
+        "id": "R3V5F-dd7d416be3280afcc89c411f",
+        "source_frame_id": "R3V5F-dd7d416be3280afcc89c411f",
+        "timestamp_seconds": 23.990633333333335,
+        "pts": 719719,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F26": {
+        "id": "R3V5F-75328a09913ea2ca27e42ec1",
+        "source_frame_id": "R3V5F-75328a09913ea2ca27e42ec1",
+        "timestamp_seconds": 24.991633333333333,
+        "pts": 749749,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F27": {
+        "id": "R3V5F-3fb49400aada361c860f702d",
+        "source_frame_id": "R3V5F-3fb49400aada361c860f702d",
+        "timestamp_seconds": 25.992633333333334,
+        "pts": 779779,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F28": {
+        "id": "R3V5F-94f49022c4b3bd7ed447a2d4",
+        "source_frame_id": "R3V5F-94f49022c4b3bd7ed447a2d4",
+        "timestamp_seconds": 26.99363333333333,
+        "pts": 809809,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F29": {
+        "id": "R3V5F-c141b6b0ec4414fa7fce04e1",
+        "source_frame_id": "R3V5F-c141b6b0ec4414fa7fce04e1",
+        "timestamp_seconds": 27.994633333333333,
+        "pts": 839839,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F30": {
+        "id": "R3V5F-51d1f7201fcd6ff465e8746f",
+        "source_frame_id": "R3V5F-51d1f7201fcd6ff465e8746f",
+        "timestamp_seconds": 28.995633333333334,
+        "pts": 869869,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F31": {
+        "id": "R3V5F-e22a9a1e481cc02355ad777f",
+        "source_frame_id": "R3V5F-e22a9a1e481cc02355ad777f",
+        "timestamp_seconds": 29.99663333333333,
+        "pts": 899899,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F32": {
+        "id": "R3V5F-4a1f16a2f24f5d990aa244fd",
+        "source_frame_id": "R3V5F-4a1f16a2f24f5d990aa244fd",
+        "timestamp_seconds": 30.997633333333333,
+        "pts": 929929,
+        "time_base": [
+          1,
+          30000
+        ]
+      }
+    },
+    "raw": "{\"at\":[\"F01\",\"F02\"],\"decision\":\"appearance\",\"note\":\"Title screen shows 'kids craft' on textured background.\"}\n{\"at\":[\"F03\",\"F04\"],\"decision\":\"begin\",\"note\":\"Hands place a square orange paper sheet on the surface.\"}\n{\"at\":[\"F05\",\"F06\"],\"decision\":\"continue\",\"note\":\"Paper is folded diagonally to form a triangle.\"}\n{\"at\":[\"F07\",\"F08\"],\"decision\":\"continue\",\"note\":\"Paper is folded again to form a diamond shape with pointed ears.\"}\n{\"at\":[\"F09\",\"F10\"],\"decision\":\"continue\",\"note\":\"Paper is folded into a cat-like shape with ears and face outline.\"}\n{\"at\":[\"F11\",\"F12\"],\"decision\":\"continue\",\"note\":\"A black marker is used to draw eyes and a nose on the paper.\"}\n{\"at\":[\"F13\",\"F14\"],\"decision\":\"complete\",\"value\":\"A cat.\",\"note\":\"The paper animal is fully drawn with facial features, labeled 'Cheeky Cat'.\"}\n{\"at\":[\"F15\",\"F16\"],\"decision\":\"begin\",\"note\":\"Hands place a new square pink paper sheet on the surface.\"}\n{\"at\":[\"F17\",\"F18\"],\"decision\":\"continue\",\"note\":\"Paper is folded diagonally to form a triangle.\"}\n{\"at\":[\"F19\",\"F20\"],\"decision\":\"continue\",\"note\":\"Paper is folded again to form a diamond shape.\"}\n{\"at\":[\"F21\",\"F22\"],\"decision\":\"continue\",\"note\":\"Paper is folded into a shape resembling a cat's head.\"}\n{\"at\":[\"F23\",\"F24\"],\"decision\":\"continue\",\"note\":\"Paper is folded to form a cat-like shape with ears and face outline.\"}\n{\"at\":[\"F25\",\"F26\"],\"decision\":\"continue\",\"note\":\"A black marker is used to draw eyes and a nose on the paper.\"}\n{\"at\":[\"F27\",\"F28\"],\"decision\":\"complete\",\"value\":\"A cat.\",\"note\":\"The paper animal is fully drawn with facial features, labeled 'Cheeky Cat'.\"}\n{\"at\":[\"F29\",\"F32\"],\"decision\":\"end\",\"status\":\"complete\",\"note\":\"Two paper cat animals are completed and displayed.\"}",
+    "output_tokens": 478
+  },
+  {
+    "case": "R3-MME-225-3",
+    "question": "What is the second paper animal made in this video?",
+    "source_file": "R3-MME-225-3.json",
+    "source_sha256": "604a20e94620a6183f8a513226c21726266c502d2b0e267878748c86b55d4f6d",
+    "call_id": "base:1",
+    "task": {
+      "key": "base:1",
+      "kind": "base",
+      "recipe": "instances",
+      "core": [
+        32.0,
+        59.726333333333336
+      ],
+      "span": [
+        30.0,
+        59.726333333333336
+      ],
+      "fps": 1.0,
+      "last": true,
+      "tail_refs": [
+        "R3V5F-9a1246909a3a28989f2e517a",
+        "R3V5F-4a1f16a2f24f5d990aa244fd",
+        "R3V5F-fc5193f46f94c9b99eeae059"
+      ],
+      "observed_targets": [
+        "making a paper animal"
+      ]
+    },
+    "refs": {
+      "F01": {
+        "id": "R3V5F-9a1246909a3a28989f2e517a",
+        "source_frame_id": "R3V5F-9a1246909a3a28989f2e517a",
+        "timestamp_seconds": 30.03,
+        "pts": 900900,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F02": {
+        "id": "R3V5F-4a1f16a2f24f5d990aa244fd",
+        "source_frame_id": "R3V5F-4a1f16a2f24f5d990aa244fd",
+        "timestamp_seconds": 30.997633333333333,
+        "pts": 929929,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F03": {
+        "id": "R3V5F-fc5193f46f94c9b99eeae059",
+        "source_frame_id": "R3V5F-fc5193f46f94c9b99eeae059",
+        "timestamp_seconds": 31.998633333333334,
+        "pts": 959959,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F04": {
+        "id": "R3V5F-a92051bd62f3a14ffc81980c",
+        "source_frame_id": "R3V5F-a92051bd62f3a14ffc81980c",
+        "timestamp_seconds": 32.999633333333335,
+        "pts": 989989,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F05": {
+        "id": "R3V5F-303d0b59f74be285fd5621ea",
+        "source_frame_id": "R3V5F-303d0b59f74be285fd5621ea",
+        "timestamp_seconds": 34.00063333333333,
+        "pts": 1020019,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F06": {
+        "id": "R3V5F-de03b0103469a4d40e0f3b65",
+        "source_frame_id": "R3V5F-de03b0103469a4d40e0f3b65",
+        "timestamp_seconds": 35.00163333333333,
+        "pts": 1050049,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F07": {
+        "id": "R3V5F-aa6765a3973f56007d12be37",
+        "source_frame_id": "R3V5F-aa6765a3973f56007d12be37",
+        "timestamp_seconds": 36.002633333333335,
+        "pts": 1080079,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F08": {
+        "id": "R3V5F-817c55d317a1fc48caf0ae68",
+        "source_frame_id": "R3V5F-817c55d317a1fc48caf0ae68",
+        "timestamp_seconds": 37.00363333333333,
+        "pts": 1110109,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F09": {
+        "id": "R3V5F-479bd8cbb7b2025730ff2a22",
+        "source_frame_id": "R3V5F-479bd8cbb7b2025730ff2a22",
+        "timestamp_seconds": 38.00463333333333,
+        "pts": 1140139,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F10": {
+        "id": "R3V5F-cc0a9a23eca420dc8a7e8261",
+        "source_frame_id": "R3V5F-cc0a9a23eca420dc8a7e8261",
+        "timestamp_seconds": 39.005633333333336,
+        "pts": 1170169,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F11": {
+        "id": "R3V5F-07a63c89f71580b001bc73bd",
+        "source_frame_id": "R3V5F-07a63c89f71580b001bc73bd",
+        "timestamp_seconds": 40.00663333333333,
+        "pts": 1200199,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F12": {
+        "id": "R3V5F-b8c6fd079db88d2f504b9913",
+        "source_frame_id": "R3V5F-b8c6fd079db88d2f504b9913",
+        "timestamp_seconds": 41.00763333333333,
+        "pts": 1230229,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F13": {
+        "id": "R3V5F-f08a9a65dbf26d7e47be4ab0",
+        "source_frame_id": "R3V5F-f08a9a65dbf26d7e47be4ab0",
+        "timestamp_seconds": 42.008633333333336,
+        "pts": 1260259,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F14": {
+        "id": "R3V5F-42b7b6d5d5f0cd8f5e632601",
+        "source_frame_id": "R3V5F-42b7b6d5d5f0cd8f5e632601",
+        "timestamp_seconds": 43.00963333333333,
+        "pts": 1290289,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F15": {
+        "id": "R3V5F-a1e3070879df68fbeb09438d",
+        "source_frame_id": "R3V5F-a1e3070879df68fbeb09438d",
+        "timestamp_seconds": 44.01063333333333,
+        "pts": 1320319,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F16": {
+        "id": "R3V5F-5fc023ccfbc9c57443b133fd",
+        "source_frame_id": "R3V5F-5fc023ccfbc9c57443b133fd",
+        "timestamp_seconds": 45.011633333333336,
+        "pts": 1350349,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F17": {
+        "id": "R3V5F-270a2223c893c670bc03008d",
+        "source_frame_id": "R3V5F-270a2223c893c670bc03008d",
+        "timestamp_seconds": 46.01263333333333,
+        "pts": 1380379,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F18": {
+        "id": "R3V5F-345c9cf28ecd7415d108b92e",
+        "source_frame_id": "R3V5F-345c9cf28ecd7415d108b92e",
+        "timestamp_seconds": 47.01363333333333,
+        "pts": 1410409,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F19": {
+        "id": "R3V5F-43cfb4c64597b0ad350e5d1f",
+        "source_frame_id": "R3V5F-43cfb4c64597b0ad350e5d1f",
+        "timestamp_seconds": 48.014633333333336,
+        "pts": 1440439,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F20": {
+        "id": "R3V5F-6f5ed30b4fc12e44a83ac538",
+        "source_frame_id": "R3V5F-6f5ed30b4fc12e44a83ac538",
+        "timestamp_seconds": 49.015633333333334,
+        "pts": 1470469,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F21": {
+        "id": "R3V5F-714f6c2628040333334af465",
+        "source_frame_id": "R3V5F-714f6c2628040333334af465",
+        "timestamp_seconds": 50.01663333333333,
+        "pts": 1500499,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F22": {
+        "id": "R3V5F-0bf8a44c39ef71e0e77044bf",
+        "source_frame_id": "R3V5F-0bf8a44c39ef71e0e77044bf",
+        "timestamp_seconds": 50.98426666666667,
+        "pts": 1529528,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F23": {
+        "id": "R3V5F-c4f70a72310078ca1c091caa",
+        "source_frame_id": "R3V5F-c4f70a72310078ca1c091caa",
+        "timestamp_seconds": 51.98526666666667,
+        "pts": 1559558,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F24": {
+        "id": "R3V5F-821903cf8bdb14bb484c5b70",
+        "source_frame_id": "R3V5F-821903cf8bdb14bb484c5b70",
+        "timestamp_seconds": 52.986266666666666,
+        "pts": 1589588,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F25": {
+        "id": "R3V5F-26eeb4f1b8b909aed739ef44",
+        "source_frame_id": "R3V5F-26eeb4f1b8b909aed739ef44",
+        "timestamp_seconds": 53.98726666666666,
+        "pts": 1619618,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F26": {
+        "id": "R3V5F-dec90455c4995702ad0a4468",
+        "source_frame_id": "R3V5F-dec90455c4995702ad0a4468",
+        "timestamp_seconds": 54.98826666666667,
+        "pts": 1649648,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F27": {
+        "id": "R3V5F-52fb774e74abe289d958216f",
+        "source_frame_id": "R3V5F-52fb774e74abe289d958216f",
+        "timestamp_seconds": 55.989266666666666,
+        "pts": 1679678,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F28": {
+        "id": "R3V5F-71832819a83935e1d6f43e00",
+        "source_frame_id": "R3V5F-71832819a83935e1d6f43e00",
+        "timestamp_seconds": 56.99026666666666,
+        "pts": 1709708,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F29": {
+        "id": "R3V5F-5c6c95ff4d269c929b3d464c",
+        "source_frame_id": "R3V5F-5c6c95ff4d269c929b3d464c",
+        "timestamp_seconds": 57.99126666666667,
+        "pts": 1739738,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F30": {
+        "id": "R3V5F-064669e31873a506296d8b34",
+        "source_frame_id": "R3V5F-064669e31873a506296d8b34",
+        "timestamp_seconds": 58.992266666666666,
+        "pts": 1769768,
+        "time_base": [
+          1,
+          30000
+        ]
+      }
+    },
+    "raw": "{\"at\":[\"F04\",\"F05\"],\"decision\":\"begin\",\"note\":\"Folding begins on a pink square sheet to start making the paper animal.\"}\n{\"at\":[\"F05\",\"F06\"],\"decision\":\"continue\",\"note\":\"The pink paper is folded into a shape resembling an animal's head.\"}\n{\"at\":[\"F06\",\"F07\"],\"decision\":\"continue\",\"note\":\"Folding continues to form the facial features of the animal.\"}\n{\"at\":[\"F07\",\"F08\"],\"decision\":\"complete\",\"value\":\"A pig.\",\"note\":\"The pink paper is marked with eyes and a snout, identified as a pig.\"}\n{\"at\":[\"F12\",\"F13\"],\"decision\":\"begin\",\"note\":\"A new yellow square sheet is introduced to start making a different paper animal.\"}\n{\"at\":[\"F13\",\"F14\"],\"decision\":\"continue\",\"note\":\"The yellow paper is folded to form the shape of an animal's head.\"}\n{\"at\":[\"F14\",\"F15\"],\"decision\":\"continue\",\"note\":\"Folding continues to shape the facial features of the animal.\"}\n{\"at\":[\"F15\",\"F16\"],\"decision\":\"complete\",\"value\":\"A dog.\",\"note\":\"The yellow paper is marked with eyes and a nose, identified as a dog.\"}\n{\"at\":[\"F04\",\"F30\"],\"decision\":\"end\",\"status\":\"complete\",\"note\":\"Two distinct paper animals, a pig and a dog, are completed.\"}",
+    "output_tokens": 307
+  },
+  {
+    "case": "R3-MME-225-3",
+    "question": "What is the second paper animal made in this video?",
+    "source_file": "R3-MME-225-3.json",
+    "source_sha256": "604a20e94620a6183f8a513226c21726266c502d2b0e267878748c86b55d4f6d",
+    "call_id": "review:e24d5515619edcc1a2fe",
+    "task": {
+      "key": "review:e24d5515619edcc1a2fe",
+      "kind": "review",
+      "recipe": "instances",
+      "core": [
+        0,
+        4.0
+      ],
+      "span": [
+        0,
+        4.0
+      ],
+      "replace_span": [
+        0,
+        4.0
+      ],
+      "fps": 16.0,
+      "attribute_only": false,
+      "zero_check": false,
+      "instruction": "Resolve this gap from the supplied new visual evidence: visible fragment lacks a complete independent event unit",
+      "tail_refs": [],
+      "observed_targets": [
+        "making a paper animal"
+      ]
+    },
+    "refs": {
+      "F01": {
+        "id": "R3V5F-2c364b822706dc943c9020c9",
+        "source_frame_id": "R3V5F-2c364b822706dc943c9020c9",
+        "timestamp_seconds": 0.0,
+        "pts": 0,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F02": {
+        "id": "R3V5F-a2739e5e1f1e4fe66cabcff2",
+        "source_frame_id": "R3V5F-a2739e5e1f1e4fe66cabcff2",
+        "timestamp_seconds": 0.06673333333333334,
+        "pts": 2002,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F03": {
+        "id": "R3V5F-ffa2d78f6f45730a337147c1",
+        "source_frame_id": "R3V5F-ffa2d78f6f45730a337147c1",
+        "timestamp_seconds": 0.13346666666666668,
+        "pts": 4004,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F04": {
+        "id": "R3V5F-cb94bccf18d544684e8a20a5",
+        "source_frame_id": "R3V5F-cb94bccf18d544684e8a20a5",
+        "timestamp_seconds": 0.2002,
+        "pts": 6006,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F05": {
+        "id": "R3V5F-b76c52736019c6245357dac6",
+        "source_frame_id": "R3V5F-b76c52736019c6245357dac6",
+        "timestamp_seconds": 0.23356666666666667,
+        "pts": 7007,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F06": {
+        "id": "R3V5F-239da15883d3055f40aea310",
+        "source_frame_id": "R3V5F-239da15883d3055f40aea310",
+        "timestamp_seconds": 0.3003,
+        "pts": 9009,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F07": {
+        "id": "R3V5F-b1df078c75fe88f7efe7fba8",
+        "source_frame_id": "R3V5F-b1df078c75fe88f7efe7fba8",
+        "timestamp_seconds": 0.3670333333333333,
+        "pts": 11011,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F08": {
+        "id": "R3V5F-3f384e43cc41f0c5e398c8a5",
+        "source_frame_id": "R3V5F-3f384e43cc41f0c5e398c8a5",
+        "timestamp_seconds": 0.4337666666666667,
+        "pts": 13013,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F09": {
+        "id": "R3V5F-81511a6d24cf4a37436c7bf7",
+        "source_frame_id": "R3V5F-81511a6d24cf4a37436c7bf7",
+        "timestamp_seconds": 0.5005,
+        "pts": 15015,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F10": {
+        "id": "R3V5F-5d2171583ae544b9ea6a3e1f",
+        "source_frame_id": "R3V5F-5d2171583ae544b9ea6a3e1f",
+        "timestamp_seconds": 0.5672333333333334,
+        "pts": 17017,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F11": {
+        "id": "R3V5F-2de20c42f5c362b2219d4fa7",
+        "source_frame_id": "R3V5F-2de20c42f5c362b2219d4fa7",
+        "timestamp_seconds": 0.6339666666666667,
+        "pts": 19019,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F12": {
+        "id": "R3V5F-dc5e16071ef86c1ec7341d7b",
+        "source_frame_id": "R3V5F-dc5e16071ef86c1ec7341d7b",
+        "timestamp_seconds": 0.7007,
+        "pts": 21021,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F13": {
+        "id": "R3V5F-dc7a6bda67b0fcf3cccb5ff9",
+        "source_frame_id": "R3V5F-dc7a6bda67b0fcf3cccb5ff9",
+        "timestamp_seconds": 0.7340666666666666,
+        "pts": 22022,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F14": {
+        "id": "R3V5F-dfbadae2d7dbd9fca55fa05d",
+        "source_frame_id": "R3V5F-dfbadae2d7dbd9fca55fa05d",
+        "timestamp_seconds": 0.8008,
+        "pts": 24024,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F15": {
+        "id": "R3V5F-2adebbf54a23d992e3508d61",
+        "source_frame_id": "R3V5F-2adebbf54a23d992e3508d61",
+        "timestamp_seconds": 0.8675333333333334,
+        "pts": 26026,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F16": {
+        "id": "R3V5F-07dc569e3d656f3f20649521",
+        "source_frame_id": "R3V5F-07dc569e3d656f3f20649521",
+        "timestamp_seconds": 0.9342666666666667,
+        "pts": 28028,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F17": {
+        "id": "R3V5F-ac66e335daa139bd613422d9",
+        "source_frame_id": "R3V5F-ac66e335daa139bd613422d9",
+        "timestamp_seconds": 1.001,
+        "pts": 30030,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F18": {
+        "id": "R3V5F-7f5fde76636045a8665fc0af",
+        "source_frame_id": "R3V5F-7f5fde76636045a8665fc0af",
+        "timestamp_seconds": 1.0677333333333334,
+        "pts": 32032,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F19": {
+        "id": "R3V5F-894a1fb59c0cf336540570b3",
+        "source_frame_id": "R3V5F-894a1fb59c0cf336540570b3",
+        "timestamp_seconds": 1.1344666666666667,
+        "pts": 34034,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F20": {
+        "id": "R3V5F-87c8a22828802752e75cd1ec",
+        "source_frame_id": "R3V5F-87c8a22828802752e75cd1ec",
+        "timestamp_seconds": 1.2012,
+        "pts": 36036,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F21": {
+        "id": "R3V5F-9583004743cbbb7cd7e22984",
+        "source_frame_id": "R3V5F-9583004743cbbb7cd7e22984",
+        "timestamp_seconds": 1.2345666666666666,
+        "pts": 37037,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F22": {
+        "id": "R3V5F-5c03e22190f4b9abd2193012",
+        "source_frame_id": "R3V5F-5c03e22190f4b9abd2193012",
+        "timestamp_seconds": 1.3013,
+        "pts": 39039,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F23": {
+        "id": "R3V5F-dabb0a7e5b4ead484a4e9f0f",
+        "source_frame_id": "R3V5F-dabb0a7e5b4ead484a4e9f0f",
+        "timestamp_seconds": 1.3680333333333334,
+        "pts": 41041,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F24": {
+        "id": "R3V5F-aceaf8b6fd5f5537a23a03ec",
+        "source_frame_id": "R3V5F-aceaf8b6fd5f5537a23a03ec",
+        "timestamp_seconds": 1.4347666666666667,
+        "pts": 43043,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F25": {
+        "id": "R3V5F-8dde0cdfc0f1615bf74804e5",
+        "source_frame_id": "R3V5F-8dde0cdfc0f1615bf74804e5",
+        "timestamp_seconds": 1.5015,
+        "pts": 45045,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F26": {
+        "id": "R3V5F-ab89bebb2f5771912ccfb02b",
+        "source_frame_id": "R3V5F-ab89bebb2f5771912ccfb02b",
+        "timestamp_seconds": 1.5682333333333334,
+        "pts": 47047,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F27": {
+        "id": "R3V5F-c695315ed7a16f5638735c90",
+        "source_frame_id": "R3V5F-c695315ed7a16f5638735c90",
+        "timestamp_seconds": 1.6349666666666667,
+        "pts": 49049,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F28": {
+        "id": "R3V5F-cfcdeeb856175b094c21585a",
+        "source_frame_id": "R3V5F-cfcdeeb856175b094c21585a",
+        "timestamp_seconds": 1.7017,
+        "pts": 51051,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F29": {
+        "id": "R3V5F-2910d323f0b50f572f299347",
+        "source_frame_id": "R3V5F-2910d323f0b50f572f299347",
+        "timestamp_seconds": 1.7350666666666668,
+        "pts": 52052,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F30": {
+        "id": "R3V5F-fa1d704884e3b7eaaadaffda",
+        "source_frame_id": "R3V5F-fa1d704884e3b7eaaadaffda",
+        "timestamp_seconds": 1.8018,
+        "pts": 54054,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F31": {
+        "id": "R3V5F-364f5cae0a82d30cb8e7091e",
+        "source_frame_id": "R3V5F-364f5cae0a82d30cb8e7091e",
+        "timestamp_seconds": 1.8685333333333334,
+        "pts": 56056,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F32": {
+        "id": "R3V5F-81b51583228648c86a4107af",
+        "source_frame_id": "R3V5F-81b51583228648c86a4107af",
+        "timestamp_seconds": 1.9352666666666667,
+        "pts": 58058,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F33": {
+        "id": "R3V5F-9d0a8a2121991eafbc67e288",
+        "source_frame_id": "R3V5F-9d0a8a2121991eafbc67e288",
+        "timestamp_seconds": 2.002,
+        "pts": 60060,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F34": {
+        "id": "R3V5F-0a6c28aebcba3aa8230c8722",
+        "source_frame_id": "R3V5F-0a6c28aebcba3aa8230c8722",
+        "timestamp_seconds": 2.0687333333333333,
+        "pts": 62062,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F35": {
+        "id": "R3V5F-c8f0e4f10736d5d0a824902c",
+        "source_frame_id": "R3V5F-c8f0e4f10736d5d0a824902c",
+        "timestamp_seconds": 2.135466666666667,
+        "pts": 64064,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F36": {
+        "id": "R3V5F-cf893ba6e489c059df683fb3",
+        "source_frame_id": "R3V5F-cf893ba6e489c059df683fb3",
+        "timestamp_seconds": 2.2022,
+        "pts": 66066,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F37": {
+        "id": "R3V5F-3ac7f7637fa4748a3515a6e5",
+        "source_frame_id": "R3V5F-3ac7f7637fa4748a3515a6e5",
+        "timestamp_seconds": 2.2355666666666667,
+        "pts": 67067,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F38": {
+        "id": "R3V5F-1452604a76e0bebdee1bee2e",
+        "source_frame_id": "R3V5F-1452604a76e0bebdee1bee2e",
+        "timestamp_seconds": 2.3023,
+        "pts": 69069,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F39": {
+        "id": "R3V5F-7a92f7c61aa12770fb9a4117",
+        "source_frame_id": "R3V5F-7a92f7c61aa12770fb9a4117",
+        "timestamp_seconds": 2.3690333333333333,
+        "pts": 71071,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F40": {
+        "id": "R3V5F-2e7bbc28d227f224fab368ca",
+        "source_frame_id": "R3V5F-2e7bbc28d227f224fab368ca",
+        "timestamp_seconds": 2.435766666666667,
+        "pts": 73073,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F41": {
+        "id": "R3V5F-ca6fc28ffb2989de4ec2fe84",
+        "source_frame_id": "R3V5F-ca6fc28ffb2989de4ec2fe84",
+        "timestamp_seconds": 2.5025,
+        "pts": 75075,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F42": {
+        "id": "R3V5F-d916ce9171a1d5010e5b2014",
+        "source_frame_id": "R3V5F-d916ce9171a1d5010e5b2014",
+        "timestamp_seconds": 2.5692333333333335,
+        "pts": 77077,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F43": {
+        "id": "R3V5F-62ee54b23966f8e9e05555c2",
+        "source_frame_id": "R3V5F-62ee54b23966f8e9e05555c2",
+        "timestamp_seconds": 2.6359666666666666,
+        "pts": 79079,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F44": {
+        "id": "R3V5F-ce4dc086baca5af81f95de50",
+        "source_frame_id": "R3V5F-ce4dc086baca5af81f95de50",
+        "timestamp_seconds": 2.7027,
+        "pts": 81081,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F45": {
+        "id": "R3V5F-2d475c3374002de90f81740a",
+        "source_frame_id": "R3V5F-2d475c3374002de90f81740a",
+        "timestamp_seconds": 2.736066666666667,
+        "pts": 82082,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F46": {
+        "id": "R3V5F-0dc15009033160e5d2f4efe0",
+        "source_frame_id": "R3V5F-0dc15009033160e5d2f4efe0",
+        "timestamp_seconds": 2.8028,
+        "pts": 84084,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F47": {
+        "id": "R3V5F-78dddb5c58321fe0c10a6c92",
+        "source_frame_id": "R3V5F-78dddb5c58321fe0c10a6c92",
+        "timestamp_seconds": 2.8695333333333335,
+        "pts": 86086,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F48": {
+        "id": "R3V5F-80bed6639d3444c67d40c549",
+        "source_frame_id": "R3V5F-80bed6639d3444c67d40c549",
+        "timestamp_seconds": 2.9362666666666666,
+        "pts": 88088,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F49": {
+        "id": "R3V5F-e6c752fae6bde8503a2dd9eb",
+        "source_frame_id": "R3V5F-e6c752fae6bde8503a2dd9eb",
+        "timestamp_seconds": 3.003,
+        "pts": 90090,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F50": {
+        "id": "R3V5F-b7ea365c875503d147e1cddf",
+        "source_frame_id": "R3V5F-b7ea365c875503d147e1cddf",
+        "timestamp_seconds": 3.069733333333333,
+        "pts": 92092,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F51": {
+        "id": "R3V5F-55dff27addcb37e9b7f9c804",
+        "source_frame_id": "R3V5F-55dff27addcb37e9b7f9c804",
+        "timestamp_seconds": 3.1364666666666667,
+        "pts": 94094,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F52": {
+        "id": "R3V5F-0545449d1e9ec5fff352ddbf",
+        "source_frame_id": "R3V5F-0545449d1e9ec5fff352ddbf",
+        "timestamp_seconds": 3.2032,
+        "pts": 96096,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F53": {
+        "id": "R3V5F-25b8b07d8427cf0b27ed40a3",
+        "source_frame_id": "R3V5F-25b8b07d8427cf0b27ed40a3",
+        "timestamp_seconds": 3.2365666666666666,
+        "pts": 97097,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F54": {
+        "id": "R3V5F-878d6f9c99e7d0356726ee93",
+        "source_frame_id": "R3V5F-878d6f9c99e7d0356726ee93",
+        "timestamp_seconds": 3.3033,
+        "pts": 99099,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F55": {
+        "id": "R3V5F-30896466d7d8f54a2af38ef6",
+        "source_frame_id": "R3V5F-30896466d7d8f54a2af38ef6",
+        "timestamp_seconds": 3.370033333333333,
+        "pts": 101101,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F56": {
+        "id": "R3V5F-505cfdea39130a98e4f4e126",
+        "source_frame_id": "R3V5F-505cfdea39130a98e4f4e126",
+        "timestamp_seconds": 3.4367666666666667,
+        "pts": 103103,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F57": {
+        "id": "R3V5F-e2e488a5764201ad532725ca",
+        "source_frame_id": "R3V5F-e2e488a5764201ad532725ca",
+        "timestamp_seconds": 3.5035,
+        "pts": 105105,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F58": {
+        "id": "R3V5F-5157f00278bf288f2957ced4",
+        "source_frame_id": "R3V5F-5157f00278bf288f2957ced4",
+        "timestamp_seconds": 3.5702333333333334,
+        "pts": 107107,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F59": {
+        "id": "R3V5F-eea729a8b6f6a491431db077",
+        "source_frame_id": "R3V5F-eea729a8b6f6a491431db077",
+        "timestamp_seconds": 3.6369666666666665,
+        "pts": 109109,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F60": {
+        "id": "R3V5F-8de7344fe79b6ae5c2107c84",
+        "source_frame_id": "R3V5F-8de7344fe79b6ae5c2107c84",
+        "timestamp_seconds": 3.7037,
+        "pts": 111111,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F61": {
+        "id": "R3V5F-9212d70ce1cdfa64d9846097",
+        "source_frame_id": "R3V5F-9212d70ce1cdfa64d9846097",
+        "timestamp_seconds": 3.7370666666666668,
+        "pts": 112112,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F62": {
+        "id": "R3V5F-ef68ff04ffbfa4b9a3209705",
+        "source_frame_id": "R3V5F-ef68ff04ffbfa4b9a3209705",
+        "timestamp_seconds": 3.8038,
+        "pts": 114114,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F63": {
+        "id": "R3V5F-e0755244763448eed3fcf079",
+        "source_frame_id": "R3V5F-e0755244763448eed3fcf079",
+        "timestamp_seconds": 3.8705333333333334,
+        "pts": 116116,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F64": {
+        "id": "R3V5F-756b24cc686a01ceec8377e9",
+        "source_frame_id": "R3V5F-756b24cc686a01ceec8377e9",
+        "timestamp_seconds": 3.9372666666666665,
+        "pts": 118118,
+        "time_base": [
+          1,
+          30000
+        ]
+      }
+    },
+    "raw": "{\"at\":[\"F01\",\"F02\"],\"decision\":\"appearance\",\"note\":\"Title screen shows 'kids craft' on textured background.\"}\n{\"at\":[\"F03\",\"F04\"],\"decision\":\"begin\",\"note\":\"Hands place a square orange paper sheet on the surface.\"}\n{\"at\":[\"F05\",\"F06\"],\"decision\":\"continue\",\"note\":\"Same orange paper is folded diagonally to form a triangle.\"}\n{\"at\":[\"F07\",\"F08\"],\"decision\":\"continue\",\"note\":\"The triangle is folded again, refining the shape.\"}\n{\"at\":[\"F09\",\"F10\"],\"decision\":\"continue\",\"note\":\"Paper is folded further, creating a smaller triangle.\"}\n{\"at\":[\"F11\",\"F12\"],\"decision\":\"continue\",\"note\":\"The paper is folded into a more compact shape, preparing for the next step.\"}\n{\"at\":[\"F13\",\"F14\"],\"decision\":\"continue\",\"note\":\"Paper is folded again, forming a sharper point.\"}\n{\"at\":[\"F15\",\"F16\"],\"decision\":\"continue\",\"note\":\"The paper is folded once more, creating a more defined shape.\"}\n{\"at\":[\"F17\",\"F18\"],\"decision\":\"continue\",\"note\":\"Paper is folded into a tighter, more compact form.\"}\n{\"at\":[\"F19\",\"F20\"],\"decision\":\"continue\",\"note\":\"The paper is folded again, refining the shape further.\"}\n{\"at\":[\"F21\",\"F22\"],\"decision\":\"continue\",\"note\":\"Paper is folded into a more intricate shape, preparing for the next step.\"}\n{\"at\":[\"F23\",\"F24\"],\"decision\":\"continue\",\"note\":\"The paper is folded again, creating a more defined form.\"}\n{\"at\":[\"F25\",\"F26\"],\"decision\":\"continue\",\"note\":\"Paper is folded into a more compact and precise",
+    "output_tokens": 384
+  },
+  {
+    "case": "R3-MME-225-3",
+    "question": "What is the second paper animal made in this video?",
+    "source_file": "R3-MME-225-3.json",
+    "source_sha256": "604a20e94620a6183f8a513226c21726266c502d2b0e267878748c86b55d4f6d",
+    "call_id": "review:66c697a838002bba8a41",
+    "task": {
+      "key": "review:66c697a838002bba8a41",
+      "kind": "review",
+      "recipe": "instances",
+      "core": [
+        27.863166666666668,
+        31.863166666666668
+      ],
+      "span": [
+        27.863166666666668,
+        31.863166666666668
+      ],
+      "replace_span": [
+        27.863166666666668,
+        31.863166666666668
+      ],
+      "fps": 16.0,
+      "attribute_only": false,
+      "zero_check": false,
+      "instruction": "Resolve this gap from the supplied new visual evidence: start/completion orders are uncertain or disagree",
+      "tail_refs": [],
+      "observed_targets": [
+        "making a paper animal"
+      ]
+    },
+    "refs": {
+      "F01": {
+        "id": "R3V5F-cdac0c6fc054f094816e9761",
+        "source_frame_id": "R3V5F-cdac0c6fc054f094816e9761",
+        "timestamp_seconds": 27.89453333333333,
+        "pts": 836836,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F02": {
+        "id": "R3V5F-2ef13eef5df1ffe305ff0f0d",
+        "source_frame_id": "R3V5F-2ef13eef5df1ffe305ff0f0d",
+        "timestamp_seconds": 27.9279,
+        "pts": 837837,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F03": {
+        "id": "R3V5F-c141b6b0ec4414fa7fce04e1",
+        "source_frame_id": "R3V5F-c141b6b0ec4414fa7fce04e1",
+        "timestamp_seconds": 27.994633333333333,
+        "pts": 839839,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F04": {
+        "id": "R3V5F-e9890c8cf7a47d392de31a14",
+        "source_frame_id": "R3V5F-e9890c8cf7a47d392de31a14",
+        "timestamp_seconds": 28.061366666666668,
+        "pts": 841841,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F05": {
+        "id": "R3V5F-3d839f9059dc80f08f3479d1",
+        "source_frame_id": "R3V5F-3d839f9059dc80f08f3479d1",
+        "timestamp_seconds": 28.1281,
+        "pts": 843843,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F06": {
+        "id": "R3V5F-c65980dc80c865142fd50c09",
+        "source_frame_id": "R3V5F-c65980dc80c865142fd50c09",
+        "timestamp_seconds": 28.161466666666666,
+        "pts": 844844,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F07": {
+        "id": "R3V5F-8b018a69642a71fd01923fc3",
+        "source_frame_id": "R3V5F-8b018a69642a71fd01923fc3",
+        "timestamp_seconds": 28.2282,
+        "pts": 846846,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F08": {
+        "id": "R3V5F-bc94a4e819a4cedd3bc4939b",
+        "source_frame_id": "R3V5F-bc94a4e819a4cedd3bc4939b",
+        "timestamp_seconds": 28.294933333333333,
+        "pts": 848848,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F09": {
+        "id": "R3V5F-0d6bd73d27abae3f5f7dd0dd",
+        "source_frame_id": "R3V5F-0d6bd73d27abae3f5f7dd0dd",
+        "timestamp_seconds": 28.361666666666668,
+        "pts": 850850,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F10": {
+        "id": "R3V5F-539e7087b171844d9ae3feea",
+        "source_frame_id": "R3V5F-539e7087b171844d9ae3feea",
+        "timestamp_seconds": 28.4284,
+        "pts": 852852,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F11": {
+        "id": "R3V5F-4317f371d1f62148ba0438f3",
+        "source_frame_id": "R3V5F-4317f371d1f62148ba0438f3",
+        "timestamp_seconds": 28.49513333333333,
+        "pts": 854854,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F12": {
+        "id": "R3V5F-24b57774b904a7b4fc58420e",
+        "source_frame_id": "R3V5F-24b57774b904a7b4fc58420e",
+        "timestamp_seconds": 28.561866666666667,
+        "pts": 856856,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F13": {
+        "id": "R3V5F-5885b987e0b9dad2ef89ca5d",
+        "source_frame_id": "R3V5F-5885b987e0b9dad2ef89ca5d",
+        "timestamp_seconds": 28.6286,
+        "pts": 858858,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F14": {
+        "id": "R3V5F-d85560768318582f06ee22dd",
+        "source_frame_id": "R3V5F-d85560768318582f06ee22dd",
+        "timestamp_seconds": 28.661966666666668,
+        "pts": 859859,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F15": {
+        "id": "R3V5F-76eaa4001f0e8fd32f56b8bb",
+        "source_frame_id": "R3V5F-76eaa4001f0e8fd32f56b8bb",
+        "timestamp_seconds": 28.7287,
+        "pts": 861861,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F16": {
+        "id": "R3V5F-9149738cd1fbb45482f0a3e3",
+        "source_frame_id": "R3V5F-9149738cd1fbb45482f0a3e3",
+        "timestamp_seconds": 28.79543333333333,
+        "pts": 863863,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F17": {
+        "id": "R3V5F-2e5c759e66e166aa5053ec16",
+        "source_frame_id": "R3V5F-2e5c759e66e166aa5053ec16",
+        "timestamp_seconds": 28.862166666666667,
+        "pts": 865865,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F18": {
+        "id": "R3V5F-ad51f9c06f1c8d9747a3dc3a",
+        "source_frame_id": "R3V5F-ad51f9c06f1c8d9747a3dc3a",
+        "timestamp_seconds": 28.9289,
+        "pts": 867867,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F19": {
+        "id": "R3V5F-51d1f7201fcd6ff465e8746f",
+        "source_frame_id": "R3V5F-51d1f7201fcd6ff465e8746f",
+        "timestamp_seconds": 28.995633333333334,
+        "pts": 869869,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F20": {
+        "id": "R3V5F-9b7fa72acae123ba6a067421",
+        "source_frame_id": "R3V5F-9b7fa72acae123ba6a067421",
+        "timestamp_seconds": 29.062366666666666,
+        "pts": 871871,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F21": {
+        "id": "R3V5F-b11bff1148ea76ffe2f06bd8",
+        "source_frame_id": "R3V5F-b11bff1148ea76ffe2f06bd8",
+        "timestamp_seconds": 29.1291,
+        "pts": 873873,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F22": {
+        "id": "R3V5F-ebbb52d3dde5cd7673945461",
+        "source_frame_id": "R3V5F-ebbb52d3dde5cd7673945461",
+        "timestamp_seconds": 29.162466666666667,
+        "pts": 874874,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F23": {
+        "id": "R3V5F-825a0d866c2194394d7d3ede",
+        "source_frame_id": "R3V5F-825a0d866c2194394d7d3ede",
+        "timestamp_seconds": 29.2292,
+        "pts": 876876,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F24": {
+        "id": "R3V5F-ca339a92f1651d8d54b541b1",
+        "source_frame_id": "R3V5F-ca339a92f1651d8d54b541b1",
+        "timestamp_seconds": 29.295933333333334,
+        "pts": 878878,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F25": {
+        "id": "R3V5F-49ea81a1a5bd89284bd8b311",
+        "source_frame_id": "R3V5F-49ea81a1a5bd89284bd8b311",
+        "timestamp_seconds": 29.362666666666666,
+        "pts": 880880,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F26": {
+        "id": "R3V5F-9e0869e9efcf578ee086ff2d",
+        "source_frame_id": "R3V5F-9e0869e9efcf578ee086ff2d",
+        "timestamp_seconds": 29.4294,
+        "pts": 882882,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F27": {
+        "id": "R3V5F-32bc382f5de8bf1362711d2e",
+        "source_frame_id": "R3V5F-32bc382f5de8bf1362711d2e",
+        "timestamp_seconds": 29.496133333333333,
+        "pts": 884884,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F28": {
+        "id": "R3V5F-488aba1544c7ffe6875ee043",
+        "source_frame_id": "R3V5F-488aba1544c7ffe6875ee043",
+        "timestamp_seconds": 29.562866666666668,
+        "pts": 886886,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F29": {
+        "id": "R3V5F-7fd0e6e7502fea549b394722",
+        "source_frame_id": "R3V5F-7fd0e6e7502fea549b394722",
+        "timestamp_seconds": 29.6296,
+        "pts": 888888,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F30": {
+        "id": "R3V5F-99987f7ab0aae45701b11505",
+        "source_frame_id": "R3V5F-99987f7ab0aae45701b11505",
+        "timestamp_seconds": 29.662966666666666,
+        "pts": 889889,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F31": {
+        "id": "R3V5F-b90a8ba202e6bd6f7eb05187",
+        "source_frame_id": "R3V5F-b90a8ba202e6bd6f7eb05187",
+        "timestamp_seconds": 29.7297,
+        "pts": 891891,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F32": {
+        "id": "R3V5F-7f93e62ddd9300eaaf09f0c1",
+        "source_frame_id": "R3V5F-7f93e62ddd9300eaaf09f0c1",
+        "timestamp_seconds": 29.796433333333333,
+        "pts": 893893,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F33": {
+        "id": "R3V5F-ab726ab1b511e441b16ba275",
+        "source_frame_id": "R3V5F-ab726ab1b511e441b16ba275",
+        "timestamp_seconds": 29.863166666666668,
+        "pts": 895895,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F34": {
+        "id": "R3V5F-4f201a03b1420472b7e262b2",
+        "source_frame_id": "R3V5F-4f201a03b1420472b7e262b2",
+        "timestamp_seconds": 29.9299,
+        "pts": 897897,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F35": {
+        "id": "R3V5F-e22a9a1e481cc02355ad777f",
+        "source_frame_id": "R3V5F-e22a9a1e481cc02355ad777f",
+        "timestamp_seconds": 29.99663333333333,
+        "pts": 899899,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F36": {
+        "id": "R3V5F-1c4820ff3dc08d9b4c10bfef",
+        "source_frame_id": "R3V5F-1c4820ff3dc08d9b4c10bfef",
+        "timestamp_seconds": 30.063366666666667,
+        "pts": 901901,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F37": {
+        "id": "R3V5F-904bf297aca35a333f4bbb6c",
+        "source_frame_id": "R3V5F-904bf297aca35a333f4bbb6c",
+        "timestamp_seconds": 30.096733333333333,
+        "pts": 902902,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F38": {
+        "id": "R3V5F-ceb02050fea5e8cf33755e5e",
+        "source_frame_id": "R3V5F-ceb02050fea5e8cf33755e5e",
+        "timestamp_seconds": 30.163466666666668,
+        "pts": 904904,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F39": {
+        "id": "R3V5F-e111c89209320cfd9e13bac7",
+        "source_frame_id": "R3V5F-e111c89209320cfd9e13bac7",
+        "timestamp_seconds": 30.2302,
+        "pts": 906906,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F40": {
+        "id": "R3V5F-c462034b2f5c08b11c7ef6e6",
+        "source_frame_id": "R3V5F-c462034b2f5c08b11c7ef6e6",
+        "timestamp_seconds": 30.29693333333333,
+        "pts": 908908,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F41": {
+        "id": "R3V5F-71dea0853805b0541c4efe5e",
+        "source_frame_id": "R3V5F-71dea0853805b0541c4efe5e",
+        "timestamp_seconds": 30.363666666666667,
+        "pts": 910910,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F42": {
+        "id": "R3V5F-c704fe1547aaca2b2346d947",
+        "source_frame_id": "R3V5F-c704fe1547aaca2b2346d947",
+        "timestamp_seconds": 30.4304,
+        "pts": 912912,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F43": {
+        "id": "R3V5F-7b00b20dd345d159eb27d217",
+        "source_frame_id": "R3V5F-7b00b20dd345d159eb27d217",
+        "timestamp_seconds": 30.497133333333334,
+        "pts": 914914,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F44": {
+        "id": "R3V5F-b1b395b0dbd2b5254847528a",
+        "source_frame_id": "R3V5F-b1b395b0dbd2b5254847528a",
+        "timestamp_seconds": 30.563866666666666,
+        "pts": 916916,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F45": {
+        "id": "R3V5F-382dab4d0df21a16e6d1bf2d",
+        "source_frame_id": "R3V5F-382dab4d0df21a16e6d1bf2d",
+        "timestamp_seconds": 30.59723333333333,
+        "pts": 917917,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F46": {
+        "id": "R3V5F-b8ea4ede5b0748b81169ae91",
+        "source_frame_id": "R3V5F-b8ea4ede5b0748b81169ae91",
+        "timestamp_seconds": 30.663966666666667,
+        "pts": 919919,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F47": {
+        "id": "R3V5F-ce7f284788c418212dd22ed0",
+        "source_frame_id": "R3V5F-ce7f284788c418212dd22ed0",
+        "timestamp_seconds": 30.7307,
+        "pts": 921921,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F48": {
+        "id": "R3V5F-49e81077106ebc33038acfc3",
+        "source_frame_id": "R3V5F-49e81077106ebc33038acfc3",
+        "timestamp_seconds": 30.797433333333334,
+        "pts": 923923,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F49": {
+        "id": "R3V5F-524e4138611519f0385b4e21",
+        "source_frame_id": "R3V5F-524e4138611519f0385b4e21",
+        "timestamp_seconds": 30.864166666666666,
+        "pts": 925925,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F50": {
+        "id": "R3V5F-b709b86ed79a5111d6a2d424",
+        "source_frame_id": "R3V5F-b709b86ed79a5111d6a2d424",
+        "timestamp_seconds": 30.9309,
+        "pts": 927927,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F51": {
+        "id": "R3V5F-4a1f16a2f24f5d990aa244fd",
+        "source_frame_id": "R3V5F-4a1f16a2f24f5d990aa244fd",
+        "timestamp_seconds": 30.997633333333333,
+        "pts": 929929,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F52": {
+        "id": "R3V5F-d741daeafbe913ca850ce65b",
+        "source_frame_id": "R3V5F-d741daeafbe913ca850ce65b",
+        "timestamp_seconds": 31.06436666666667,
+        "pts": 931931,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F53": {
+        "id": "R3V5F-23fbeb883b5b8a3c1ec81215",
+        "source_frame_id": "R3V5F-23fbeb883b5b8a3c1ec81215",
+        "timestamp_seconds": 31.097733333333334,
+        "pts": 932932,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F54": {
+        "id": "R3V5F-852b9c5650f28cd274474266",
+        "source_frame_id": "R3V5F-852b9c5650f28cd274474266",
+        "timestamp_seconds": 31.164466666666666,
+        "pts": 934934,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F55": {
+        "id": "R3V5F-62eaeea22d6ef25658524d4c",
+        "source_frame_id": "R3V5F-62eaeea22d6ef25658524d4c",
+        "timestamp_seconds": 31.2312,
+        "pts": 936936,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F56": {
+        "id": "R3V5F-0fd5a37a32d20eddbdeb9ce1",
+        "source_frame_id": "R3V5F-0fd5a37a32d20eddbdeb9ce1",
+        "timestamp_seconds": 31.297933333333333,
+        "pts": 938938,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F57": {
+        "id": "R3V5F-1bacf21d30554be66a9ff943",
+        "source_frame_id": "R3V5F-1bacf21d30554be66a9ff943",
+        "timestamp_seconds": 31.36466666666667,
+        "pts": 940940,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F58": {
+        "id": "R3V5F-51ed0a38ffb21f8188d52d68",
+        "source_frame_id": "R3V5F-51ed0a38ffb21f8188d52d68",
+        "timestamp_seconds": 31.4314,
+        "pts": 942942,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F59": {
+        "id": "R3V5F-92529c9d02c792b8aff134dc",
+        "source_frame_id": "R3V5F-92529c9d02c792b8aff134dc",
+        "timestamp_seconds": 31.49813333333333,
+        "pts": 944944,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F60": {
+        "id": "R3V5F-167eeadc79cde4058b1b9260",
+        "source_frame_id": "R3V5F-167eeadc79cde4058b1b9260",
+        "timestamp_seconds": 31.564866666666667,
+        "pts": 946946,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F61": {
+        "id": "R3V5F-158af85e17f4c6f213e55555",
+        "source_frame_id": "R3V5F-158af85e17f4c6f213e55555",
+        "timestamp_seconds": 31.598233333333333,
+        "pts": 947947,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F62": {
+        "id": "R3V5F-88be21f26223845266cb9b2d",
+        "source_frame_id": "R3V5F-88be21f26223845266cb9b2d",
+        "timestamp_seconds": 31.66496666666667,
+        "pts": 949949,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F63": {
+        "id": "R3V5F-0d71262226168307e8d45f75",
+        "source_frame_id": "R3V5F-0d71262226168307e8d45f75",
+        "timestamp_seconds": 31.7317,
+        "pts": 951951,
+        "time_base": [
+          1,
+          30000
+        ]
+      },
+      "F64": {
+        "id": "R3V5F-5f8ec1a5cb54d709219e792a",
+        "source_frame_id": "R3V5F-5f8ec1a5cb54d709219e792a",
+        "timestamp_seconds": 31.79843333333333,
+        "pts": 953953,
+        "time_base": [
+          1,
+          30000
+        ]
+      }
+    },
+    "raw": "{\"at\":[\"F01\",\"F02\"],\"decision\":\"begin\",\"note\":\"Hands begin folding a pink square paper, initiating the origami process.\"}\n{\"at\":[\"F03\",\"F04\"],\"decision\":\"continue\",\"note\":\"Paper is folded diagonally to form a diamond shape, continuing the origami process.\"}\n{\"at\":[\"F05\",\"F06\"],\"decision\":\"continue\",\"note\":\"Paper is folded again, refining the shape into a triangular form.\"}\n{\"at\":[\"F07\",\"F08\"],\"decision\":\"continue\",\"note\":\"Folding continues, shaping the paper into a more defined triangular form.\"}\n{\"at\":[\"F09\",\"F10\"],\"decision\":\"continue\",\"note\":\"Paper is folded further, creating sharper creases and a more defined shape.\"}\n{\"at\":[\"F11\",\"F12\"],\"decision\":\"continue\",\"note\":\"Folding continues, with hands pressing down to secure creases.\"}\n{\"at\":[\"F13\",\"F14\"],\"decision\":\"continue\",\"note\":\"Paper is folded into a more compact triangular shape, with hands smoothing the edges.\"}\n{\"at\":[\"F15\",\"F16\"],\"decision\":\"continue\",\"note\":\"Folding continues, with hands adjusting and refining the shape.\"}\n{\"at\":[\"F17\",\"F18\"],\"decision\":\"continue\",\"note\":\"Paper is folded further, creating a more defined and compact triangular form.\"}\n{\"at\":[\"F19\",\"F20\"],\"decision\":\"continue\",\"note\":\"Folding continues, with hands pressing down to secure creases and refine the shape.\"}\n{\"at\":[\"F21\",\"F22\"],\"decision\":\"continue\",\"note\":\"Paper is folded into a more compact triangular form, with hands smoothing the edges.\"}\n{\"at\":[\"F23\",\"F24\"],\"decision\":\"continue\",\"note\":\"Folding continues, with hands adjusting and",
+    "output_tokens": 384
+  },
+  {
+    "case": "R3-MME-251-3",
+    "question": "After cleaning her floor in the video, what did the woman do next?",
+    "source_file": "R3-MME-251-3.json",
+    "source_sha256": "3d074dd351a9cbcb6c0c03e937d3217493a05cb557ef97efca26082276b6e377",
+    "call_id": "query",
+    "task": {
+      "key": "query",
+      "kind": "query"
+    },
+    "refs": {},
+    "raw": "{\"op\":\"next_after_anchor\",\"target\":\"cleaning her floor\",\"unit\":\"production_instance\",\"anchor\":\"cleaning her floor\",\"anchor_selection\":\"unique\",\"relation\":\"adjacent\",\"time_basis\":\"media\",\"unresolved\":[\"Frying an egg.\",\"Using a cup to catch water.\",\"Washing her clothes.\",\"Cutting a watermelon.\"]}",
+    "output_tokens": 69
+  }
+]

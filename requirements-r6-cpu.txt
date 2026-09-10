@@ -1,0 +1,8 @@
+# Lightweight controller and synthetic-media validation; no model weights or Torch.
+pytest>=8
+ruff>=0.9
+jsonschema>=4.23,<5
+PyYAML>=6
+Pillow>=10
+av>=14
+numpy>=1.24

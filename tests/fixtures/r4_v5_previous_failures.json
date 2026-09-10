@@ -1,0 +1,534 @@
+{
+  "source_protocol": "r4-inventory-v4.1",
+  "source_files": [
+    {
+      "path": "items/R4-MME-077-2.json",
+      "sha256": "2b7d88e00be5a1850f58377b784fdbdcbdb1640ca3b88528520d7bb8496d8b2a"
+    },
+    {
+      "path": "items/R4-MME-225-1.json",
+      "sha256": "9fd0c1480e191ea4a9a135b8d138929caabf4eb1178d0d8365358b5df8a12483"
+    },
+    {
+      "path": "items/R4-MME-251-1.json",
+      "sha256": "0529551e8e2ff83ff97aff0857b472cf9302d34ba219840b7d02d161de648672"
+    },
+    {
+      "path": "calls\\R4-MME-077-2\\00088.json",
+      "sha256": "d47d4372152640d07f0c47f34588b747132f24d3520fe0cd1098bb23f8c2c64c"
+    },
+    {
+      "path": "calls\\R4-MME-251-1\\00006.json",
+      "sha256": "e769b209fd3ba9a8d9d5916f85b77cc82e05c43226b9bfb800dcf10610f51655"
+    }
+  ],
+  "cases": {
+    "cup": {
+      "bottle_records": [
+        {
+          "observation_id": "obs_0000007",
+          "set_id": "members",
+          "entry_id": "source-1",
+          "source_id": "df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c",
+          "local_id": "O1",
+          "value": "bottle",
+          "category": "bottle",
+          "predicate_status": "satisfied",
+          "evidence_relation": "visually_present",
+          "evidence_refs": [
+            "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072005",
+            "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072239",
+            "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072506"
+          ],
+          "detections": [
+            {
+              "ref": "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072005",
+              "bbox": [
+                266.0,
+                325.0,
+                350.0,
+                700.0
+              ],
+              "source_frame_id": "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072005"
+            },
+            {
+              "ref": "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072239",
+              "bbox": [
+                266.0,
+                325.0,
+                350.0,
+                700.0
+              ],
+              "source_frame_id": "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072239"
+            },
+            {
+              "ref": "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072506",
+              "bbox": [
+                266.0,
+                325.0,
+                350.0,
+                700.0
+              ],
+              "source_frame_id": "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072506"
+            }
+          ],
+          "attributes": {},
+          "raw_text": null,
+          "candidate_values": [],
+          "visibility": "clear",
+          "population_status": "included",
+          "owner": null,
+          "task_id": null,
+          "issues": [],
+          "predicate_evidence": {},
+          "reference_status": "validated",
+          "semantic_status": "model_reported",
+          "call_id": "call_000011"
+        }
+      ],
+      "bbox_width_relation": [
+        {
+          "relation_id": "rel_0000038",
+          "left": "obs_0000004",
+          "right": "obs_0000013",
+          "relation": "different",
+          "reason": "The cropped images show the cup with different bounding box dimensions. In the first crop (obs_0000004-comparison-crop), the cup's bounding box is [550, 288, 730, 634] pixels, while in the second crop (obs_0000013-comparison-crop), it is [550, 288, 704, 634] pixels. The right edge of the cup is narrower in the second crop, indicating a change in the visual appearance or framing, which is sufficient to conclude they are different instances.",
+          "evidence_refs": [
+            "obs_0000004-comparison-crop",
+            "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032266",
+            "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032132",
+            "obs_0000013-comparison-crop"
+          ],
+          "supersedes": []
+        }
+      ],
+      "reduced_state": {
+        "sets": {
+          "members": {
+            "namespace": "physical_instance",
+            "confirmed_members": [
+              "obs_0000000",
+              "obs_0000003",
+              "obs_0000004",
+              "obs_0000005",
+              "obs_0000006",
+              "obs_0000007",
+              "obs_0000012",
+              "obs_0000014"
+            ],
+            "possible_members": [
+              "obs_0000000",
+              "obs_0000003",
+              "obs_0000004",
+              "obs_0000005",
+              "obs_0000006",
+              "obs_0000007",
+              "obs_0000012",
+              "obs_0000014"
+            ],
+            "member_names": {
+              "obs_0000000": "cup",
+              "obs_0000003": "cup",
+              "obs_0000004": "cup",
+              "obs_0000005": "cup",
+              "obs_0000006": "cup",
+              "obs_0000007": "bottle",
+              "obs_0000012": "cup",
+              "obs_0000014": "cup"
+            },
+            "member_groups": {
+              "obs_0000000": [
+                "cup"
+              ],
+              "obs_0000003": [
+                "cup"
+              ],
+              "obs_0000004": [
+                "cup"
+              ],
+              "obs_0000005": [
+                "cup"
+              ],
+              "obs_0000006": [
+                "cup"
+              ],
+              "obs_0000007": [
+                "bottle"
+              ],
+              "obs_0000012": [
+                "cup"
+              ],
+              "obs_0000014": [
+                "cup"
+              ]
+            },
+            "observed_groups": 8,
+            "observed_count_bounds": [
+              6,
+              8
+            ],
+            "population_count_bounds": [
+              6,
+              null
+            ],
+            "exact_count": null,
+            "coverage_closed": false,
+            "closed_under_policy": false,
+            "candidate_states": {},
+            "identity_conflict": false,
+            "issues": [
+              "identity_or_predicate_unresolved"
+            ],
+            "normalization": {},
+            "evidence_refs": [
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000005005",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008008",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008141",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008242",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008375",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008508",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008609",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000024892",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000024992",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000025125",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000025359",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000031865",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000031999",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032132",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032266",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032366",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000039373",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000040007",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000040140",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000056123",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000056256",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072005",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072239",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072506"
+            ],
+            "groupings": {},
+            "unresolved_groupings": [],
+            "group_bounds": {}
+          }
+        },
+        "results": [
+          {
+            "operation_id": "answer",
+            "op": "count_unique",
+            "value": null,
+            "closed_under_policy": false,
+            "issues": [],
+            "evidence_refs": [
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000005005",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008008",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008141",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008242",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008375",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008508",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008609",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000024892",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000024992",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000025125",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000025359",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000031865",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000031999",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032132",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032266",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032366",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000039373",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000040007",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000040140",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000056123",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000056256",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072005",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072239",
+              "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072506"
+            ],
+            "bounds": [
+              6,
+              null
+            ],
+            "observed_bounds": [
+              6,
+              8
+            ]
+          }
+        ],
+        "contract_unresolved": true,
+        "closed_under_policy": false,
+        "evidence_refs": [
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000005005",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008008",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008141",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008242",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008375",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008508",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000008609",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000024892",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000024992",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000025125",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000025359",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000031865",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000031999",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032132",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032266",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000032366",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000039373",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000040007",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000040140",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000056123",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000056256",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072005",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072239",
+          "frame-ffa6a744d78d-SRC-df9b1da3cdeb4945b1967b06bfa67730ff7cc69de75be587eb67cff2cb808c1c-000000072506"
+        ],
+        "issues": [
+          "budget_limited:model_call_budget_or_coverage_reserve",
+          "identity_or_predicate_unresolved",
+          "unreadable_or_occluded",
+          "coverage_missing:tile_000002.s0.s3",
+          "unreadable_or_occluded",
+          "coverage_missing:tile_000002.s1.s0",
+          "unreadable_or_occluded",
+          "coverage_missing:tile_000002.s1.s2",
+          "unreadable_or_occluded",
+          "coverage_missing:tile_000002.s1.s3"
+        ]
+      },
+      "prediction": "C"
+    },
+    "animal": {
+      "raw_categories": [
+        "Naughty Dog",
+        "cheeky cat",
+        "dog",
+        "pig",
+        "pinky pig",
+        "triangle"
+      ],
+      "shape_record": {
+        "observation_id": "obs_0000000",
+        "set_id": "animal_faces",
+        "entry_id": "source-1",
+        "source_id": "bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3",
+        "local_id": "O1",
+        "value": "triangle",
+        "category": "triangle",
+        "predicate_status": "satisfied",
+        "evidence_relation": "visually_present",
+        "evidence_refs": [
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000008008",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000008242",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000008508",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000008742",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000009009",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000009243",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000009510",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000009743",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000010010",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000010244",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000010510",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000010744",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000011011",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000011245",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000011512",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000011745",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000012012",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000012246",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000012512",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000012746",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000013013",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000013247",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000013514",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000013747",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000014014",
+          "frame-ffa6a744d78d-SRC-bb395b9e1bedb81706e3c337adf35e9a1ad1e938f07846353f5a42b87d9b4ae3-000000014248"
+        ],
+        "detections": [],
+        "attributes": {},
+        "raw_text": null,
+        "candidate_values": [],
+        "visibility": "clear",
+        "population_status": "included",
+        "owner": null,
+        "task_id": null,
+        "issues": [],
+        "predicate_evidence": {},
+        "reference_status": "validated",
+        "semantic_status": "model_reported",
+        "call_id": "call_000003"
+      }
+    },
+    "missing": {
+      "failure": {
+        "stage": "observe",
+        "code": "observe_recovery_exhausted",
+        "message": "Observation invalid and the one visual recovery is exhausted",
+        "attempts": [
+          {
+            "call_id": "call_000006",
+            "role": "observe",
+            "errors": [
+              {
+                "path": "observations[2].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "role": "observe",
+                "stage": "observe",
+                "call_id": "call_000006"
+              },
+              {
+                "path": "observations[3].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "severity": "error",
+                "origin": "complete_json",
+                "role": "observe",
+                "stage": "observe",
+                "call_id": "call_000006"
+              }
+            ],
+            "diagnostic_findings": [
+              {
+                "path": "observations[2].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "severity": "error",
+                "origin": "complete_json",
+                "call_id": "call_000006",
+                "stage": "observe"
+              },
+              {
+                "path": "observations[3].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "severity": "error",
+                "origin": "complete_json",
+                "call_id": "call_000006",
+                "stage": "observe"
+              }
+            ],
+            "raw_validation_errors": [
+              {
+                "path": "observations[2].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "call_id": "call_000006",
+                "stage": "observe"
+              },
+              {
+                "path": "observations[3].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "call_id": "call_000006",
+                "stage": "observe"
+              }
+            ]
+          },
+          {
+            "call_id": "call_000007",
+            "role": "observe",
+            "errors": [
+              {
+                "path": "observations[2].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "role": "observe",
+                "stage": "observe",
+                "call_id": "call_000007"
+              },
+              {
+                "path": "observations[3].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "severity": "error",
+                "origin": "complete_json",
+                "role": "observe",
+                "stage": "observe",
+                "call_id": "call_000007"
+              }
+            ],
+            "diagnostic_findings": [
+              {
+                "path": "observations[2].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "severity": "error",
+                "origin": "complete_json",
+                "call_id": "call_000007",
+                "stage": "observe"
+              },
+              {
+                "path": "observations[3].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "severity": "error",
+                "origin": "complete_json",
+                "call_id": "call_000007",
+                "stage": "observe"
+              }
+            ],
+            "raw_validation_errors": [
+              {
+                "path": "observations[2].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "call_id": "call_000007",
+                "stage": "observe"
+              },
+              {
+                "path": "observations[3].evidence_refs",
+                "code": "schema_minItems",
+                "message": "[] should be non-empty",
+                "expected": 1,
+                "actual": "array",
+                "call_id": "call_000007",
+                "stage": "observe"
+              }
+            ]
+          }
+        ],
+        "call_ids": [
+          "call_000006",
+          "call_000007"
+        ],
+        "tile_id": "tile_000003",
+        "root_tile_id": "tile_000003",
+        "core": [
+          24.0,
+          32.0
+        ]
+      }
+    },
+    "identity": {
+      "role": "R4:identity",
+      "raw_output": "{\n  \"relation\": \"different\",\n  \"evidence_refs\": [\n    \"obs_0000004-comparison-crop\",\n    \"obs_0000013-comparison-crop\"\n  ],\n  \"reason\": \"The cropped images show the cup with different bounding box dimensions. In the first crop (obs_0000004-comparison-crop), the cup's bounding box is [550, 288, 730, 634] pixels, while in the second crop (obs_0000013-comparison-crop), it is [550, 288, 704, 634] pixels. The right edge of the cup is narrower in the second crop, indicating a change in the visual appearance or framing, which is sufficient to conclude they are different instances.\",\n  \"supersedes\": []\n}"
+    },
+    "missing_observe": {
+      "role": "R4:observe",
+      "raw_output": "```json\n{\n  \"observations\": [\n    {\n      \"local_id\": \"O1\",\n      \"set_id\": \"observed_activities\",\n      \"value\": \"Cleaning the floor.\",\n      \"predicate_status\": \"satisfied\",\n      \"visibility\": \"clear\",\n      \"evidence_refs\": [\n        \"F9\",\n        \"F10\",\n        \"F11\",\n        \"F12\",\n        \"F18\",\n        \"F19\",\n        \"F20\",\n        \"F21\",\n        \"F22\",\n        \"F23\",\n        \"F24\",\n        \"F25\",\n        \"F26\",\n        \"F27\",\n        \"F28\",\n        \"F29\",\n        \"F30\",\n        \"F31\"\n      ]\n    },\n    {\n      \"local_id\": \"O2\",\n      \"set_id\": \"observed_activities\",\n      \"value\": \"Cooking.\",\n      \"predicate_status\": \"satisfied\",\n      \"visibility\": \"clear\",\n      \"evidence_refs\": [\n        \"F41\",\n        \"F42\",\n        \"F43\",\n        \"F44\",\n        \"F45\",\n        \"F46\",\n        \"F47\",\n        \"F48\"\n      ]\n    },\n    {\n      \"local_id\": \"O3\",\n      \"set_id\": \"observed_activities\",\n      \"value\": \"Eating a meal.\",\n      \"predicate_status\": \"refuted\",\n      \"visibility\": \"unreadable\",\n      \"evidence_refs\": []\n    },\n    {\n      \"local_id\": \"O4\",\n      \"set_id\": \"observed_activities\",\n      \"value\": \"Ironing clothes.\",\n      \"predicate_status\": \"refuted\",\n      \"visibility\": \"unreadable\",\n      \"evidence_refs\": []\n    }\n  ],\n  \"observation_status\": \"valid\"\n}\n```"
+    }
+  }
+}

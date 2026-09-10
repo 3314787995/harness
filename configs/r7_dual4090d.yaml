@@ -1,0 +1,35 @@
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  revision: 0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
+  device: auto
+  device_map: balanced
+  max_memory:
+    0: 20GiB
+    1: 20GiB
+  required_cuda_devices: [0, 1]
+  forbid_offload: true
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  use_cache: true
+  generation:
+    temperature: 0.0
+r7:
+  initial_frames: 32
+  max_frames_per_call: 48
+  tail_focus_seconds: 3.0
+  fine_motion_fps: 16.0
+  window_seconds: 60.0
+  max_refinements: 2
+  max_latent_branches: 3
+  short_model_calls: 10
+  short_unique_frames: 128
+  long_model_calls: 128
+  long_unique_frames: 4096
+  compiler_tokens: 800
+  candidates_tokens: 1600
+  observer_tokens: 1200
+  reasoner_tokens: 1600
+  verifier_tokens: 800
+  model_revision: 0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
+  media:
+    cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/r7

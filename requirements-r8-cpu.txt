@@ -1,0 +1,8 @@
+# CPU engineering tests; does not install torch or download model weights.
+pytest>=8,<10
+jsonschema>=4.23,<5
+PyYAML>=6,<7
+av>=14
+Pillow>=10
+numpy>=1.26
+z3-solver==5.1.0.0

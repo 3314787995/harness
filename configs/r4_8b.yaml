@@ -1,0 +1,54 @@
+# R4 v5.1 compiler contract; collection budgets and executors stay at v5.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  device: auto
+  device_map: balanced
+  max_memory: {0: 20GiB, 1: 20GiB}
+  required_cuda_devices: [0, 1]
+  forbid_offload: true
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  generation:
+    temperature: 0.0
+  video:
+    min_pixels: 65536
+    # Shared backend defaults. V5 supplies explicit image sizes from r4.media below.
+    max_pixels: 262144
+    total_pixels: 12582912
+
+r4:
+  core_frames: 16
+  context_frames: 2
+  max_frames_per_call: 24
+  static_fps: 2.0
+  motion_fps: 2.0
+  refinement_fps: [6.0, 12.0]
+  max_refinement_rounds: 2
+  identity_candidates: 3
+  crop_overlap: 0.1
+  max_observations_per_call: 12
+  max_provider_segments: 64
+  max_provider_text_chars: 16000
+  text_window_sec: 60.0
+  compiler_tokens: 512
+  observer_tokens: 1024
+  review_tokens: 768
+  final_tokens: 512
+  max_focused_calls: 4
+  max_qualification_calls: 2
+  max_identity_calls: 4
+  max_recovery_calls: 2
+  budget:
+    max_model_calls: 192
+    max_provider_calls: 4096
+    terminal_call_reserve: 0
+    max_frame_exposures: 4096
+    max_media_pixels: 4294967296
+    max_generated_tokens: 32768
+    visual_tokens_per_call: 8192
+    max_text_chars_per_call: 60000
+  media:
+    cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/r4-v5_7
+    normal_max_pixels: 393216
+    normal_total_pixels: 8388608
+    detail_max_pixels: 1048576

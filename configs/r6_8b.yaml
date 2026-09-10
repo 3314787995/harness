@@ -1,0 +1,33 @@
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  revision: 0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
+  dtype: bfloat16
+  device: auto
+  device_map: auto
+  attn_implementation: sdpa
+  generation:
+    temperature: 0.0
+r6:
+  initial_overview_frames: 32
+  core_window_seconds: 8.0
+  context_seconds_each_side: 2.0
+  fps_default: 2.0
+  fps_for_fast_events: 4.0
+  max_frames_per_call: 48
+  crop_frames_per_request: 2
+  max_relevant_facts_per_call: 10
+  max_total_input_tokens_per_call: 16384
+  max_visual_tokens_per_call: 8192
+  max_new_tokens_compiler: 1024
+  max_new_tokens_observer: 1024
+  max_new_tokens_relation_checker: 1536
+  max_new_tokens_verifier: 1024
+  max_model_calls_total: 16
+  reserve_model_calls_for_verification: 2
+  max_refinement_rounds: 4
+  schema_repair_attempts_per_call: 1
+  observer_options: neutral
+  refinement_policy: targeted
+  relation_verification: true
+  direct_channel: true
+  audio_provider: disabled

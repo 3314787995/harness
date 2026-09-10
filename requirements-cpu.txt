@@ -1,0 +1,9 @@
+pytest>=8,<10
+ruff>=0.9
+jsonschema>=4.23,<5
+PyYAML>=6,<7
+Pillow>=10
+numpy>=1.26
+av>=14
+pyarrow>=17,<22
+z3-solver==5.1.0.0

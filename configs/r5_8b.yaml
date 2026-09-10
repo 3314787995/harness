@@ -1,0 +1,39 @@
+# R5 direct v3: compact observation and direct Composer output; no Auditor.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  device: auto
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  generation:
+    temperature: 0.0
+  video:
+    min_pixels: 65536
+    max_pixels: 262144
+    total_pixels: 12582912
+r5:
+  sample_fps: 4.0
+  core_frames: 32
+  context_frames: 8
+  max_frames_per_call: 48
+  merge_fan_in: 4
+  max_facts_per_card: 8
+  recovery_facts: 4
+  max_recovery_calls: 3
+  max_split_depth: 1
+  max_claims: 32
+  compiler_tokens: 2048
+  observer_tokens: 2048
+  recovery_tokens: 1024
+  merge_tokens: 4096
+  composer_tokens: 4096
+  budget:
+    max_model_calls: 64
+    max_elapsed_sec: 600
+    visual_deadline_sec: 420
+    max_provider_calls: 4096
+    terminal_call_reserve: 2
+    max_frame_exposures: 196608
+    max_media_pixels: 51539607552
+    max_text_chars_per_call: 60000
+  media:
+    cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/r5

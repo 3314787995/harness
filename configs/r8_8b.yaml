@@ -1,0 +1,36 @@
+# Engineering defaults; real model accuracy and VRAM measurements are separate experiments.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  revision: 0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
+  device: auto
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  use_cache: true
+  generation:
+    temperature: 0.0
+r8:
+  initial_frames: 24
+  max_frames_per_call: 48
+  max_crops: 3
+  core_seconds: 6.0
+  context_seconds: 1.0
+  scan_fps: 4.0
+  format_retries: 1
+  semantic_recompiles: 2
+  repair_rounds: 3
+  max_joint_candidates: 8
+  max_query_nodes: 64
+  max_query_depth: 16
+  max_numeric_digits: 100
+  max_geometry_rules: 50
+  solver_seconds: 5.0
+  max_model_calls: 128
+  max_unique_frames: 4096
+  max_seconds: 900.0
+  compiler_tokens: 768
+  observer_tokens: 1024
+  formalizer_tokens: 2048
+  auditor_tokens: 1024
+  model_revision: 0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
+  media:
+    cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/r8

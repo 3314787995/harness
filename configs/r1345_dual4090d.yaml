@@ -1,0 +1,15 @@
+# Shared model override only. Each pipeline retains its existing *_8b.yaml settings.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  device: auto
+  device_map: balanced
+  max_memory:
+    0: 20GiB
+    1: 20GiB
+  required_cuda_devices: [0, 1]
+  forbid_offload: true
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  use_cache: true
+  generation:
+    temperature: 0.0

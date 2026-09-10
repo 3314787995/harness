@@ -1,200 +1,115 @@
-# Qwen3-VL Video Agent
+# Harness：九类视频推理 Pipeline
 
-[![CI](https://github.com/3314787995/harness/actions/workflows/ci.yml/badge.svg)](https://github.com/3314787995/harness/actions/workflows/ci.yml)
+基于冻结的 Qwen3-VL-8B-Instruct，按题目需要的证据结构组织视频取证与推理。仓库提供 **R1–R9 的当前实现、运行配置、CPU 回归测试和 benchmark 具体题型映射**。不训练模型，也不包含权重或 benchmark 视频。
 
-这是一个面向长视频推理机制研究的 Qwen3-VL 工程仓库。它把同一个本地
-Qwen3-VL 模型封装成四条可比较的推理路径，并提供 Video-MME 小样本评测、
-Evidence30 证据标注、冻结协议、消融实验和可回放 trace。
+这里的 R1–R9 是项目的执行分类，并非九种官方 benchmark 标签。**先判断实际题意，再选择策略；没有自动将整个原生标签硬路由到某一类的分类器。**
 
-当前重点是验证“如何找到、记录并验证长视频证据”，不是训练模型，也不宣称复现
-任何论文的训练过程或公开指标。模型权重、Video-MME 数据和批量运行产物不在仓库中。
+## 当前版本
 
-## 先看结论
+| Pipeline | 版本 | 主要任务 | CLI 策略 |
+|---|---|---|---|
+| [R1](docs/pipelines/r1.md) | 3.1 | 定向定位与局部取证 | `r1` |
+| [R2](docs/pipelines/r2.md) | 1.5 | 连续动态与实体状态追踪 | `r2` |
+| [R3](docs/pipelines/r3.md) | 5.4 | 查询驱动时间证据 | `r3` |
+| [R4](docs/pipelines/r4.md) | 5.7 | 清单构建与集合归约 | `r4` |
+| [R5](docs/pipelines/r5.md) | 3.1 | 分段全局综合 | `r5` |
+| [R6](docs/pipelines/r6.md) | 1.0 | 证据约束关系推理 | `r6` |
+| [R7](docs/pipelines/r7.md) | 1.0 | 假设与未来推演 | `r7` |
+| [R8](docs/pipelines/r8.md) | 1.0 | 视觉符号与约束求解 | `r8` |
+| [R9](docs/pipelines/r9.md) | 1.0 | 空间场景建模与查询 | `r9` |
 
-| 路径 | 解决的问题 | 实现位置 |
-|---|---|---|
-| `direct` | 单次模型回答；评测时可用有界均匀帧基线 | `qwen3vl_agent/cli.py`、`evaluation/runtime.py` |
-| `tools` | 先规划工具调用，再把工具结果作为补充证据回答 | `qwen3vl_agent/agent.py` |
-| `coarse_to_fine` | 先粗看全片，再定位窗口并逐轮细化 | `qwen3vl_agent/coarse_to_fine/` |
-| `active_tree` | 用场景树、证据契约、原子账本和双验证器主动搜索 | `qwen3vl_agent/active_tree/` |
+`r1` 与 `r1-v3` 都运行 **R1 3.1**，沿用 `r1_v3` 配置／trace 命名空间。其余旧版独立策略已从统一入口移除。源码中的 `r1/`、`r1_v2/`、`p01/`、`coarse_to_fine/` 保留的是当前实现仍需的基类和工具，不是额外发布版本。版本与代码校验值见 [发布清单](release_manifest.json)。
 
-Evidence30 不是第五条线上推理策略，而是一套机制诊断工具：
+## Pipeline 对应哪些 benchmark 题型
 
-- 30 条 AI-assisted internal reference，18 条 dev、12 条 locked；
-- direct / coarse-to-fine / active-tree 的统一运行和证据暴露评分；
-- 统一答题头、Oracle context 与 core-frame 密度诊断；
-- 配置、标注、运行签名和冻结/密封约束。
+| Pipeline | 主要原生入口及具体子型（精选） |
+|---|---|
+| R1 | Video-MME / OCR Problems（局部文字）、Object Recognition（普通目标）、Attribute Perception（直接属性） |
+| R2 | MVBench / Action Antonym、Object Shuffle；TOMATO / Rotation、Direction |
+| R3 | MVBench / Action Count、Character Order；Video-MME / Temporal Perception（事件顺序、时长）；Video-MME-v2 / Repetitive Action Counting |
+| R4 | Video-MME / Counting Problem（实例数）、Object Recognition（未讨论项）；VSI-Bench / Object Count |
+| R5 | Video-MME / Information Synopsis（事实综合）；MLVU / Video Summarization；EgoSchema / Long-form Video QA（整体行为） |
+| R6 | Video-MME / Action Reasoning（非明示原因）；Video-MME-v2 / Causal Reasoning、Symbolic/Metaphorical Interpretation |
+| R7 | MVBench / Action Prediction、Counterfactual Inference；Video-MME-v2 / Future Event Prediction、Counterfactual Reasoning |
+| R8 | Video-MME-v2 / Numerical Calculation；EgoLifeQA / EntityLog（由总价和数量求单价） |
+| R9 | VSI-Bench / Relative Direction、Relative Distance、Route Plan；Video-MME-v2 / Spatial Understanding（参考系、跨视角子型） |
 
-截至 2026-08-23，控制逻辑有 79 个不加载模型的单元测试。当前真实实验结论、失败项和
-不可宣称内容见 [当前状态](docs/current_status.md)。
+例如，**R1 对应 Video-MME 的局部 OCR、普通物体识别、直接动作或属性读取**；但 Object Recognition 中“第二个制作的纸动物”需要事件排序，主 R3；“哪些物品没有被讨论”需要范围清单与否定核验，主 R4。
 
-## 五分钟上手
+Counting Problem 也必须细分：**事件次数 → R3，不同实例／类别数量 → R4，读取视频明示数量 → R1**。同一原生标签可能存在多个执行子型。
 
-要求 Python 3.10+。真实推理通常需要 CUDA GPU；CPU 只适合静态检查、单元测试和
-无模型 preflight。
+完整说明见 [九类与 benchmark 题型对应说明](docs/benchmark_mapping.md)，其中包含 11 个 benchmark 的主要对应关系、Video-MME 全部 12 类专项对照、通常／条件／待确认标记及来源。Video-MME 与 Video-MME-v2 分开处理；映射不代表已完成全部数据适配或效果验证。
 
-```powershell
+## 安装
+
+统一使用 **Python 3.11**。真实模型推理需要按配置准备 CUDA GPU 和 Qwen3-VL 权重；CPU 可运行控制逻辑、合成媒体和入口检查。
+
+```bash
 git clone https://github.com/3314787995/harness.git
 cd harness
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -e ".[dev,eval]"
+# Linux/macOS: source .venv/bin/activate
+# Windows PowerShell: .\.venv\Scripts\Activate.ps1
+python -m pip install -e ".[dev,eval,r8]"
 ```
 
-默认配置使用 Hugging Face 模型 ID `Qwen/Qwen3-VL-2B-Instruct`。如果模型已下载到
-本地，推荐通过环境变量覆盖，而不是修改版本化配置：
+仅做 CPU 工程验证、避免安装模型推理依赖时：
 
-```powershell
-$env:QWEN3VL_MODEL_PATH = "D:\models\Qwen3-VL-2B-Instruct"
-$env:VIDEOMME_ROOT = "D:\videomme"
-$env:QWEN3VL_CACHE_DIR = "D:\videomme\cache\qwen3vl_agent"
-Copy-Item configs\local.example.yaml configs\local.yaml
-```
-
-`configs/local.yaml` 已被 Git 忽略，适合保存机器专属路径。未设置
-`VIDEOMME_ROOT` 时，评测命令默认按下面的仓库相对布局查找：
-
-```text
-data/videomme/
-├── videomme/test-00000-of-00001.parquet
-├── videos/<video_id>.mp4
-└── subtitle/<video_id>.srt
-```
-
-先跑无需模型的质量门：
-
-```powershell
-python -m ruff check qwen3vl_agent tests scripts tools examples
-python -m compileall -q qwen3vl_agent
+```bash
+python -m pip install -e . --no-deps
+python -m pip install -r requirements-cpu.txt
 python -m pytest -q
+python tools/check_release.py
 ```
 
-再做一次真实 direct 推理：
+各类模型配置保留现有 attention 与预算设置。配置使用 FlashAttention 2 时，需另行准备与本机 CUDA／PyTorch 匹配的环境；改用 `sdpa` 时在本地配置中明确设置并记录，不会在本文中宣称两种条件等价。
+
+## 配置模型与运行
+
+模型路径优先使用已有本地快照，机器路径通过环境变量传入。下面是 PowerShell 示例：
 
 ```powershell
-qwen3vl-agent `
-  --config configs\local.yaml `
-  --strategy direct `
-  --video path\to\example.mp4 `
-  --query "What happens in this video?"
+$env:QWEN3VL_MODEL_PATH = "D:/models/Qwen3-VL-8B-Instruct"
+$env:QWEN3VL_CACHE_DIR = "D:/cache/harness"
+qwen3vl-agent --strategy r1 --config configs/r1_8b.yaml --video path/to/video.mp4 --query "What word is displayed on the sign?" --choice "OPEN" --choice "CLOSED" --trace-output runs/r1/trace.json
 ```
 
-## 常用命令
+Linux 可用 `export QWEN3VL_MODEL_PATH=/path/to/model` 设置同一变量。不设置时使用配置中的模型 ID；首次真实运行可能下载权重。R6–R9 等配置若指定模型 revision，本地快照也应与指定版本对应。
 
-工具调用基线：
+九类均通过 `--strategy r1` 至 `r9` 与对应的 `configs/rN_8b.yaml` 选择；题目、原选项及媒体由运行者提供。每类的输入权限、补充参数与批量入口见上方运行文档。不存在必须安装 benchmark 视频才能运行的隐含项目绝对路径。
 
-```powershell
-qwen3vl-agent `
-  --config configs\local.yaml `
-  --strategy tools `
-  --video path\to\example.mp4 `
-  --query "How long is this video?" `
-  --show-metadata
+```bash
+python -m qwen3vl_agent.cli --help
+python -m qwen3vl_agent.r6.evaluate --help
+python -m qwen3vl_agent.r8.evaluate --help
 ```
 
-粗到细多选推理：
+**时间范围和模态是输入协议的一部分。** `allowed_scope`／`allowed_intervals` 限制能看的媒体，`query_scope`／`reference_scope` 指所问事件的范围，二者不可混用。字幕、ASR 必须按原任务授权和时间对齐；已有转写不能替代音乐证据。未来预测必须确认观察截止，不得从题型标签猜测截止时刻。
 
-```powershell
-qwen3vl-agent `
-  --config configs\local.yaml `
-  --strategy coarse_to_fine `
-  --video path\to\example.mp4 `
-  --subtitle path\to\example.srt `
-  --query "What are the people arguing about?" `
-  --choice "Option A" `
-  --choice "Option B" `
-  --choice "Option C" `
-  --choice "Option D" `
-  --trace-output runs\manual_trace.json
-```
+## 答案、证据与 Trace
 
-Active Evidence Tree 推理与 HTML 回放：
+统一 CLI 打印答案；`--trace-output` 保存 metadata，`--show-metadata` 额外显示完整记录。各类沿用自身结果字段和命名空间，详细字段见对应运行文档与公开 Request／Result 类型。
 
-```powershell
-qwen3vl-agent `
-  --config configs\local.yaml `
-  --strategy active_tree `
-  --video path\to\example.mp4 `
-  --subtitle path\to\example.srt `
-  --query "What happens before the final event?" `
-  --choice "Option A" `
-  --choice "Option B" `
-  --choice "Option C" `
-  --choice "Option D" `
-  --trace-output runs\active_tree_trace.json `
-  --replay-output runs\active_tree_replay.html
-```
+答案、证据充分性、执行停止原因分别记录。非空预测或合法选项不代表语义已验证；预算耗尽、缺失模态、未知证据和协议失败不能当作零次、空集合或不存在。批量评测中参考答案放在评分侧，不作为推理请求的证据。
 
-Video-MME 指定题目评测：
+## 验证状态与能力边界
 
-```powershell
-qwen3vl-videomme `
-  --config configs\local.yaml `
-  --question-id 102-2 `
-  --strategy active_tree `
-  --with-subtitles `
-  --output runs\active_tree_debug.json `
-  --trace-jsonl runs\active_tree_debug.jsonl `
-  --replay-dir runs\active_tree_replays
-```
+发布版的实测检查、原始快照对照和已知失败见 [发布验证记录](docs/validation.md)。CI 在 Python 3.11 中运行当前测试并如实报告失败，不把原有失败改成跳过来制造通过结果。
 
-Evidence30 的完整命令、冻结顺序和 locked 约束见
-[调试协议](docs/evidence30_debug_protocol.md)。三个诊断入口分别是：
+R6 已有 1.0 实现及 CPU 验收记录，**真实 GPU smoke 尚未执行**，真实音频 Provider 尚未启用。本次发布不启动付费 GPU 或完整 benchmark 评测；其他版本的历史小样本成绩也不作为本快照的真实效果结论。
 
-```powershell
-qwen3vl-evidence30 preflight
-qwen3vl-evidence30-ablate preflight
-qwen3vl-evidence30-core-dense preflight
-```
-
-## 仓库地图
+## 目录
 
 ```text
-qwen3vl_agent/             Python 包
-├── models/                Qwen3-VL 模型适配层
-├── tools/                 工具协议、注册表和默认工具
-├── coarse_to_fine/        粗到细检索、缓存、字幕对齐和预算
-├── active_tree/           场景树、证据账本、主动观察与验证
-└── evaluation/            Video-MME、Evidence30、消融与 core-density
-
-configs/                   可版本化实验配置与本地配置模板
-annotations/               冻结的 Evidence30 参考记录
-schemas/                   标注 JSON Schema
-tests/                     不加载真实模型的控制逻辑测试
-scripts/                   小范围人工 smoke 工具
-tools/                     标注构建等维护脚本
-docs/                      架构、接手说明、协议和实验报告
-results/                   去除本机路径后的精选机器可读摘要
+qwen3vl_agent/           九类实现与必需内部公共代码
+configs/                当前配置（r1_v3 配置为 r1 的兼容别名）
+docs/pipelines/          每类一份当前运行文档
+docs/benchmark_mapping.md
+docs/sources/           分类来源；不是额外运行版本
+examples/               小型开发请求，媒体另行提供
+tests/                  当前机制回归与共享测试辅助代码
+tools/check_release.py  无模型发布完整性检查
+release_manifest.json   协议版本、发布基点、代码 SHA-256
 ```
 
-详细职责和调用关系见 [架构说明](docs/architecture.md)。新接手者建议按
-[上手与维护指南](docs/onboarding.md) 的阅读顺序走一遍。
-
-## 版本化与本地产物边界
-
-仓库会提交：
-
-- 源码、配置、测试、Schema 和设计文档；
-- `annotations/videomme_evidence30/0.2.0` 冻结参考；
-- `results/` 中去除绝对路径后的精简结果。
-
-仓库不会提交：
-
-- 模型权重、Video-MME 视频/字幕/原始 parquet；
-- `runs/`、`tmp/`、帧缓存、HTML 回放和逐题大 trace；
-- `annotations/_unreviewed_ai_drafts`；
-- `configs/local.yaml`、环境变量或凭据。
-
-## 重要边界
-
-- Evidence30 记录是 AI-assisted internal reference，不是独立人工 gold。
-- 当前样本规模很小，准确率差异只用于机制诊断，不是稳健效果结论。
-- Active-tree 的 verified rate 仍低，不能把“最终选项正确”等同于“证据链已验证”。
-- locked v1 已执行，且 coarse-to-fine 出现一次 degraded fallback；详见状态报告。
-- `active_tree/agent.py` 仍是大文件。首版发布保留行为稳定性，暂不做高风险拆分。
-
-## 许可证
-
-本仓库目前没有开源许可证。公开可见不等于获得复制、修改或再分发许可；复用前请联系
-仓库所有者确认授权。
+旧研究内容可从 Git 历史查阅。当前目录不包含旧上传包、视频、模型权重或运行日志。

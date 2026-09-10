@@ -1,0 +1,83 @@
+[
+  {
+    "request_id": "R6-dev-E02",
+    "media_file": "media/E02.mp4",
+    "benchmark": "MVBench",
+    "video_url": null,
+    "official_media_name": "castle_s07e04_seg02_clip_14",
+    "source_url": "https://huggingface.co/datasets/OpenGVLab/MVBench/resolve/230a2d4fac8900333c61754641c7a13e069ac9c6/json/episodic_reasoning.json",
+    "scope_note": "Supply the native MVBench clip"
+  },
+  {
+    "request_id": "R6-dev-E04",
+    "media_file": "media/E04.mp4",
+    "benchmark": "Video-MME",
+    "video_url": "https://www.youtube.com/watch?v=24i4ncHuf6A",
+    "official_media_name": null,
+    "source_url": "https://huggingface.co/datasets/lmms-eval/Video-MME/resolve/ead1408f75b618502df9a1d8e0950166bf0a2a0b/videomme/test-00000-of-00001.parquet",
+    "scope_note": "Supply the full native benchmark video; no gold temporal crop"
+  },
+  {
+    "request_id": "R6-dev-E05",
+    "media_file": "media/E05.mp4",
+    "benchmark": "Video-MME",
+    "video_url": "https://www.youtube.com/watch?v=HIjX8OPuf-w",
+    "official_media_name": null,
+    "source_url": "https://huggingface.co/datasets/lmms-eval/Video-MME/resolve/ead1408f75b618502df9a1d8e0950166bf0a2a0b/videomme/test-00000-of-00001.parquet",
+    "scope_note": "Supply the full native benchmark video; no gold temporal crop"
+  },
+  {
+    "request_id": "R6-dev-E08",
+    "media_file": "media/E08.mp4",
+    "benchmark": "Video-MME-v2",
+    "video_url": "https://www.youtube.com/watch?v=iV8UkuD4gig",
+    "official_media_name": null,
+    "source_url": "https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2/resolve/6e4bebb03202e1ddbf3d37703e560e51c5aa2d64/test.parquet",
+    "scope_note": "Supply the full native benchmark video; no gold temporal crop"
+  },
+  {
+    "request_id": "R6-dev-E09",
+    "media_file": "media/E09.mp4",
+    "benchmark": "Video-MME-v2",
+    "video_url": "https://www.youtube.com/watch?v=bZFjXrMOENc",
+    "official_media_name": null,
+    "source_url": "https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2/resolve/6e4bebb03202e1ddbf3d37703e560e51c5aa2d64/test.parquet",
+    "scope_note": "Supply the full native benchmark video; no gold temporal crop"
+  },
+  {
+    "request_id": "R6-dev-E10",
+    "media_file": "media/E10.mp4",
+    "benchmark": "Video-MME-v2",
+    "video_url": "https://www.youtube.com/watch?v=AiUiUhHoNmo",
+    "official_media_name": null,
+    "source_url": "https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2/resolve/6e4bebb03202e1ddbf3d37703e560e51c5aa2d64/test.parquet",
+    "scope_note": "Supply the full native benchmark video; no gold temporal crop"
+  },
+  {
+    "request_id": "R6-dev-E11",
+    "media_file": "media/E11.mp4",
+    "benchmark": "Video-MME-v2",
+    "video_url": "https://www.youtube.com/watch?v=QAbzIi_UpFI",
+    "official_media_name": null,
+    "source_url": "https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2/resolve/6e4bebb03202e1ddbf3d37703e560e51c5aa2d64/test.parquet",
+    "scope_note": "Supply the full native benchmark video; no gold temporal crop"
+  },
+  {
+    "request_id": "R6-dev-E12",
+    "media_file": "media/E12.mp4",
+    "benchmark": "Video-MME-v2",
+    "video_url": "https://www.youtube.com/watch?v=GkK5d-atQjs",
+    "official_media_name": null,
+    "source_url": "https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2/resolve/6e4bebb03202e1ddbf3d37703e560e51c5aa2d64/test.parquet",
+    "scope_note": "Supply the full native benchmark video; no gold temporal crop"
+  },
+  {
+    "request_id": "R6-dev-E14",
+    "media_file": "media/E14.mp4",
+    "benchmark": "Video-MME-v2",
+    "video_url": "https://www.youtube.com/watch?v=38y_1EWIE9I",
+    "official_media_name": null,
+    "source_url": "https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2/resolve/6e4bebb03202e1ddbf3d37703e560e51c5aa2d64/test.parquet",
+    "scope_note": "Supply the full native benchmark video; no gold temporal crop"
+  }
+]

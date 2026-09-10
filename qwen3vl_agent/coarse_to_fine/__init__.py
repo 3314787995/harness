@@ -2,7 +2,6 @@ from qwen3vl_agent.coarse_to_fine.adapters import (
     AnswerAdapter,
     MultipleChoiceAdapter,
 )
-from qwen3vl_agent.coarse_to_fine.agent import CoarseToFineVideoAgent
 from qwen3vl_agent.coarse_to_fine.cache import (
     CachedVideo,
     SubtitleCue,
@@ -16,7 +15,6 @@ __all__ = [
     "AnswerAdapter",
     "CachedVideo",
     "CoarseToFineConfig",
-    "CoarseToFineVideoAgent",
     "FrameRef",
     "MultipleChoiceAdapter",
     "SubtitleCue",

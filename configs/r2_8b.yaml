@@ -1,0 +1,35 @@
+# R2 1.5 development defaults; this version awaits GPU validation.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  device: auto
+  dtype: bfloat16
+  attn_implementation: flash_attention_2
+  generation:
+    temperature: 0.0
+
+r2:
+  core_sec: 4.0
+  context_sec: 1.0
+  fps: 4.0
+  fast_core_sec: 2.0
+  fast_context_sec: 0.5
+  fast_fps: 8.0
+  refine_core_sec: 1.0
+  refine_context_sec: 0.25
+  refine_fps: 16.0
+  endpoint_frames: 6
+  max_frames_per_call: 48
+  max_refinements: 2
+  max_hypotheses: 8
+  compiler_tokens: 3072
+  observer_tokens: 4096
+  final_tokens: 3072
+  budget:
+    max_model_calls: 128
+    max_frame_exposures: 4096
+    max_media_pixels: 1073741824
+    max_visual_tokens: 1048576
+    max_text_chars_per_call: 120000
+    terminal_call_reserve: 4
+  media:
+    cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/r2

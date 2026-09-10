@@ -1,0 +1,68 @@
+[
+  {
+    "request_id": "R3-MVB-action-count-000",
+    "call": 3,
+    "role": "R3:observe",
+    "output": "{\n  \"events\": [],\n  \"unresolved\": [],\n  \"truncated\": false,\n  \"observation_status\": \"valid\",\n  \"crop_requests\": []\n}",
+    "metadata": {
+      "output_tokens": 35,
+      "input_tokens": 18801,
+      "visual_tokens": 10080
+    }
+  },
+  {
+    "request_id": "R3-MME-225-3",
+    "call": 12,
+    "role": "R3:observe",
+    "output": "{\n  \"events\": [],\n  \"unresolved\": [],\n  \"truncated\": false,\n  \"observation_status\": \"valid\",\n  \"crop_requests\": []\n}",
+    "metadata": {
+      "output_tokens": 35,
+      "input_tokens": 21997,
+      "visual_tokens": 12096
+    }
+  },
+  {
+    "request_id": "R3-MME-225-3",
+    "call": 33,
+    "role": "R3:final",
+    "output": "{\"prediction\": \"A pig.\", \"evidence_refs\": []}",
+    "metadata": {
+      "output_tokens": 15,
+      "input_tokens": 429,
+      "visual_tokens": 0
+    }
+  },
+  {
+    "request_id": "R3-MME-225-3",
+    "call": 34,
+    "role": "R3:repair",
+    "output": "{\"prediction\": \"A pig.\", \"evidence_refs\": []}",
+    "metadata": {
+      "output_tokens": 15,
+      "input_tokens": 170,
+      "visual_tokens": 0
+    }
+  },
+  {
+    "request_id": "R3-MME-251-3",
+    "call": 56,
+    "role": "R3:final",
+    "output": "{\"prediction\": \"A\", \"evidence_refs\": [\"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000027933\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028067\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028200\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028300\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028433\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028567\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028700\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028800\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028933\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000029067\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000029200\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000029300\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000029433",
+    "metadata": {
+      "output_tokens": 1024,
+      "input_tokens": 8431,
+      "visual_tokens": 0
+    }
+  },
+  {
+    "request_id": "R3-MME-251-3",
+    "call": 57,
+    "role": "R3:repair",
+    "output": "{\"prediction\": \"A\", \"evidence_refs\": [\"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000027933\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028067\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028200\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028300\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028433\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028567\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028700\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028800\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000028933\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000029067\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000029200\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000029300\", \"SRC-8530081a8c0a0362b950797fe33eb257de01975a65c0a954f486f2e5315363f2-000000029433",
+    "metadata": {
+      "output_tokens": 1024,
+      "input_tokens": 1179,
+      "visual_tokens": 0
+    }
+  }
+]

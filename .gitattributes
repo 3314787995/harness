@@ -1,16 +1,2 @@
-* text=auto
-.editorconfig text eol=lf
-.gitattributes text eol=lf
-.gitignore text eol=lf
-*.py text eol=lf
-*.md text eol=lf
-*.toml text eol=lf
-*.yaml text eol=lf
-*.yml text eol=lf
-*.json text eol=lf
-*.jsonl text eol=lf
-
-# Frozen annotation manifests contain byte-level SHA256 checksums. Keep their
-# versioned JSONL payloads byte-for-byte identical across operating systems.
-annotations/videomme_evidence30/*.jsonl binary
-annotations/videomme_evidence30/**/*.jsonl binary
+* text=auto eol=lf
+*.xlsx binary

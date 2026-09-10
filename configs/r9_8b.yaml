@@ -1,0 +1,26 @@
+# CPU engineering validation and GPU inference use the same bounded R9 policy.
+model:
+  path: ${QWEN3VL_MODEL_PATH:-Qwen/Qwen3-VL-8B-Instruct}
+  revision: 0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
+  device: auto
+  dtype: bfloat16
+  attn_implementation: sdpa
+  use_cache: true
+  generation:
+    temperature: 0.0
+r9:
+  geometry_backend: disabled
+  max_model_calls: 32
+  terminal_call_reserve: 2
+  initial_overview_frames: 32
+  preferred_frames_per_call: 16
+  max_video_frames_per_call: 32
+  max_detail_images_per_call: 2
+  max_unique_source_frames: 128
+  max_visual_exposures: 256
+  max_refinement_rounds: 3
+  max_active_binding_hypotheses: 3
+  working_context_target_tokens: 16384
+  max_new_tokens_per_structured_call: 1200
+  media:
+    cache_dir: ${QWEN3VL_CACHE_DIR:-.cache/qwen3vl_agent}/r9

@@ -1,0 +1,18 @@
+[
+  {
+    "source": "225-1/00004",
+    "output": "```json\n{\n  \"members\": [\n    {\n      \"set\": \"items\",\n      \"object\": \"O1\",\n      \"label\": \"origami animal face\",\n      \"judgments\": {\n        \"J1\": \"yes\",\n        \"J2\": \"yes\"\n      },\n      \"refs\": [\n        \"F17\"\n      ]\n    }\n  ],\n  \"coverage\": \"complete\",\n  \"gaps\": []\n}\n```"
+  },
+  {
+    "source": "225-1/00006",
+    "output": "```json\n{\"members\": [{\"set\": \"items\", \"object\": \"O1\", \"label\": \"origami animal face\", \"judgments\": {\"J1\": \"yes\", \"J2\": \"yes\"}, \"refs\": [\"F12\", \"F13\", \"F14\", \"F15\", \"F16\", \"F17\", \"F18\", \"F19\"]}], \"coverage\": \"complete\", \"gaps\": []}\n```"
+  },
+  {
+    "source": "251-1/00007",
+    "output": "```json\n{\"answers\": [{\"task\": \"Q1\", \"status\": \"observed\", \"refs\": [\"F3\"], \"note\": \"A plate with cooked eggs is shown, and a hand is spraying sauce on it, indicating the action of preparing or eating a meal.\"}]}\n```"
+  },
+  {
+    "source": "251-1/00008",
+    "output": "```json\n{\"answers\": [{\"task\": \"Q1\", \"status\": \"observed\", \"refs\": [\"F3\"], \"note\": \"A hand is spraying sauce onto a plate of cooked eggs, which is a direct visual evidence of the activity 'Eating a meal.'\"}]}\n```"
+  }
+]
