@@ -13,10 +13,12 @@ runs/
 tmp/
 /data/
 /models/
+/pipelines/data/
+/pipelines/models/
 .env
 .env.*
 !.env.example
-configs/local.yaml
+**/configs/local.yaml
 *.mp4
 *.pt
 *.safetensors

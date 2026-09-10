@@ -9,12 +9,16 @@ from pathlib import Path
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = ROOT.parent
 sys.path.insert(0, str(ROOT))
-DIRECTORIES = {'qwen3vl_agent', 'configs', 'docs', 'examples', 'tests', 'tools', 'scripts', '.github'}
-ROOT_FILES = {'README.md', 'CONTRIBUTING.md', '.gitignore', '.gitattributes', '.editorconfig', 'pyproject.toml'}
+DIRECTORIES = {'qwen3vl_agent', 'configs', 'docs', 'examples', 'tests', 'tools', 'scripts'}
+ROOT_FILES = {'README.md', 'CONTRIBUTING.md', 'pyproject.toml'}
 
 
 def release_files():
+    for name in ('README.md', '.gitignore', '.gitattributes', '.editorconfig'):
+        yield REPO_ROOT / name
+    yield from sorted(p for p in (REPO_ROOT / '.github').rglob('*') if p.is_file())
     for p in sorted(ROOT.rglob('*')):
         rel = p.relative_to(ROOT)
         if not p.is_file() or any(x in rel.parts for x in ('.git', '__pycache__', '.pytest_cache', '.ruff_cache')):
@@ -29,7 +33,7 @@ def main():
     args = parser.parse_args()
     path = ROOT / 'release_manifest.json'
     manifest = json.loads(path.read_text(encoding='utf-8'))
-    hashes = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in release_files()}
+    hashes = {p.relative_to(REPO_ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in release_files()}
     if args.write_manifest:
         manifest['files'] = hashes
         path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
@@ -67,7 +71,7 @@ def main():
             if not target or re.match(r'^[A-Za-z][A-Za-z0-9+.-]*:', target):
                 continue
             if not (p.parent / unquote(target)).exists():
-                broken.append((p.relative_to(ROOT).as_posix(), target))
+                broken.append((p.relative_to(REPO_ROOT).as_posix(), target))
     assert not broken, broken
     text = (ROOT / 'docs/benchmark_mapping.md').read_text(encoding='utf-8')
     section = text.split('## 4.')[1].split('## 5.')[0]
